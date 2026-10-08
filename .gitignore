@@ -1,0 +1,10 @@
+# Large sensor data and point clouds are shared separately.
+*.bag
+*.db3
+*.pcd
+build/
+install/
+log/
+.venv*/
+__pycache__/
+*.pyc

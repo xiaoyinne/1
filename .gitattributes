@@ -1,0 +1,10 @@
+* text=auto
+*.md text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.patch text eol=lf
+*.patch -whitespace
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.png binary
+*.zip binary
