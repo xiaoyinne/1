@@ -1,0 +1,24 @@
+{
+  "point_count": 7042489,
+  "full_xyz_span_m": [
+    139.6334228515625,
+    136.57395935058594,
+    36.09156036376953
+  ],
+  "top_xy_bounds_m": [
+    [
+      -23.635867080688477,
+      -11.861881141662597
+    ],
+    [
+      1.0583400774002083,
+      11.731180191040039
+    ]
+  ],
+  "detail_center_xy_m": [
+    -4.1402997970581055,
+    5.409881591796875
+  ],
+  "detail_width_m": 10,
+  "note": "XY projection merges heights; visible bands alone do not prove wall duplication. Display crop/stride only, source PCD unchanged."
+}

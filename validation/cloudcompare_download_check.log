@@ -1,0 +1,12 @@
+[21:43:58] [SET LOG FILE] finished in 0.00 s.
+[21:43:58] [LOAD]
+[21:43:58] Opening file: 'C:\Users\Administrator\Documents\Codex\2026-09-29\z-g\work\release-download\fastlio_hilti_fixed_20261008.pcd'
+[21:43:58] [PCL] PCD version: 1
+[21:43:58] [PCL] C:\Users\Administrator\Documents\Codex\2026-09-29\z-g\work\release-download\fastlio_hilti_fixed_20261008.pcd: 7042489 points
+[21:43:58] [PCL] Reading uncompressed binary PCD file...
+[21:43:59] [I/O] File 'C:\Users\Administrator\Documents\Codex\2026-09-29\z-g\work\release-download\fastlio_hilti_fixed_20261008.pcd' loaded successfully
+[21:43:59] Found one cloud with 7042489 points
+[21:43:59] [LOAD] finished in 1.38 s.
+[21:43:59] [CLEAR]
+[21:43:59] [CLEAR] finished in 0.01 s.
+[21:43:59] Processed finished in 1.39 s.

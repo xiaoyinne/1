@@ -1,66 +1,26 @@
-# 尹安伟第一周交付材料
+# 第一周文件说明
 
-目标：完成 Hilti bag → FAST-LIO 建图 → evo ATE 评估，统一为 PCD + KITTI 位姿 TXT。
+本目录保存 2026-10-08 半速完整回放的基线结果。2026-10-10 的补充工作增加了复现工具和验证记录，未替换本目录的历史轨迹及 ATE 原始结果。
 
-## 已完成
-
-- WSL2、Ubuntu 22.04、ROS2 Humble 环境。
-- FAST-LIO 编译运行，Hilti exp18 点云和 IMU 输入适配。
-- 完整序列半速播放，保存 PCD，CloudCompare 查看。
-- 同次运行轨迹导出为 TUM 和 KITTI（附独立时间戳文件）。
-- 使用官方 exp18 IMU 真值计算 evo ATE 并保存结果、误差图和轨迹图。
-
-## 文件
-
-| 文件 | 含义 |
+| 文件 | 内容和用途 |
 |---|---|
-| `trajectory_kitti.txt` | 每行 12 个数，行优先排列的 3×4 矩阵 `[R|t]`，`camera_init` 下 IMU/body 的位姿 |
-| `trajectory_times.txt` | 与 KITTI 行一一对应的 ROS 时间戳（秒） |
-| `trajectory_tum.txt` | `timestamp tx ty tz qx qy qz qw`，用于时间匹配评估 |
-| `groundtruth_imu.txt` | 官方同序列 IMU 真值 |
-| `ate_results.zip` | evo 数值结果 |
-| `ate_error.png` | 平移误差曲线 |
-| `ate_trajectory.png` | SE(3) 对齐后的估计轨迹与真值对比 |
-| `map_screenshot.png` | CloudCompare 地图展示 |
-| `hesai.yaml` | 本次运行配置 |
-| `fastlio_changes.patch` | 相对本地 FAST-LIO Git HEAD 的代码修改；包括此前 Hesai 点类型修改 |
-| `修复记录.md` | 原因、修改、运行与验证记录 |
-| `第一周周报.md` | 半页周报草稿 |
+| `trajectory_tum.txt` | `/Odometry` 采集的 `timestamp tx ty tz qx qy qz qw`；`camera_init` 下 IMU/body 位姿，米、秒 |
+| `trajectory_kitti.txt` | 同一轨迹，逐行展开的 3×4 `[R\|t]`；无对齐、无尺度变换、无原点重置 |
+| `trajectory_times.txt` | 与 KITTI 每行对应的时间戳 |
+| `groundtruth_imu.txt` | 官方 exp18 IMU 真值；已与官方文件核对完整性 |
+| `ate_results.zip` | evo 原始评估结果，619 对匹配位姿 |
+| `evaluation_scope.json` | 脚本重新统计的时间范围、匹配数量、误差及输入 SHA256 |
+| `ate_scope.png` | 标注已匹配部分和未评估尾段的轨迹图 |
+| `ate_error.png` / `ate_trajectory.png` | 原始 evo 误差图和轨迹图 |
+| `map_screenshot.png` | CloudCompare 查看基线地图时的截图 |
+| `figures/map_top.png` / `figures/map_detail.png` | 真实 PCD 的俯视和局部投影；显示抽样/裁切参数写在图中及 JSON |
+| `hesai.yaml` | 历史运行参数；自动采集脚本复制配置并覆盖本次输出路径 |
+| `fastlio_changes.patch` | 相对固定上游提交的 Hesai 时间字段及 PCD 保存修复 |
+| `修复记录.md` | 故障原因、修复范围和已知限制 |
+| `第一周周报.md` | 已整理的第一周交付汇报 |
 
-完整地图另存于 `D:\chromeDownload\fastlio_hilti_fixed_20261008.pcd`，包含 7,042,489 点，225,359,901 字节。上传 Git 时按组内大文件约定处理；不要把 10.8 GiB 原始 bag 放入普通 Git。
+估计轨迹共 876 位姿、108.51 秒。在 0.05 秒匹配阈值下，匹配 619 对位姿，区间跨度 85.80 秒；SE(3) 对齐、不校正尺度，平移 ATE RMSE 0.167018 m，最大误差 0.433353 m。末尾 189 个估计位姿、约 22.70 秒超出官方真值范围，未评估。
 
-## ATE 结果和范围
+轨迹时间取 `Odometry.header.stamp`（FAST-LIO 扫描结束时刻），不使用消息接收时的电脑时间。估计位姿为 IMU/body；真值选用官方 `_imu.txt`，避免混用 LiDAR 真值与 IMU 估计。
 
-序列 `exp18_corridor_lower_gallery_2`；876 个估计位姿。平移 ATE 使用 SE(3) Umeyama 对齐、无尺度校正、0.05 秒时间匹配阈值。RMSE **0.167018 m**，均值 **0.143999 m**，最大值 **0.433353 m**。
-
-该数值针对匹配的位姿，不等于全部地图点误差。原速运行仍不稳定，此次基线使用 `--rate 0.5`；地图中仍有远距离零散点。
-
-## 复现
-
-终端 1：
-
-```bash
-source /opt/ros/humble/setup.bash
-source /home/yaw/ros2_ws/install/setup.bash
-ros2 launch fast_lio mapping.launch.py config_path:=/home/yaw/ros2_ws/src/FAST_LIO/config config_file:=hesai.yaml use_sim_time:=true rviz:=false
-```
-
-终端 2：
-
-```bash
-source /opt/ros/humble/setup.bash
-ros2 bag play /home/yaw/ros2_bag --clock --rate 0.5 --topics /hesai/pandar /alphasense/imu
-```
-
-播放一次结束后，FAST-LIO 终端按一次 Ctrl+C，等待保存完成。默认保存路径为 `hesai.yaml` 的 `map_file_path`；新运行会写该路径，需要事先保留既有结果。不要加 `--loop`。
-
-## 还需要完成
-
-1. 学生检查周报中的事实、确认是否有需要补充的内容。
-2. 将配置、代码修改、轨迹、ATE 图表、截图、周报提交到组仓库，按组内约定共享 PCD，并记录 commit ID 和地图位置。
-3. 确认组内格式规范（坐标系、单位、KITTI 行列顺序、时间戳配套）。
-
-官方真值与标定来源：
-
-- https://huggingface.co/datasets/Hilti-Research/hilti-slam-challenge-2022/blob/main/ground_truth/exp18_corridor_lower_gallery_2_imu.txt
-- https://huggingface.co/datasets/Hilti-Research/hilti-slam-challenge-2022/blob/main/calibration/calibration_files/lidar_calibration.yaml
+完整执行流程见 [REPRODUCE.md](../REPRODUCE.md)，PCD 下载见 [MAP_FILE.md](../MAP_FILE.md)，验证情况见 [VALIDATION.md](../VALIDATION.md)。

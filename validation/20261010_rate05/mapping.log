@@ -1,0 +1,11 @@
+[INFO] [1791639788.555049033] [laser_mapping]: p_pre->lidar_type 2
+Multi thread started 
+~~~~/home/yaw/week1_build_20261010/src/FAST_LIO/ file opened
+[INFO] [1791639788.568755190] [laser_mapping]: Node init finished.
+IMU Initial Done
+[WARN] [1791639796.189073196] [laser_mapping]: No point, skip this scan!
+
+[INFO] [1791639800.396822589] [laser_mapping]: Initialize the map kdtree
+catch sig %d2
+current scan saved to /home/yaw/week1_validation_20261010/runs/exp18_rate05/map.pcd
+Rebuild thread terminated normally

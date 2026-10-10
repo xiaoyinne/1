@@ -2,8 +2,11 @@
 *.md text eol=lf
 *.txt text eol=lf
 *.yaml text eol=lf
+*.py text eol=lf
+*.json text eol=lf
 *.patch text eol=lf
 *.patch -whitespace
+*.log text eol=lf -whitespace
 .gitattributes text eol=lf
 .gitignore text eol=lf
 *.png binary

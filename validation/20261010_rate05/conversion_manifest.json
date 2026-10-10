@@ -1,0 +1,14 @@
+{
+  "rosbags_version": "0.11.5",
+  "command": [
+    "/home/yaw/week1_validation_20261010/venv-bag/bin/rosbags-convert",
+    "--src",
+    "/mnt/d/chromeDownload/exp18_corridor_lower_gallery_2.bag",
+    "--dst",
+    "/home/yaw/week1_validation_20261010/ros2_bag"
+  ],
+  "source": "/mnt/d/chromeDownload/exp18_corridor_lower_gallery_2.bag",
+  "source_bytes": 8657654860,
+  "humble_qos_fields_normalized": 8,
+  "metadata_sha256": "2887dd14dbb82230216d9c400efe19a050b92cebeba9764fa2f722b777697a39"
+}
