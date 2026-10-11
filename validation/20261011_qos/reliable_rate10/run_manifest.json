@@ -1,0 +1,113 @@
+{
+  "status": "completed_needs_accuracy_evaluation",
+  "started_at_utc": "2026-10-11T04:27:27Z",
+  "playback_rate": 1.0,
+  "ros_domain_id": 87,
+  "ros_distro": "humble",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "workspace": "/home/yaw/week1_build_20261010",
+  "source_commit": "2fffc570a25d0df172720bac034fbdb6a13d2162",
+  "source_patch_sha256": "b220f8837f098dadbf0234e7aa6f846e8a324146d7832e860b835061492b0ff5",
+  "executable_sha256": "756f6d6a3893a77a80fd89cd70330e57dd24353f6a74811cd99a6220f20fb06d",
+  "config_sha256": "107715f8ea2d052672f9f37ced2dcacdd62ab600f6633575302e8ddc40d7379c",
+  "bag_metadata_sha256": "2887dd14dbb82230216d9c400efe19a050b92cebeba9764fa2f722b777697a39",
+  "bag_duration_s": 109.404904317,
+  "bag_topic_counts": {
+    "/alphasense/cam0/image_raw": 4376,
+    "/alphasense/cam1/image_raw": 4376,
+    "/alphasense/cam2/image_raw": 4376,
+    "/alphasense/imu": 43656,
+    "/alphasense/cam3/image_raw": 4376,
+    "/alphasense/cam4/image_raw": 4376,
+    "/hesai/pandar": 1094,
+    "/Point_name": 3
+  },
+  "trajectory": {
+    "topic": "/Odometry",
+    "pose": "IMU/body in camera_init",
+    "quaternion": "xyzw",
+    "timestamp": "Odometry.header.stamp (scan end), seconds",
+    "position_unit": "m"
+  },
+  "limitation": "Bag source counts and instrumented callback/processing counts are separate; neither establishes accuracy.",
+  "rmw_implementation": "rmw_fastrtps_cpp",
+  "transport_environment": {
+    "ROS_LOCALHOST_ONLY": "0",
+    "RMW_IMPLEMENTATION": null,
+    "FASTRTPS_DEFAULT_PROFILES_FILE": null,
+    "FASTDDS_DEFAULT_PROFILES_FILE": null,
+    "RMW_FASTRTPS_USE_QOS_FROM_XML": null,
+    "CYCLONEDDS_URI": null
+  },
+  "commands": {
+    "mapping": [
+      "/home/yaw/week1_build_20261010/install/fast_lio/lib/fast_lio/fastlio_mapping",
+      "--ros-args",
+      "--params-file",
+      "/home/yaw/week1_validation_20261011/runs/reliable_rate10/config.yaml"
+    ],
+    "bag": [
+      "ros2",
+      "bag",
+      "play",
+      "/home/yaw/week1_validation_20261010/ros2_bag",
+      "--clock",
+      "--rate",
+      "1.0",
+      "--topics",
+      "/hesai/pandar",
+      "/alphasense/imu"
+    ]
+  },
+  "bag_exit_code": 0,
+  "mapping_exit_code": 0,
+  "node_diagnostics": {
+    "lidar_received": 1094,
+    "imu_received": 43636,
+    "synced_frames": 1093,
+    "first_scan_skipped": 1,
+    "empty_undistorted_skipped": 1,
+    "map_initialization_skipped": 1,
+    "too_few_downsampled_skipped": 0,
+    "odometry_published": 1090,
+    "no_effective_filter_updates": 0,
+    "pending_lidar": 1,
+    "pending_imu": 44,
+    "lidar_buffer_peak": 4,
+    "imu_buffer_peak": 106,
+    "lidar_max_stamp_gap_s": 0.103486061096,
+    "imu_max_stamp_gap_s": 0.0526049137115,
+    "frame_wall_mean_s": 0.0076401402397,
+    "frame_wall_max_s": 0.139566135,
+    "lidar_qos_depth": 100,
+    "imu_qos_depth": 20000,
+    "lidar_reliability": "reliable"
+  },
+  "sampled_process_resources": {
+    "mapping": {
+      "last_cpu_s": 61.72,
+      "last_sample_monotonic_s": 1441.552230408,
+      "peak_sampled_rss_mib": 614.9609375,
+      "peak_sampled_cpu_percent_one_core": 103.76852645353486
+    },
+    "bag": {
+      "last_cpu_s": 14.65,
+      "last_sample_monotonic_s": 1441.552303616,
+      "peak_sampled_rss_mib": 201.38671875,
+      "peak_sampled_cpu_percent_one_core": 574.7652639704239
+    }
+  },
+  "trajectory_poses": 1090,
+  "observed_frames": [
+    [
+      "camera_init",
+      "body"
+    ]
+  ],
+  "no_effective_points_count": 0,
+  "forced_stop_pids": [],
+  "recorder_errors": [],
+  "finished_at_utc": "2026-10-11T04:29:21Z",
+  "failure": null,
+  "map_sha256": "575fca5ba412f4fe360a07561d2a5b13cbb6e61b0b3b84e8099123ee5b6576ef"
+}

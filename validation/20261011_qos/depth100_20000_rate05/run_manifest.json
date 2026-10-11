@@ -1,0 +1,103 @@
+{
+  "status": "failed",
+  "started_at_utc": "2026-10-11T04:10:17Z",
+  "playback_rate": 0.5,
+  "ros_domain_id": 87,
+  "ros_distro": "humble",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "workspace": "/home/yaw/week1_build_20261010",
+  "source_commit": "2fffc570a25d0df172720bac034fbdb6a13d2162",
+  "source_patch_sha256": "9f253eb2b57c1fe7b2d68cf09a937fa32557ddb1f7adfcbf81d9ae86b1f1015e",
+  "executable_sha256": "8ebfac0abd8580b4251bf3777116be768988a84fbcb0213017ff90985068e803",
+  "config_sha256": "ac3169abf783dc093673a99eda4d9cea14523cc4edbd1afd7d33a18a4ff4a9af",
+  "bag_metadata_sha256": "2887dd14dbb82230216d9c400efe19a050b92cebeba9764fa2f722b777697a39",
+  "bag_duration_s": 109.404904317,
+  "bag_topic_counts": {
+    "/alphasense/cam0/image_raw": 4376,
+    "/alphasense/cam1/image_raw": 4376,
+    "/alphasense/cam2/image_raw": 4376,
+    "/alphasense/imu": 43656,
+    "/alphasense/cam3/image_raw": 4376,
+    "/alphasense/cam4/image_raw": 4376,
+    "/hesai/pandar": 1094,
+    "/Point_name": 3
+  },
+  "trajectory": {
+    "topic": "/Odometry",
+    "pose": "IMU/body in camera_init",
+    "quaternion": "xyzw",
+    "timestamp": "Odometry.header.stamp (scan end), seconds",
+    "position_unit": "m"
+  },
+  "limitation": "Bag topic counts are source counts, not FAST-LIO receive/process counters.",
+  "commands": {
+    "mapping": [
+      "/home/yaw/week1_build_20261010/install/fast_lio/lib/fast_lio/fastlio_mapping",
+      "--ros-args",
+      "--params-file",
+      "/home/yaw/week1_validation_20261011/runs/depth100_20000_rate05/config.yaml"
+    ],
+    "bag": [
+      "ros2",
+      "bag",
+      "play",
+      "/home/yaw/week1_validation_20261010/ros2_bag",
+      "--clock",
+      "--rate",
+      "0.5",
+      "--topics",
+      "/hesai/pandar",
+      "/alphasense/imu"
+    ]
+  },
+  "bag_exit_code": 0,
+  "mapping_exit_code": 0,
+  "node_diagnostics": {
+    "lidar_received": 608,
+    "imu_received": 43641,
+    "synced_frames": 607,
+    "first_scan_skipped": 1,
+    "empty_undistorted_skipped": 1,
+    "map_initialization_skipped": 1,
+    "too_few_downsampled_skipped": 0,
+    "odometry_published": 604,
+    "no_effective_filter_updates": 4,
+    "pending_lidar": 1,
+    "pending_imu": 44,
+    "lidar_buffer_peak": 2,
+    "imu_buffer_peak": 801,
+    "lidar_max_stamp_gap_s": 1.99800086021,
+    "imu_max_stamp_gap_s": 0.00253582000732,
+    "frame_wall_mean_s": 0.00885484744646,
+    "frame_wall_max_s": 0.297884354,
+    "lidar_qos_depth": 100,
+    "imu_qos_depth": 20000
+  },
+  "sampled_process_resources": {
+    "mapping": {
+      "last_cpu_s": 49.73,
+      "last_sample_monotonic_s": 521.845730529,
+      "peak_sampled_rss_mib": 459.3828125,
+      "peak_sampled_cpu_percent_one_core": 119.63926369209773
+    },
+    "bag": {
+      "last_cpu_s": 19.21,
+      "last_sample_monotonic_s": 521.845790654,
+      "peak_sampled_rss_mib": 175.75390625,
+      "peak_sampled_cpu_percent_one_core": 566.5683746345034
+    }
+  },
+  "trajectory_poses": 604,
+  "observed_frames": [
+    [
+      "camera_init",
+      "body"
+    ]
+  ],
+  "no_effective_points_count": 4,
+  "forced_stop_pids": [],
+  "recorder_errors": [],
+  "finished_at_utc": "2026-10-11T04:14:01Z",
+  "failure": "Missing map/trajectory, recorder error or No Effective Points; inspect logs",
+  "map_sha256": "a5464f0222fa9515a65b28eeba6c07f3dc45458ae72e51471e01ac9173a404bc"
+}

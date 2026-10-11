@@ -1,0 +1,179 @@
+diff --git a/src/laserMapping.cpp b/src/laserMapping.cpp
+--- a/src/laserMapping.cpp
++++ b/src/laserMapping.cpp
+@@ -99,6 +99,28 @@ bool   lidar_pushed, flg_first_scan = true, flg_exit = false, flg_EKF_inited;
+ bool   scan_pub_en = false, dense_pub_en = false, scan_body_pub_en = false;
+ bool    is_first_lidar = true;
+ 
++// Runtime counters for the single-threaded ROS executor. OpenMP work does not
++// update these counters. Queue depth remains configurable for controlled tests.
++int lidar_qos_depth = 5, imu_qos_depth = 10;
++std::string lidar_reliability = "best_effort";
++uint64_t diag_imu_received = 0, diag_synced = 0, diag_first_skip = 0;
++uint64_t diag_empty_skip = 0, diag_map_init_skip = 0, diag_downsample_skip = 0;
++uint64_t diag_odom_published = 0, diag_no_effective_updates = 0;
++size_t diag_lidar_buffer_peak = 0, diag_imu_buffer_peak = 0;
++double diag_last_lidar_stamp = -1, diag_last_imu_stamp = -1;
++double diag_lidar_max_gap = 0, diag_imu_max_gap = 0;
++double diag_frame_total_s = 0, diag_frame_max_s = 0;
++struct FrameDiagnosticScope
++{
++    double start = omp_get_wtime();
++    ~FrameDiagnosticScope()
++    {
++        const double duration = omp_get_wtime() - start;
++        diag_frame_total_s += duration;
++        diag_frame_max_s = std::max(diag_frame_max_s, duration);
++    }
++};
++
+ vector<vector<int>>  pointSearchInd_surf; 
+ vector<BoxPointType> cub_needrm;
+ vector<PointVector>  Nearest_Points; 
+@@ -285,6 +307,9 @@ void standard_pcl_cbk(const sensor_msgs::msg::PointCloud2::UniquePtr msg)
+     mtx_buffer.lock();
+     scan_count ++;
+     double cur_time = get_time_sec(msg->header.stamp);
++    if (diag_last_lidar_stamp >= 0)
++        diag_lidar_max_gap = std::max(diag_lidar_max_gap, cur_time - diag_last_lidar_stamp);
++    diag_last_lidar_stamp = cur_time;
+     double preprocess_start_time = omp_get_wtime();
+     if (!is_first_lidar && cur_time < last_timestamp_lidar)
+     {
+@@ -299,6 +324,7 @@ void standard_pcl_cbk(const sensor_msgs::msg::PointCloud2::UniquePtr msg)
+     PointCloudXYZI::Ptr  ptr(new PointCloudXYZI());
+     p_pre->process(msg, ptr);
+     lidar_buffer.push_back(ptr);
++    diag_lidar_buffer_peak = std::max(diag_lidar_buffer_peak, lidar_buffer.size());
+     time_buffer.push_back(cur_time);
+     last_timestamp_lidar = cur_time;
+     s_plot11[scan_count] = omp_get_wtime() - preprocess_start_time;
+@@ -349,6 +375,11 @@ void livox_pcl_cbk(const livox_ros_driver2::msg::CustomMsg::UniquePtr msg)
+ 
+ void imu_cbk(const sensor_msgs::msg::Imu::UniquePtr msg_in)
+ {
++    ++diag_imu_received;
++    const double input_stamp = get_time_sec(msg_in->header.stamp);
++    if (diag_last_imu_stamp >= 0)
++        diag_imu_max_gap = std::max(diag_imu_max_gap, input_stamp - diag_last_imu_stamp);
++    diag_last_imu_stamp = input_stamp;
+     publish_count ++;
+     // cout<<"IMU got at: "<<msg_in->header.stamp.toSec()<<endl;
+     sensor_msgs::msg::Imu::SharedPtr msg(new sensor_msgs::msg::Imu(*msg_in));
+@@ -374,6 +405,7 @@ void imu_cbk(const sensor_msgs::msg::Imu::UniquePtr msg_in)
+     last_timestamp_imu = timestamp;
+ 
+     imu_buffer.push_back(msg);
++    diag_imu_buffer_peak = std::max(diag_imu_buffer_peak, imu_buffer.size());
+     mtx_buffer.unlock();
+     sig_buffer.notify_all();
+ }
+@@ -746,6 +778,7 @@ void h_share_model(state_ikfom &s, esekfom::dyn_share_datastruct<double> &ekfom_
+     {
+         ekfom_data.valid = false;
+         std::cerr << "No Effective Points!" << std::endl;
++        ++diag_no_effective_updates;
+         // ROS_WARN("No Effective Points! \n");
+         return;
+     }
+@@ -916,15 +949,25 @@ public:
+             cout << "~~~~"<<ROOT_DIR<<" doesn't exist" << endl;
+ 
+         /*** ROS subscribe initialization ***/
++        lidar_qos_depth = this->declare_parameter<int>("input_qos.lidar_depth", 5);
++        imu_qos_depth = this->declare_parameter<int>("input_qos.imu_depth", 10);
++        lidar_reliability = this->declare_parameter<std::string>("input_qos.lidar_reliability", "best_effort");
++        if (lidar_reliability != "best_effort" && lidar_reliability != "reliable")
++            throw std::invalid_argument("input_qos.lidar_reliability must be best_effort or reliable");
++        if (lidar_qos_depth <= 0 || imu_qos_depth <= 0)
++            throw std::invalid_argument("Input QoS queue depths must be positive");
+         if (p_pre->lidar_type == AVIA)
+         {
+             sub_pcl_livox_ = this->create_subscription<livox_ros_driver2::msg::CustomMsg>(lid_topic, 20, livox_pcl_cbk);
+         }
+         else
+         {
+-            sub_pcl_pc_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(lid_topic, rclcpp::SensorDataQoS(), standard_pcl_cbk);
++            auto lidar_qos = rclcpp::SensorDataQoS();
++            lidar_qos.keep_last(lidar_qos_depth);
++            if (lidar_reliability == "reliable") lidar_qos.reliable();
++            sub_pcl_pc_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(lid_topic, lidar_qos, standard_pcl_cbk);
+         }
+-        sub_imu_ = this->create_subscription<sensor_msgs::msg::Imu>(imu_topic, 10, imu_cbk);
++        sub_imu_ = this->create_subscription<sensor_msgs::msg::Imu>(imu_topic, rclcpp::QoS(imu_qos_depth), imu_cbk);
+         pubLaserCloudFull_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_registered", 20);
+         pubLaserCloudFull_body_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_registered_body", 20);
+         pubLaserCloudEffect_ = this->create_publisher<sensor_msgs::msg::PointCloud2>("/cloud_effected", 20);
+@@ -957,8 +1000,11 @@ private:
+     {
+         if(sync_packages(Measures))
+         {
++            ++diag_synced;
++            FrameDiagnosticScope diagnostic_scope;
+             if (flg_first_scan)
+             {
++                ++diag_first_skip;
+                 first_lidar_time = Measures.lidar_beg_time;
+                 p_imu->first_lidar_time = first_lidar_time;
+                 flg_first_scan = false;
+@@ -980,6 +1026,7 @@ private:
+ 
+             if (feats_undistort->empty() || (feats_undistort == NULL))
+             {
++                ++diag_empty_skip;
+                 RCLCPP_WARN(this->get_logger(), "No point, skip this scan!\n");
+                 return;
+             }
+@@ -997,6 +1044,7 @@ private:
+             /*** initialize the map kdtree ***/
+             if(ikdtree.Root_Node == nullptr)
+             {
++                ++diag_map_init_skip;
+                 RCLCPP_INFO(this->get_logger(), "Initialize the map kdtree");
+                 if(feats_down_size > 5)
+                 {
+@@ -1018,6 +1066,7 @@ private:
+             /*** ICP and iterated Kalman filter update ***/
+             if (feats_down_size < 5)
+             {
++                ++diag_downsample_skip;
+                 RCLCPP_WARN(this->get_logger(), "No point, skip this scan!\n");
+                 return;
+             }
+@@ -1060,6 +1109,7 @@ private:
+ 
+             /******* Publish odometry *******/
+             publish_odometry(pubOdomAftMapped_, tf_broadcaster_);
++            ++diag_odom_published;
+ 
+             /*** add the feature points to map kdtree ***/
+             t3 = omp_get_wtime();
+@@ -1160,6 +1210,28 @@ int main(int argc, char** argv)
+ 
+     rclcpp::spin(std::make_shared<LaserMappingNode>());
+ 
++    std::cout << std::setprecision(12)
++              << "FASTLIO_DIAGNOSTICS {\"lidar_received\":" << scan_count
++              << ",\"imu_received\":" << diag_imu_received
++              << ",\"synced_frames\":" << diag_synced
++              << ",\"first_scan_skipped\":" << diag_first_skip
++              << ",\"empty_undistorted_skipped\":" << diag_empty_skip
++              << ",\"map_initialization_skipped\":" << diag_map_init_skip
++              << ",\"too_few_downsampled_skipped\":" << diag_downsample_skip
++              << ",\"odometry_published\":" << diag_odom_published
++              << ",\"no_effective_filter_updates\":" << diag_no_effective_updates
++              << ",\"pending_lidar\":" << lidar_buffer.size()
++              << ",\"pending_imu\":" << imu_buffer.size()
++              << ",\"lidar_buffer_peak\":" << diag_lidar_buffer_peak
++              << ",\"imu_buffer_peak\":" << diag_imu_buffer_peak
++              << ",\"lidar_max_stamp_gap_s\":" << diag_lidar_max_gap
++              << ",\"imu_max_stamp_gap_s\":" << diag_imu_max_gap
++              << ",\"frame_wall_mean_s\":" << (diag_synced ? diag_frame_total_s / diag_synced : 0)
++              << ",\"frame_wall_max_s\":" << diag_frame_max_s
++              << ",\"lidar_qos_depth\":" << lidar_qos_depth
++              << ",\"imu_qos_depth\":" << imu_qos_depth
++              << ",\"lidar_reliability\":\"" << lidar_reliability << "\"}" << std::endl;
++
+     if (rclcpp::ok())
+         rclcpp::shutdown();
+     /**************** save map ****************/

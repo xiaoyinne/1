@@ -1,6 +1,6 @@
 # 从原始 bag 到地图、轨迹和 ATE
 
-目标环境：Ubuntu 22.04（可在 WSL2）、ROS2 Humble、Python 3.10。所有以下命令在 **Ubuntu Bash** 执行；输入命令时不包含终端提示符。路径含空格时保留双引号。完整实测范围见 [VALIDATION.md](VALIDATION.md)：流程已执行，新半速复跑 ATE 为 0.846 m，未稳定复现历史 0.167 m；必须评估每一次新运行。
+目标环境：Ubuntu 22.04（可在 WSL2）、ROS2 Humble、Python 3.10。所有以下命令在 **Ubuntu Bash** 执行；输入命令时不包含终端提示符。路径含空格时保留双引号。2026-10-11 推荐流程增加输入 QoS 补丁，显式使用可靠点云和大队列；两次半速测试均收到完整输入，ATE 为 0.196888 m。它不等于精确重演历史 0.167 m，仍须评估每次新运行。实测范围及尾帧限制见 [VALIDATION.md](VALIDATION.md) 和 [运行对照](validation/20261011_qos/)。
 
 ## 1. 环境与交付仓库
 
@@ -46,6 +46,8 @@ git -C "$WORK/ws/src/FAST_LIO" checkout --detach 2fffc570a25d0df172720bac034fbdb
 git -C "$WORK/ws/src/FAST_LIO" submodule update --init --recursive
 git -C "$WORK/ws/src/FAST_LIO" apply --check "$REPO/week1_yin_anwei/fastlio_changes.patch"
 git -C "$WORK/ws/src/FAST_LIO" apply "$REPO/week1_yin_anwei/fastlio_changes.patch"
+git -C "$WORK/ws/src/FAST_LIO" apply --check "$REPO/week1_yin_anwei/fastlio_runtime_diagnostics.patch"
+git -C "$WORK/ws/src/FAST_LIO" apply "$REPO/week1_yin_anwei/fastlio_runtime_diagnostics.patch"
 
 source /opt/ros/humble/setup.bash
 cd "$WORK/ws"
@@ -108,10 +110,13 @@ export RUN="$WORK/runs/exp18_rate05_$(date +%Y%m%d_%H%M%S)"
 /usr/bin/python3 -s "$REPO/tools/verify_fastlio_save.py" \
   --workspace "$WORK/ws" --bag "$WORK/ros2_bag" \
   --config "$REPO/week1_yin_anwei/hesai.yaml" --run-dir "$RUN" \
-  --rate 0.5 --timeout 600 --domain-id 87
+  --rate 0.5 --timeout 600 --domain-id 87 \
+  --lidar-depth 100 --imu-depth 20000 --lidar-reliability reliable
 ```
 
 脚本在指定 ROS domain 内启动 FAST-LIO，确认初始化和订阅发现后播放 bag，录制 `/Odometry`。回放结束、输出短暂静默后发一次 SIGINT，让 FAST-LIO 退出保存地图。只结束它自己启动的进程组。超时、子进程异常、空轨迹、缺少地图或 `No Effective Points` 都会标记失败并保留诊断文件。不要让其他节点在同一 domain 发布 `/Odometry`。
+
+本数据 rosbag2 发布端实测为 RELIABLE；如果更换成仅支持 BEST_EFFORT 的驱动，不能直接沿用可靠订阅。查看节点输入计数及实验对照的方法见 [RUNTIME_DIAGNOSTICS.md](RUNTIME_DIAGNOSTICS.md)。历史小队列/BEST_EFFORT 配置仍可显式选择用于对照，不推荐作为本机默认流程。
 
 ```text
 exp18_rate05_.../
@@ -125,6 +130,13 @@ exp18_rate05_.../
 ```
 
 `pcd_save.pcd_save_en=true`、`interval=-1` 保证累计为一个文件。修复的是退出保存；`map_save` 服务未验证。原配置中的本机 `map_file_path` 由脚本覆盖为 `$RUN/map.pcd`。
+
+运行清单包含源 bag、节点实际接收/处理/跳过/发布计数以及进程资源采样。执行下面命令生成对账报告；可靠组实测末尾仍有 1 帧已收到但未处理，不能把完整接收等同于逐帧完整处理：
+
+```bash
+"$EVAL_PY" "$REPO/tools/runtime_report.py" \
+  --manifest "$RUN/run_manifest.json" --output "$RUN/runtime_report.json"
+```
 
 位姿含义：`camera_init` 下 IMU/body 的 `[R|t]`，`p_world = R × p_body + t`；平移米，四元数顺序 xyzw。时间取 `Odometry.header.stamp`，源码设为扫描结束时间，不是电脑墙钟。配套真值选官方 `_imu.txt`。
 
@@ -181,4 +193,4 @@ MPLBACKEND=Agg "$EVAL_PY" "$REPO/tools/run_evo.py" tum \
 - `Publisher count: 1` 只说明发布端存在，不代表持续有消息；先查看采集脚本日志和返回状态。
 - `No Effective Points!` 连续出现时，不以“能保存 PCD”作为成功。检查时间字段、外参、输入格式及运行负载。
 - `timestamp` 是本数据绝对秒；必须减 header 后转毫秒。`T_imu_pandar` 将 LiDAR 点变到 IMU：`p_imu = R × p_lidar + T`。
-- 原速不稳定原因尚未定位。原速对照实验需要节点接收/处理计数，见 [WEEK2_PLAN.md](WEEK2_PLAN.md)。
+- 不要只凭播放倍率猜原因：本机 BEST_EFFORT 半速实验也少了数百帧输入；改为 RELIABLE 后输入完整性明显改善。实验和适用限制见 [运行对照](validation/20261011_qos/)。

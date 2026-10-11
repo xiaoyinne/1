@@ -1,0 +1,97 @@
+[INFO] [1791691520.616525715] [laser_mapping]: p_pre->lidar_type 2
+Multi thread started 
+~~~~/home/yaw/week1_build_20261010/src/FAST_LIO/ file opened
+[INFO] [1791691520.630453761] [laser_mapping]: Node init finished.
+IMU Initial Done
+[WARN] [1791691524.006508320] [laser_mapping]: No point, skip this scan!
+
+[INFO] [1791691524.607911825] [laser_mapping]: Initialize the map kdtree
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+[pcl::VoxelGrid::applyFilter] Leaf size is too small for the input dataset. Integer indices would overflow.
+No Effective Points!
+No Effective Points!
+No Effective Points!
+No Effective Points!
+catch sig %d2
+FASTLIO_DIAGNOSTICS {"lidar_received":480,"imu_received":43567,"synced_frames":480,"first_scan_skipped":1,"empty_undistorted_skipped":1,"map_initialization_skipped":1,"too_few_downsampled_skipped":0,"odometry_published":477,"no_effective_filter_updates":80,"pending_lidar":0,"pending_imu":124,"lidar_buffer_peak":2,"imu_buffer_peak":1119,"lidar_max_stamp_gap_s":2.80124211311,"imu_max_stamp_gap_s":0.170338153839,"frame_wall_mean_s":0.0129401664917,"frame_wall_max_s":0.388542288,"lidar_qos_depth":5,"imu_qos_depth":10}
+current scan saved to /home/yaw/week1_validation_20261011/runs/depth5_10_rate05/map.pcd
+Rebuild thread terminated normally

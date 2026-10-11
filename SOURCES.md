@@ -5,6 +5,7 @@
 - 上游：https://github.com/Ericsii/FAST_LIO
 - 本机基准提交：`2fffc570a25d0df172720bac034fbdb6a13d2162`
 - `week1_yin_anwei/fastlio_changes.patch` 相对该提交生成，包含本次修改及此前对 Hesai 字段的修改；配置文件独立提供。
+- `week1_yin_anwei/fastlio_runtime_diagnostics.patch` 在上一个补丁之后应用，增加本次 PointCloud2 回放的接收/处理计数、可配置输入 QoS 和耗时摘要；不改几何、外参或时间计算。原默认 QoS 保留，新推荐命令显式选择 RELIABLE。
 - 原始源码保留其原有版权和许可。应用补丁前应在该基准版本检查 `git apply --check`。
 
 固定构建依赖：

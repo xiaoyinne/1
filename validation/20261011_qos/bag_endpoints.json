@@ -1,0 +1,32 @@
+{
+  "/hesai/pandar": {
+    "first": {
+      "bag_timestamp_s": 1649856227.623466,
+      "header_timestamp_s": 1649856227.623466,
+      "points": 60976,
+      "payload_bytes": 2926848,
+      "point_step": 48,
+      "min_point_timestamp_s": 1649856227.623467,
+      "max_point_timestamp_s": 1649856227.723469
+    },
+    "last": {
+      "bag_timestamp_s": 1649856336.9184709,
+      "header_timestamp_s": 1649856336.918471,
+      "points": 58822,
+      "payload_bytes": 2823456,
+      "point_step": 48,
+      "min_point_timestamp_s": 1649856336.918471,
+      "max_point_timestamp_s": 1649856337.0184548
+    }
+  },
+  "/alphasense/imu": {
+    "first": {
+      "bag_timestamp_s": 1649856227.6707702,
+      "header_timestamp_s": 1649856227.6707702
+    },
+    "last": {
+      "bag_timestamp_s": 1649856337.0283704,
+      "header_timestamp_s": 1649856337.0283704
+    }
+  }
+}

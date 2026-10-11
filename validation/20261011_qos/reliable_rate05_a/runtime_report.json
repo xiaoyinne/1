@@ -1,0 +1,57 @@
+{
+  "playback_rate": 0.5,
+  "lidar_qos_depth": 100,
+  "imu_qos_depth": 20000,
+  "source_lidar": 1094,
+  "source_imu": 43656,
+  "lidar_not_observed_by_callback": 0,
+  "imu_not_observed_by_callback": 0,
+  "lidar_accounting_residual": 0,
+  "processing_accounting_residual": 0,
+  "odometry_not_observed_by_recorder": 0,
+  "diagnostics": {
+    "lidar_received": 1094,
+    "imu_received": 43656,
+    "synced_frames": 1093,
+    "first_scan_skipped": 1,
+    "empty_undistorted_skipped": 1,
+    "map_initialization_skipped": 1,
+    "too_few_downsampled_skipped": 0,
+    "odometry_published": 1090,
+    "no_effective_filter_updates": 0,
+    "pending_lidar": 1,
+    "pending_imu": 44,
+    "lidar_buffer_peak": 2,
+    "imu_buffer_peak": 55,
+    "lidar_max_stamp_gap_s": 0.103486061096,
+    "imu_max_stamp_gap_s": 0.00253582000732,
+    "frame_wall_mean_s": 0.00747396273193,
+    "frame_wall_max_s": 0.165956644,
+    "lidar_qos_depth": 100,
+    "imu_qos_depth": 20000,
+    "lidar_reliability": "reliable"
+  },
+  "sampled_process_resources": {
+    "mapping": {
+      "last_cpu_s": 69.5,
+      "last_sample_monotonic_s": 919.603829978,
+      "peak_sampled_rss_mib": 607.00390625,
+      "peak_sampled_cpu_percent_one_core": 107.77619626191567
+    },
+    "bag": {
+      "last_cpu_s": 18.25,
+      "last_sample_monotonic_s": 919.603894972,
+      "peak_sampled_rss_mib": 175.67578125,
+      "peak_sampled_cpu_percent_one_core": 574.7862927599232
+    }
+  },
+  "collection_status": "completed_needs_accuracy_evaluation",
+  "notes": [
+    "Source minus callback is unobserved input, not proof of the DDS loss mechanism.",
+    "Accounting assumes this Hilti single-play run, no loop/reset, and one publisher per input.",
+    "Queued samples not delivered before shutdown are also unobserved; pending_lidar covers only the application buffer.",
+    "Frame time covers the synchronized timer processing, not preprocessing in the input callback.",
+    "CPU/RSS are sampled from each spawned PID, not its descendants; CPU percent is relative to one CPU.",
+    "Counts and clean exit do not establish geometric accuracy; inspect the separate evo evaluation."
+  ]
+}

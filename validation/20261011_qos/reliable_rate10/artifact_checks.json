@@ -1,0 +1,25 @@
+{
+  "pcd_bytes": 281286365,
+  "pcd_points": 8790191,
+  "pcd_sha256": "575fca5ba412f4fe360a07561d2a5b13cbb6e61b0b3b84e8099123ee5b6576ef",
+  "pcd_fields": [
+    "x",
+    "y",
+    "z",
+    "intensity",
+    "normal_x",
+    "normal_y",
+    "normal_z",
+    "curvature"
+  ],
+  "xyz_span_m": [
+    196.70460510253906,
+    146.44528198242188,
+    32.75739669799805
+  ],
+  "trajectory_poses": 1090,
+  "trajectory_span_s": 108.90801334381104,
+  "no_effective_points_count": 0,
+  "structural_checks_passed": true,
+  "scope_note": "Nonempty, finite PCD and consistent trajectory formats; geometric accuracy must be evaluated separately."
+}

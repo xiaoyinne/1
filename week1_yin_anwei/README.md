@@ -16,6 +16,7 @@
 | `figures/map_top.png` / `figures/map_detail.png` | 真实 PCD 的俯视和局部投影；显示抽样/裁切参数写在图中及 JSON |
 | `hesai.yaml` | 历史运行参数；自动采集脚本复制配置并覆盖本次输出路径 |
 | `fastlio_changes.patch` | 相对固定上游提交的 Hesai 时间字段及 PCD 保存修复 |
+| `fastlio_runtime_diagnostics.patch` | 在历史修复之后应用的运行计数与可配置输入 QoS 补丁；2026-10-11 新实验使用 |
 | `修复记录.md` | 故障原因、修复范围和已知限制 |
 | `第一周周报.md` | 已整理的第一周交付汇报 |
 

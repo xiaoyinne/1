@@ -1,0 +1,12 @@
+[INFO] [1791692848.174068032] [laser_mapping]: p_pre->lidar_type 2
+Multi thread started 
+~~~~/home/yaw/week1_build_20261010/src/FAST_LIO/ file opened
+[INFO] [1791692848.188144124] [laser_mapping]: Node init finished.
+IMU Initial Done
+[WARN] [1791692849.345256341] [laser_mapping]: No point, skip this scan!
+
+[INFO] [1791692849.370994042] [laser_mapping]: Initialize the map kdtree
+catch sig %d2
+FASTLIO_DIAGNOSTICS {"lidar_received":1094,"imu_received":43636,"synced_frames":1093,"first_scan_skipped":1,"empty_undistorted_skipped":1,"map_initialization_skipped":1,"too_few_downsampled_skipped":0,"odometry_published":1090,"no_effective_filter_updates":0,"pending_lidar":1,"pending_imu":44,"lidar_buffer_peak":4,"imu_buffer_peak":106,"lidar_max_stamp_gap_s":0.103486061096,"imu_max_stamp_gap_s":0.0526049137115,"frame_wall_mean_s":0.0076401402397,"frame_wall_max_s":0.139566135,"lidar_qos_depth":100,"imu_qos_depth":20000,"lidar_reliability":"reliable"}
+current scan saved to /home/yaw/week1_validation_20261011/runs/reliable_rate10/map.pcd
+Rebuild thread terminated normally

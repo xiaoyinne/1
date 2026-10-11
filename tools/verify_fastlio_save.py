@@ -33,6 +33,10 @@ def main():
     parser.add_argument('--rate', type=float, default=0.5)
     parser.add_argument('--timeout', type=float, default=600, help='Wall seconds; reaching this limit is a failed, partial run')
     parser.add_argument('--domain-id', type=int, default=87)
+    parser.add_argument('--lidar-depth', type=int, help='Requires the optional runtime diagnostics patch')
+    parser.add_argument('--imu-depth', type=int, help='Requires the optional runtime diagnostics patch')
+    parser.add_argument('--lidar-reliability', choices=('best_effort', 'reliable'),
+                        help='Requires the optional runtime patch; reliable also requires a compatible publisher')
     args = parser.parse_args()
     if args.rate <= 0 or args.timeout <= 0 or not 0 <= args.domain_id <= 232:
         parser.error('Invalid rate, timeout or ROS domain')
@@ -49,6 +53,13 @@ def main():
         parser.error('Expected pcd_save enabled and interval=-1 for one cumulative map')
     parameters['map_file_path'] = str(run_dir / 'map.pcd')
     parameters['use_sim_time'] = True
+    for name, value in (('lidar_depth', args.lidar_depth), ('imu_depth', args.imu_depth)):
+        if value is not None:
+            if value <= 0:
+                parser.error('Input queue depths must be positive')
+            parameters.setdefault('input_qos', {})[name] = value
+    if args.lidar_reliability:
+        parameters.setdefault('input_qos', {})['lidar_reliability'] = args.lidar_reliability
     metadata = yaml.safe_load((bag_path / 'metadata.yaml').read_text())['rosbag2_bagfile_information']
     run_dir.mkdir(parents=True)
     (run_dir / 'input_config.yaml').write_bytes(config.read_bytes())
@@ -75,10 +86,15 @@ def main():
     save_manifest()
     os.environ['ROS_DOMAIN_ID'] = str(args.domain_id)
     import rclpy
+    from rclpy.utilities import get_rmw_implementation_identifier
     from rclpy.node import Node
     from rclpy.executors import ExternalShutdownException
     from nav_msgs.msg import Odometry
     rclpy.init()
+    manifest['rmw_implementation'] = get_rmw_implementation_identifier()
+    manifest['transport_environment'] = {key: os.environ.get(key) for key in (
+        'ROS_LOCALHOST_ONLY', 'RMW_IMPLEMENTATION', 'FASTRTPS_DEFAULT_PROFILES_FILE',
+        'FASTDDS_DEFAULT_PROFILES_FILE', 'RMW_FASTRTPS_USE_QOS_FROM_XML', 'CYCLONEDDS_URI')}
     observer = Node('week1_trajectory_recorder')
     trajectory = []
     frames = set()
@@ -123,6 +139,26 @@ def main():
                 proc.wait(timeout=5)
 
     failure = None
+    process_samples = {}
+
+    def sample_process(name, proc):
+        """Linux /proc samples: CPU% is relative to one CPU, RSS in MiB."""
+        try:
+            fields = Path(f'/proc/{proc.pid}/stat').read_text().rsplit(')', 1)[1].split()
+            cpu_s = (int(fields[11]) + int(fields[12])) / os.sysconf('SC_CLK_TCK')
+            rss_mib = int(fields[21]) * os.sysconf('SC_PAGE_SIZE') / 1024**2
+            now = time.monotonic()
+            previous = process_samples.get(name)
+            current = {'last_cpu_s': cpu_s, 'last_sample_monotonic_s': now,
+                       'peak_sampled_rss_mib': rss_mib, 'peak_sampled_cpu_percent_one_core': 0.0}
+            if previous:
+                current['peak_sampled_rss_mib'] = max(rss_mib, previous['peak_sampled_rss_mib'])
+                current['peak_sampled_cpu_percent_one_core'] = max(
+                    previous['peak_sampled_cpu_percent_one_core'],
+                    100 * (cpu_s - previous['last_cpu_s']) / (now - previous['last_sample_monotonic_s']))
+            process_samples[name] = current
+        except (FileNotFoundError, ProcessLookupError):
+            pass
     try:
         if observer.get_publishers_info_by_topic('/Odometry'):
             raise RuntimeError('Another odometry publisher is already in this ROS domain; choose a free domain')
@@ -150,6 +186,8 @@ def main():
             print(f'Playback at {args.rate}x; logs and artifacts: {run_dir}', flush=True)
             deadline = time.monotonic() + args.timeout
             while player.poll() is None:
+                sample_process('mapping', mapper)
+                sample_process('bag', player)
                 if mapper.poll() is not None or spin_errors:
                     raise RuntimeError('Mapper or odometry recorder stopped during playback')
                 if time.monotonic() >= deadline:
@@ -161,6 +199,7 @@ def main():
             drain_start = time.monotonic()
             time.sleep(2)
             while time.monotonic() - last_received[0] < 2:
+                sample_process('mapping', mapper)
                 if time.monotonic() - drain_start > 30:
                     raise RuntimeError('Odometry did not settle after playback')
                 time.sleep(.25)
@@ -182,6 +221,22 @@ def main():
         mapping_log = (run_dir / 'mapping.log')
         text = mapping_log.read_text(errors='replace') if mapping_log.exists() else ''
         warnings = text.count('No Effective Points')
+        diagnostics = [line.split('FASTLIO_DIAGNOSTICS ', 1)[1] for line in text.splitlines()
+                       if line.startswith('FASTLIO_DIAGNOSTICS ')]
+        if diagnostics:
+            try:
+                manifest['node_diagnostics'] = json.loads(diagnostics[-1])
+                manifest['limitation'] = 'Bag source counts and instrumented callback/processing counts are separate; neither establishes accuracy.'
+                for key, expected in (('lidar_qos_depth', args.lidar_depth),
+                                      ('imu_qos_depth', args.imu_depth),
+                                      ('lidar_reliability', args.lidar_reliability)):
+                    if expected is not None and manifest['node_diagnostics'].get(key) != expected:
+                        failure = failure or f'Runtime override not confirmed by node: {key}={expected}'
+            except json.JSONDecodeError as exc:
+                failure = failure or f'Invalid node diagnostics JSON: {exc}'
+        elif args.lidar_depth is not None or args.imu_depth is not None or args.lidar_reliability:
+            failure = failure or 'Queue overrides requested but node diagnostics are missing; verify the patched binary'
+        manifest['sampled_process_resources'] = process_samples
         manifest.update({'trajectory_poses': len(trajectory), 'observed_frames': sorted(frames),
                          'no_effective_points_count': warnings, 'forced_stop_pids': forced_stops,
                          'recorder_errors': spin_errors,
