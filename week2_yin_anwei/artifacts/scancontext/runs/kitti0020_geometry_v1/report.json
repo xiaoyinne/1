@@ -1,0 +1,16 @@
+{
+  "tested_candidates": 23,
+  "geometry_passed": 23,
+  "initialization": "SC yaw only; zero translation; no reference pose",
+  "geometry_rule": "both overlap >= 0.5 and both inlier RMSE <= 0.3m",
+  "evaluation_distance_m": 0.5,
+  "reference_note": "Interpolated OXTS reference, not exact ground truth",
+  "elapsed_s": 5.952,
+  "retrieval_sha256": "2d1dbe3fa095cb7fcef10da9c65d4b8ab95c40c9d736ac3fc4d13b1deb812415",
+  "reference_sha256": "7fe131444c229dd8914e86903bb96766904de290a69c2f915a770e8bb9ea4299",
+  "script_sha256": "94546683c88355929a19355aa0d5213041c5340b28d346dd2c5c8efb47323e43",
+  "passed_reference_translation_error_median_m": 0.05162929819991682,
+  "passed_reference_translation_error_max_m": 0.11261306012417709,
+  "passed_reference_rotation_error_median_deg": 0.1197855116698649,
+  "passed_reference_rotation_error_max_deg": 0.18407570817044366
+}

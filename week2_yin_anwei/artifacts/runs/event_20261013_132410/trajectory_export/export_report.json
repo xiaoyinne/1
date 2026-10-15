@@ -1,0 +1,31 @@
+{
+  "/Odometry": {
+    "count": 1091,
+    "start_s": 1649856228.010438,
+    "end_s": 1649856337.0184395,
+    "max_gap_s": 0.125581502,
+    "frames": [
+      [
+        "camera_init",
+        "body"
+      ]
+    ]
+  },
+  "/localization": {
+    "count": 1068,
+    "start_s": 1649856230.3107688,
+    "end_s": 1649856337.0184395,
+    "max_gap_s": 0.125581502,
+    "frames": [
+      [
+        "map",
+        "body"
+      ]
+    ]
+  },
+  "coverage": {
+    "odom_before_localization": 23,
+    "odom_after_localization": 0,
+    "odom_missing_inside_localization_span": 0
+  }
+}

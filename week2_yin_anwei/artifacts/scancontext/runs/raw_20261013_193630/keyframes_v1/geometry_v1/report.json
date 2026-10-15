@@ -1,0 +1,193 @@
+{
+  "purpose": "four diagnostic cases; not a full benchmark",
+  "cloud_radius_m": 25,
+  "final_voxel_m": 0.2,
+  "evaluation_correspondence_m": 0.3,
+  "initialization": "Scan Context candidate-to-query yaw, zero translation",
+  "results": [
+    {
+      "query_id": 79,
+      "candidate_id": 0,
+      "sc_distance": 0.09526159886568963,
+      "initial_yaw_deg": 294.0,
+      "initial_translation": [
+        0,
+        0,
+        0
+      ],
+      "forward_fitness": 0.645933014354067,
+      "reverse_fitness": 0.04968421052631579,
+      "forward_inliers": 135,
+      "reverse_inliers": 118,
+      "forward_inlier_rmse_m": 0.18968127001250223,
+      "reverse_inlier_rmse_m": 0.19079396224008566,
+      "translation_difference_from_odom_m": 2.1321682859313262,
+      "rotation_difference_from_odom_deg": 19.98498928517377,
+      "T_query_candidate": [
+        [
+          0.5093646156016297,
+          0.8605017507415758,
+          -0.009188326490485916,
+          0.183772906253044
+        ],
+        [
+          -0.8488722289727438,
+          0.5041764479729456,
+          0.1588145087460184,
+          -1.172655289187658
+        ],
+        [
+          0.14129270063190077,
+          -0.07309477601086987,
+          0.9872656818040788,
+          0.1692964793047204
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "elapsed_s": 0.113
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 0,
+      "sc_distance": 0.05933084721595083,
+      "initial_yaw_deg": 270.0,
+      "initial_translation": [
+        0,
+        0,
+        0
+      ],
+      "forward_fitness": 0.5885167464114832,
+      "reverse_fitness": 0.05174701459531181,
+      "forward_inliers": 123,
+      "reverse_inliers": 117,
+      "forward_inlier_rmse_m": 0.20050461774198963,
+      "reverse_inlier_rmse_m": 0.19557982413729313,
+      "translation_difference_from_odom_m": 2.6019506024051062,
+      "rotation_difference_from_odom_deg": 10.436061642282576,
+      "T_query_candidate": [
+        [
+          0.11315105134774521,
+          0.9910901490087356,
+          0.07026489960677235,
+          0.2282261814475475
+        ],
+        [
+          -0.9899563056886057,
+          0.11848887314398067,
+          -0.07711614466793128,
+          -0.23381305180870016
+        ],
+        [
+          -0.08475466008590041,
+          -0.060833407589239136,
+          0.9945430830863062,
+          0.3537393254819159
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "elapsed_s": 0.016
+    },
+    {
+      "query_id": 56,
+      "candidate_id": 0,
+      "sc_distance": 0.0,
+      "initial_yaw_deg": 6.0,
+      "initial_translation": [
+        0,
+        0,
+        0
+      ],
+      "forward_fitness": 0.39712918660287083,
+      "reverse_fitness": 0.08902077151335312,
+      "forward_inliers": 83,
+      "reverse_inliers": 60,
+      "forward_inlier_rmse_m": 0.19947232810354576,
+      "reverse_inlier_rmse_m": 0.17832625922860645,
+      "translation_difference_from_odom_m": 6.316018469997716,
+      "rotation_difference_from_odom_deg": 173.8650956831011,
+      "T_query_candidate": [
+        [
+          0.8713152832011988,
+          -0.45446407449206705,
+          -0.18512720560763452,
+          2.2597009930481295
+        ],
+        [
+          0.48949138103839296,
+          0.7781894559745531,
+          0.39347091188442923,
+          -1.7181072933854722
+        ],
+        [
+          -0.03475435439121141,
+          -0.4334553905606719,
+          0.900504613672107,
+          0.8581010536083278
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "elapsed_s": 0.004
+    },
+    {
+      "query_id": 142,
+      "candidate_id": 0,
+      "sc_distance": 0.0,
+      "initial_yaw_deg": 6.0,
+      "initial_translation": [
+        0,
+        0,
+        0
+      ],
+      "forward_fitness": 0.2679425837320574,
+      "reverse_fitness": 0.2037735849056604,
+      "forward_inliers": 56,
+      "reverse_inliers": 54,
+      "forward_inlier_rmse_m": 0.17680399560418247,
+      "reverse_inlier_rmse_m": 0.1763419827221445,
+      "translation_difference_from_odom_m": 17.158316583756484,
+      "rotation_difference_from_odom_deg": 159.603046238606,
+      "T_query_candidate": [
+        [
+          0.5096680860256279,
+          -0.8119062620694136,
+          -0.2846869573750069,
+          2.5804891566750294
+        ],
+        [
+          0.8570976959018832,
+          0.4502921466784943,
+          0.25024092854558516,
+          -1.5494455498474664
+        ],
+        [
+          -0.0749798757444663,
+          -0.3715443503165413,
+          0.9253825230580087,
+          0.6865389542018298
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "elapsed_s": 0.002
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "reference": "OXTS-derived lidar poses interpolated to scan timestamps",
+  "interpolation": "linear translation and SLERP rotation; no extrapolation",
+  "valid_frames": 1102,
+  "queries_with_history_within_5m": 271,
+  "voxel_size_m": 0.3,
+  "correspondence_distance_m": 0.5,
+  "note": "Reference-selected diagnostic pairs, not retrieval results.",
+  "results": [
+    {
+      "query_id": 833,
+      "candidate_id": 2,
+      "reference_distance_m": 3.8492481518908144,
+      "time_gap_s": 86.354231641,
+      "forward_overlap": 0.8103140546082862,
+      "reverse_overlap": 0.8143517987536797,
+      "forward_inlier_rmse_m": 0.25724036985674886,
+      "reverse_inlier_rmse_m": 0.256415351895377
+    },
+    {
+      "query_id": 871,
+      "candidate_id": 41,
+      "reference_distance_m": 0.30266535337613215,
+      "time_gap_s": 86.245209384,
+      "forward_overlap": 0.9235156652275518,
+      "reverse_overlap": 0.9217747332782174,
+      "forward_inlier_rmse_m": 0.17776514998476203,
+      "reverse_inlier_rmse_m": 0.17730478139751957
+    },
+    {
+      "query_id": 910,
+      "candidate_id": 80,
+      "reference_distance_m": 0.40430298839567047,
+      "time_gap_s": 86.238704261,
+      "forward_overlap": 0.9061465319636641,
+      "reverse_overlap": 0.9020442219440968,
+      "forward_inlier_rmse_m": 0.19939489964949986,
+      "reverse_inlier_rmse_m": 0.19977691933338565
+    },
+    {
+      "query_id": 948,
+      "candidate_id": 117,
+      "reference_distance_m": 0.7022173006623881,
+      "time_gap_s": 86.33991647,
+      "forward_overlap": 0.9004486300100107,
+      "reverse_overlap": 0.8966735354724757,
+      "forward_inlier_rmse_m": 0.20650335426261396,
+      "reverse_inlier_rmse_m": 0.20819602864770664
+    },
+    {
+      "query_id": 987,
+      "candidate_id": 160,
+      "reference_distance_m": 0.272175689000309,
+      "time_gap_s": 85.917180164,
+      "forward_overlap": 0.9366110993880565,
+      "reverse_overlap": 0.9364818790251295,
+      "forward_inlier_rmse_m": 0.18916683281694946,
+      "reverse_inlier_rmse_m": 0.1903146470527256
+    },
+    {
+      "query_id": 1025,
+      "candidate_id": 205,
+      "reference_distance_m": 0.25304228498466996,
+      "time_gap_s": 85.181327364,
+      "forward_overlap": 0.9458944963830958,
+      "reverse_overlap": 0.9440844833389431,
+      "forward_inlier_rmse_m": 0.16967342702733743,
+      "reverse_inlier_rmse_m": 0.17050730168804984
+    },
+    {
+      "query_id": 1064,
+      "candidate_id": 245,
+      "reference_distance_m": 0.13068644077262895,
+      "time_gap_s": 85.075186412,
+      "forward_overlap": 0.9041953069447737,
+      "reverse_overlap": 0.9064053401505467,
+      "forward_inlier_rmse_m": 0.2042671721389936,
+      "reverse_inlier_rmse_m": 0.20350099254779375
+    },
+    {
+      "query_id": 1103,
+      "candidate_id": 291,
+      "reference_distance_m": 4.857844399497104,
+      "time_gap_s": 84.351673004,
+      "forward_overlap": 0.7768269855216411,
+      "reverse_overlap": 0.7664330218068536,
+      "forward_inlier_rmse_m": 0.25293997351425257,
+      "reverse_inlier_rmse_m": 0.25110335359654073
+    }
+  ]
+}

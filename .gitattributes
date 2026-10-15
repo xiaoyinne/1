@@ -13,3 +13,7 @@
 *.zip binary
 # Preserve official ground-truth bytes so a fresh checkout keeps its published SHA256.
 week1_yin_anwei/groundtruth_imu.txt -text whitespace=cr-at-eol
+# Preserve the bytes of archived evidence and its recorded SHA256 values.
+week2_yin_anwei/artifacts/** -text -whitespace
+week2_yin_anwei/manifest.json -text
+week2_yin_anwei/upstream/** -whitespace

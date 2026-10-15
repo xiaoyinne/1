@@ -1,0 +1,57 @@
+{
+  "purpose": "odometry-reference overlap diagnostic; not relocalization",
+  "results": [
+    {
+      "query_id": 79,
+      "candidate_id": 0,
+      "candidate_points": 209,
+      "query_points": 2375,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "forward_inliers": 0,
+      "reverse_inliers": 0,
+      "forward_rmse_m": 0.0,
+      "reverse_rmse_m": 0.0,
+      "relative_z_axis_angle_deg": 7.501992024744249
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 0,
+      "candidate_points": 209,
+      "query_points": 2261,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "forward_inliers": 0,
+      "reverse_inliers": 0,
+      "forward_rmse_m": 0.0,
+      "reverse_rmse_m": 0.0,
+      "relative_z_axis_angle_deg": 3.3069257450974012
+    },
+    {
+      "query_id": 56,
+      "candidate_id": 0,
+      "candidate_points": 209,
+      "query_points": 674,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "forward_inliers": 0,
+      "reverse_inliers": 0,
+      "forward_rmse_m": 0.0,
+      "reverse_rmse_m": 0.0,
+      "relative_z_axis_angle_deg": 3.357692347901849
+    },
+    {
+      "query_id": 142,
+      "candidate_id": 0,
+      "candidate_points": 209,
+      "query_points": 265,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "forward_inliers": 0,
+      "reverse_inliers": 0,
+      "forward_rmse_m": 0.0,
+      "reverse_rmse_m": 0.0,
+      "relative_z_axis_angle_deg": 5.685693753391808
+    }
+  ]
+}

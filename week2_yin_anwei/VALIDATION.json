@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archived_files_hash_checked": 62,
+  "upstream_files_not_redistributed": [
+    "artifacts/scancontext/vendor/PyICP-SLAM-master/utils/ScanContextManager.py",
+    "artifacts/scancontext/vendor/PyICP-SLAM-master/utils/ScanContextManager.py.original"
+  ],
+  "python_files_syntax_checked": 22,
+  "ate_recomputed_m": {
+    "odometry": 0.15400349391769905,
+    "localization": 0.3531485620830939
+  },
+  "retrieval_queries": 162,
+  "accepted_and_geometry_verified": 23,
+  "relative_translation_error_median_m": 0.05162929819991682,
+  "relative_rotation_error_median_deg": 0.1197855116698649,
+  "scope": "Archived evidence consistency; no ROS replay or raw-cloud ICP rerun."
+}

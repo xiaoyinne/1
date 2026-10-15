@@ -1,0 +1,1017 @@
+{
+  "purpose": "Odometry-based overlap diagnostic, not retrieval success",
+  "exclusion_seconds": 30,
+  "odom_distance_limit_m": 3.0,
+  "voxel_size_m": 0.2,
+  "correspondence_distance_m": 0.3,
+  "results": [
+    {
+      "query_id": 194,
+      "candidate_id": 122,
+      "time_gap_s": 31.697753668,
+      "odom_distance_m": 2.98084512541939,
+      "forward_fitness": 0.022455805064500716,
+      "reverse_fitness": 0.054637865311308764,
+      "min_bidirectional_fitness": 0.022455805064500716
+    },
+    {
+      "query_id": 195,
+      "candidate_id": 122,
+      "time_gap_s": 31.898649216,
+      "odom_distance_m": 2.97820442224203,
+      "forward_fitness": 0.020544672718585764,
+      "reverse_fitness": 0.04518430439952437,
+      "min_bidirectional_fitness": 0.020544672718585764
+    },
+    {
+      "query_id": 192,
+      "candidate_id": 123,
+      "time_gap_s": 30.402126312,
+      "odom_distance_m": 2.858693631082391,
+      "forward_fitness": 0.008703220191470844,
+      "reverse_fitness": 0.028169014084507043,
+      "min_bidirectional_fitness": 0.008703220191470844
+    },
+    {
+      "query_id": 193,
+      "candidate_id": 123,
+      "time_gap_s": 30.601312876,
+      "odom_distance_m": 2.718773653795991,
+      "forward_fitness": 0.0073977371627502175,
+      "reverse_fitness": 0.028148148148148148,
+      "min_bidirectional_fitness": 0.0073977371627502175
+    },
+    {
+      "query_id": 194,
+      "candidate_id": 123,
+      "time_gap_s": 30.899618626,
+      "odom_distance_m": 2.6071292829813872,
+      "forward_fitness": 0.005221932114882507,
+      "reverse_fitness": 0.012706480304955527,
+      "min_bidirectional_fitness": 0.005221932114882507
+    },
+    {
+      "query_id": 199,
+      "candidate_id": 123,
+      "time_gap_s": 31.498978615,
+      "odom_distance_m": 2.77956155716704,
+      "forward_fitness": 0.004786771105308964,
+      "reverse_fitness": 0.014745308310991957,
+      "min_bidirectional_fitness": 0.004786771105308964
+    },
+    {
+      "query_id": 195,
+      "candidate_id": 123,
+      "time_gap_s": 31.100514174,
+      "odom_distance_m": 2.596902278441502,
+      "forward_fitness": 0.004351610095735422,
+      "reverse_fitness": 0.01070154577883472,
+      "min_bidirectional_fitness": 0.004351610095735422
+    },
+    {
+      "query_id": 201,
+      "candidate_id": 123,
+      "time_gap_s": 31.695239782,
+      "odom_distance_m": 2.9133641588966466,
+      "forward_fitness": 0.004351610095735422,
+      "reverse_fitness": 0.025437201907790145,
+      "min_bidirectional_fitness": 0.004351610095735422
+    },
+    {
+      "query_id": 200,
+      "candidate_id": 123,
+      "time_gap_s": 31.597107172,
+      "odom_distance_m": 2.847429506035413,
+      "forward_fitness": 0.0039164490861618795,
+      "reverse_fitness": 0.015691868758915834,
+      "min_bidirectional_fitness": 0.0039164490861618795
+    },
+    {
+      "query_id": 196,
+      "candidate_id": 123,
+      "time_gap_s": 31.200318337,
+      "odom_distance_m": 2.626653678105567,
+      "forward_fitness": 0.0034812880765883376,
+      "reverse_fitness": 0.005988023952095809,
+      "min_bidirectional_fitness": 0.0034812880765883376
+    },
+    {
+      "query_id": 197,
+      "candidate_id": 123,
+      "time_gap_s": 31.30036211,
+      "odom_distance_m": 2.6722640729756435,
+      "forward_fitness": 0.0034812880765883376,
+      "reverse_fitness": 0.00878293601003764,
+      "min_bidirectional_fitness": 0.0034812880765883376
+    },
+    {
+      "query_id": 198,
+      "candidate_id": 123,
+      "time_gap_s": 31.399996042,
+      "odom_distance_m": 2.7214837519983157,
+      "forward_fitness": 0.0034812880765883376,
+      "reverse_fitness": 0.012048192771084338,
+      "min_bidirectional_fitness": 0.0034812880765883376
+    },
+    {
+      "query_id": 196,
+      "candidate_id": 124,
+      "time_gap_s": 30.199058533,
+      "odom_distance_m": 2.0263612941251896,
+      "forward_fitness": 0.0014285714285714286,
+      "reverse_fitness": 0.004790419161676647,
+      "min_bidirectional_fitness": 0.0014285714285714286
+    },
+    {
+      "query_id": 201,
+      "candidate_id": 124,
+      "time_gap_s": 30.693979978,
+      "odom_distance_m": 2.308483055948377,
+      "forward_fitness": 0.0014285714285714286,
+      "reverse_fitness": 0.009538950715421303,
+      "min_bidirectional_fitness": 0.0014285714285714286
+    },
+    {
+      "query_id": 195,
+      "candidate_id": 124,
+      "time_gap_s": 30.09925437,
+      "odom_distance_m": 1.9866897356620965,
+      "forward_fitness": 0.0010714285714285715,
+      "reverse_fitness": 0.0035671819262782403,
+      "min_bidirectional_fitness": 0.0010714285714285715
+    },
+    {
+      "query_id": 199,
+      "candidate_id": 124,
+      "time_gap_s": 30.497718811,
+      "odom_distance_m": 2.1825042006686144,
+      "forward_fitness": 0.0010714285714285715,
+      "reverse_fitness": 0.005361930294906166,
+      "min_bidirectional_fitness": 0.0010714285714285715
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 1,
+      "time_gap_s": 36.902722359,
+      "odom_distance_m": 2.939975580849538,
+      "forward_fitness": 0.011560693641618497,
+      "reverse_fitness": 0.0008845643520566122,
+      "min_bidirectional_fitness": 0.0008845643520566122
+    },
+    {
+      "query_id": 197,
+      "candidate_id": 124,
+      "time_gap_s": 30.299102306,
+      "odom_distance_m": 2.0775779333833877,
+      "forward_fitness": 0.0007142857142857143,
+      "reverse_fitness": 0.005018820577164366,
+      "min_bidirectional_fitness": 0.0007142857142857143
+    },
+    {
+      "query_id": 202,
+      "candidate_id": 124,
+      "time_gap_s": 30.789491415,
+      "odom_distance_m": 2.3688001677692148,
+      "forward_fitness": 0.0007142857142857143,
+      "reverse_fitness": 0.004830917874396135,
+      "min_bidirectional_fitness": 0.0007142857142857143
+    },
+    {
+      "query_id": 208,
+      "candidate_id": 127,
+      "time_gap_s": 30.001630306,
+      "odom_distance_m": 2.4561285012122434,
+      "forward_fitness": 0.00039308176100628933,
+      "reverse_fitness": 0.0026595744680851063,
+      "min_bidirectional_fitness": 0.00039308176100628933
+    },
+    {
+      "query_id": 202,
+      "candidate_id": 125,
+      "time_gap_s": 30.188240051,
+      "odom_distance_m": 2.132786049303112,
+      "forward_fitness": 0.00038580246913580245,
+      "reverse_fitness": 0.001610305958132045,
+      "min_bidirectional_fitness": 0.00038580246913580245
+    },
+    {
+      "query_id": 198,
+      "candidate_id": 124,
+      "time_gap_s": 30.398736238,
+      "odom_distance_m": 2.128973389257617,
+      "forward_fitness": 0.00035714285714285714,
+      "reverse_fitness": 0.002677376171352075,
+      "min_bidirectional_fitness": 0.00035714285714285714
+    },
+    {
+      "query_id": 200,
+      "candidate_id": 124,
+      "time_gap_s": 30.595847368,
+      "odom_distance_m": 2.2466541665001363,
+      "forward_fitness": 0.00035714285714285714,
+      "reverse_fitness": 0.0028530670470756064,
+      "min_bidirectional_fitness": 0.00035714285714285714
+    },
+    {
+      "query_id": 76,
+      "candidate_id": 0,
+      "time_gap_s": 37.498492718,
+      "odom_distance_m": 2.978016146805334,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 76,
+      "candidate_id": 2,
+      "time_gap_s": 33.29914403,
+      "odom_distance_m": 2.986743001806192,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 76,
+      "candidate_id": 3,
+      "time_gap_s": 31.199508429,
+      "odom_distance_m": 2.983307133463138,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 77,
+      "candidate_id": 0,
+      "time_gap_s": 37.805011034,
+      "odom_distance_m": 2.894022541476241,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 77,
+      "candidate_id": 1,
+      "time_gap_s": 35.705002308,
+      "odom_distance_m": 2.924607961464027,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 77,
+      "candidate_id": 2,
+      "time_gap_s": 33.605662346,
+      "odom_distance_m": 2.901195128730039,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 77,
+      "candidate_id": 3,
+      "time_gap_s": 31.506026745,
+      "odom_distance_m": 2.897326874048769,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 78,
+      "candidate_id": 0,
+      "time_gap_s": 38.106497049,
+      "odom_distance_m": 2.821772896651772,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 78,
+      "candidate_id": 1,
+      "time_gap_s": 36.006488323,
+      "odom_distance_m": 2.8521810026411334,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 78,
+      "candidate_id": 2,
+      "time_gap_s": 33.907148361,
+      "odom_distance_m": 2.8273382899487767,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 78,
+      "candidate_id": 3,
+      "time_gap_s": 31.80751276,
+      "odom_distance_m": 2.8230785030201453,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 79,
+      "candidate_id": 0,
+      "time_gap_s": 38.506227493,
+      "odom_distance_m": 2.8062811650699815,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 79,
+      "candidate_id": 1,
+      "time_gap_s": 36.406218767,
+      "odom_distance_m": 2.8360778590021387,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 79,
+      "candidate_id": 2,
+      "time_gap_s": 34.306878805,
+      "odom_distance_m": 2.809648970885297,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 79,
+      "candidate_id": 3,
+      "time_gap_s": 32.207243204,
+      "odom_distance_m": 2.804938870641461,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 79,
+      "candidate_id": 4,
+      "time_gap_s": 30.206147432,
+      "odom_distance_m": 2.8116231745144464,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 0,
+      "time_gap_s": 39.002731085,
+      "odom_distance_m": 2.912644184113468,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 2,
+      "time_gap_s": 34.803382397,
+      "odom_distance_m": 2.912734674673322,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 3,
+      "time_gap_s": 32.703746796,
+      "odom_distance_m": 2.907613688828761,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 80,
+      "candidate_id": 4,
+      "time_gap_s": 30.702651024,
+      "odom_distance_m": 2.915371192025028,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 201,
+      "candidate_id": 125,
+      "time_gap_s": 30.092728614,
+      "odom_distance_m": 2.0821869186376363,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 202,
+      "candidate_id": 123,
+      "time_gap_s": 31.790751219,
+      "odom_distance_m": 2.9767031607021255,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 203,
+      "candidate_id": 124,
+      "time_gap_s": 30.888581514,
+      "odom_distance_m": 2.4154547661635966,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 203,
+      "candidate_id": 125,
+      "time_gap_s": 30.28733015,
+      "odom_distance_m": 2.169588229376787,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 204,
+      "candidate_id": 124,
+      "time_gap_s": 30.988675833,
+      "odom_distance_m": 2.4636461846309805,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 204,
+      "candidate_id": 125,
+      "time_gap_s": 30.387424469,
+      "odom_distance_m": 2.211331603088484,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 205,
+      "candidate_id": 124,
+      "time_gap_s": 31.089036941,
+      "odom_distance_m": 2.4999487421089768,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 205,
+      "candidate_id": 125,
+      "time_gap_s": 30.487785577,
+      "odom_distance_m": 2.242981784802347,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 206,
+      "candidate_id": 124,
+      "time_gap_s": 31.189564228,
+      "odom_distance_m": 2.5341375700953446,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 206,
+      "candidate_id": 125,
+      "time_gap_s": 30.588312864,
+      "odom_distance_m": 2.274456538168645,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 207,
+      "candidate_id": 124,
+      "time_gap_s": 31.290316343,
+      "odom_distance_m": 2.564738500076643,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 207,
+      "candidate_id": 125,
+      "time_gap_s": 30.689064979,
+      "odom_distance_m": 2.305865249382018,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 207,
+      "candidate_id": 126,
+      "time_gap_s": 30.090240478,
+      "odom_distance_m": 2.3363115051425876,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 208,
+      "candidate_id": 124,
+      "time_gap_s": 31.401157856,
+      "odom_distance_m": 2.586616655519823,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 208,
+      "candidate_id": 125,
+      "time_gap_s": 30.799906492,
+      "odom_distance_m": 2.3306004081008767,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 208,
+      "candidate_id": 126,
+      "time_gap_s": 30.201081991,
+      "odom_distance_m": 2.3606519680873665,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 209,
+      "candidate_id": 124,
+      "time_gap_s": 31.499405861,
+      "odom_distance_m": 2.60015125210967,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 209,
+      "candidate_id": 125,
+      "time_gap_s": 30.898154497,
+      "odom_distance_m": 2.3501894107840697,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 209,
+      "candidate_id": 126,
+      "time_gap_s": 30.299329996,
+      "odom_distance_m": 2.3842461104077626,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 209,
+      "candidate_id": 127,
+      "time_gap_s": 30.099878311,
+      "odom_distance_m": 2.479912769397566,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 210,
+      "candidate_id": 124,
+      "time_gap_s": 31.605561495,
+      "odom_distance_m": 2.6148564764783395,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 210,
+      "candidate_id": 125,
+      "time_gap_s": 31.004310131,
+      "odom_distance_m": 2.373905394393831,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 210,
+      "candidate_id": 126,
+      "time_gap_s": 30.40548563,
+      "odom_distance_m": 2.414839475491483,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 210,
+      "candidate_id": 127,
+      "time_gap_s": 30.206033945,
+      "odom_distance_m": 2.511354522015235,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 211,
+      "candidate_id": 124,
+      "time_gap_s": 31.705440521,
+      "odom_distance_m": 2.6340935952737103,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 211,
+      "candidate_id": 125,
+      "time_gap_s": 31.104189157,
+      "odom_distance_m": 2.4018179338682493,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 211,
+      "candidate_id": 126,
+      "time_gap_s": 30.505364656,
+      "odom_distance_m": 2.448980615635664,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 211,
+      "candidate_id": 127,
+      "time_gap_s": 30.305912971,
+      "odom_distance_m": 2.546212231719949,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 211,
+      "candidate_id": 128,
+      "time_gap_s": 30.013723135,
+      "odom_distance_m": 2.7218975149806552,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 212,
+      "candidate_id": 124,
+      "time_gap_s": 31.904973984,
+      "odom_distance_m": 2.6959349776349923,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 212,
+      "candidate_id": 125,
+      "time_gap_s": 31.30372262,
+      "odom_distance_m": 2.4765080266764397,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 212,
+      "candidate_id": 126,
+      "time_gap_s": 30.704898119,
+      "odom_distance_m": 2.529536327103953,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 212,
+      "candidate_id": 127,
+      "time_gap_s": 30.505446434,
+      "odom_distance_m": 2.626315273660952,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 212,
+      "candidate_id": 128,
+      "time_gap_s": 30.213256598,
+      "odom_distance_m": 2.8001440570059457,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 213,
+      "candidate_id": 124,
+      "time_gap_s": 32.607537746,
+      "odom_distance_m": 2.7820547745179245,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 213,
+      "candidate_id": 125,
+      "time_gap_s": 32.006286382,
+      "odom_distance_m": 2.560266438093576,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 213,
+      "candidate_id": 126,
+      "time_gap_s": 31.407461881,
+      "odom_distance_m": 2.6003956902367618,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 213,
+      "candidate_id": 127,
+      "time_gap_s": 31.208010196,
+      "odom_distance_m": 2.6908429441314485,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 213,
+      "candidate_id": 128,
+      "time_gap_s": 30.91582036,
+      "odom_distance_m": 2.8548898691643476,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 214,
+      "candidate_id": 124,
+      "time_gap_s": 34.707082271,
+      "odom_distance_m": 2.8043714870036767,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 214,
+      "candidate_id": 125,
+      "time_gap_s": 34.105830907,
+      "odom_distance_m": 2.5872545529075004,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 214,
+      "candidate_id": 126,
+      "time_gap_s": 33.507006406,
+      "odom_distance_m": 2.6294139718362155,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 214,
+      "candidate_id": 127,
+      "time_gap_s": 33.307554721,
+      "odom_distance_m": 2.7195063821252443,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 214,
+      "candidate_id": 128,
+      "time_gap_s": 33.015364885,
+      "odom_distance_m": 2.882556540843957,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 215,
+      "candidate_id": 124,
+      "time_gap_s": 36.807026386,
+      "odom_distance_m": 2.809847840994533,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 215,
+      "candidate_id": 125,
+      "time_gap_s": 36.205775022,
+      "odom_distance_m": 2.593146530351555,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 215,
+      "candidate_id": 126,
+      "time_gap_s": 35.606950521,
+      "odom_distance_m": 2.6350606332201125,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 215,
+      "candidate_id": 127,
+      "time_gap_s": 35.407498836,
+      "odom_distance_m": 2.724879021711778,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 215,
+      "candidate_id": 128,
+      "time_gap_s": 35.115309,
+      "odom_distance_m": 2.8874549582371225,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 216,
+      "candidate_id": 124,
+      "time_gap_s": 38.906887293,
+      "odom_distance_m": 2.8033932299682753,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 216,
+      "candidate_id": 125,
+      "time_gap_s": 38.305635929,
+      "odom_distance_m": 2.585442763431866,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 216,
+      "candidate_id": 126,
+      "time_gap_s": 37.706811428,
+      "odom_distance_m": 2.626675960304573,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 216,
+      "candidate_id": 127,
+      "time_gap_s": 37.507359743,
+      "odom_distance_m": 2.716454212451764,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 216,
+      "candidate_id": 128,
+      "time_gap_s": 37.215169907,
+      "odom_distance_m": 2.8790807811417034,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 217,
+      "candidate_id": 124,
+      "time_gap_s": 41.006817341,
+      "odom_distance_m": 2.8091418803413157,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 217,
+      "candidate_id": 125,
+      "time_gap_s": 40.405565977,
+      "odom_distance_m": 2.5913609391377648,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 217,
+      "candidate_id": 126,
+      "time_gap_s": 39.806741476,
+      "odom_distance_m": 2.632287114955135,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 217,
+      "candidate_id": 127,
+      "time_gap_s": 39.607289791,
+      "odom_distance_m": 2.721901814810129,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 217,
+      "candidate_id": 128,
+      "time_gap_s": 39.315099955,
+      "odom_distance_m": 2.8842540361311335,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 218,
+      "candidate_id": 124,
+      "time_gap_s": 43.106653213,
+      "odom_distance_m": 2.8136779438280453,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 218,
+      "candidate_id": 125,
+      "time_gap_s": 42.505401849,
+      "odom_distance_m": 2.59360850336871,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 218,
+      "candidate_id": 126,
+      "time_gap_s": 41.906577348,
+      "odom_distance_m": 2.6318220102033587,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 218,
+      "candidate_id": 127,
+      "time_gap_s": 41.707125663,
+      "odom_distance_m": 2.720689221313659,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 218,
+      "candidate_id": 128,
+      "time_gap_s": 41.414935827,
+      "odom_distance_m": 2.882066124565539,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 219,
+      "candidate_id": 124,
+      "time_gap_s": 44.506667614,
+      "odom_distance_m": 2.8072361382814726,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 219,
+      "candidate_id": 125,
+      "time_gap_s": 43.90541625,
+      "odom_distance_m": 2.587708656184113,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 219,
+      "candidate_id": 126,
+      "time_gap_s": 43.306591749,
+      "odom_distance_m": 2.626847488298113,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 219,
+      "candidate_id": 127,
+      "time_gap_s": 43.107140064,
+      "odom_distance_m": 2.71594252478656,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    },
+    {
+      "query_id": 219,
+      "candidate_id": 128,
+      "time_gap_s": 42.814950228,
+      "odom_distance_m": 2.877628919099468,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0,
+      "min_bidirectional_fitness": 0.0
+    }
+  ]
+}

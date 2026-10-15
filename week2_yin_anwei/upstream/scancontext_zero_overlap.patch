@@ -1,0 +1,11 @@
+--- a/utils/ScanContextManager.py
++++ b/utils/ScanContextManager.py
+@@ -97,7 +97,7 @@
+             num_col_engaged = num_col_engaged + 1
+ 
+         # save 
+-        sim_for_each_cols[i] = sum_of_cossim / num_col_engaged
++        sim_for_each_cols[i] = sum_of_cossim / num_col_engaged if num_col_engaged > 0 else 0.0
+ 
+     yaw_diff = np.argmax(sim_for_each_cols) + 1 # because python starts with 0 
+     sim = np.max(sim_for_each_cols)

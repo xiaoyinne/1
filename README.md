@@ -1,4 +1,14 @@
-# 尹安伟 · 第一周 FAST-LIO 建图与评估
+# 尹安伟 · FAST-LIO 建图、先验地图定位与地点识别
+
+## 第二周成果（2026-10-14）
+
+已归档 [第二周实验与演示](week2_yin_anwei/README.md)、[周报](week2_yin_anwei/WEEK2_REPORT.md) 和 [复现说明](week2_yin_anwei/REPRODUCE.md)。Hilti 同一组 763 个匹配样本独立 SE(3) 对齐后，FAST-LIO 前端 ATE RMSE 为 **0.154003 m**，地图定位输出为 **0.353149 m**：本次精度未改善，保留失败结果。
+
+KITTI raw `2011_09_30_drive_0020_sync` 的 162 个历史查询中，23 个候选通过 SC 阈值，并全部通过 ICP 几何筛选；相对插值 OXTS 参考的平移误差中位数为 **0.051629 m**，旋转误差中位数为 **0.119786°**。这是同序列离线检索与配准，非 23 个独立回环、轨迹 ATE、跨 session 验证或在线闭环系统。
+
+![第二周 Scan Context 检索与 ICP 验证](week2_yin_anwei/artifacts/scancontext/runs/kitti0020_geometry_v1/demo/scancontext_demo.png)
+
+## 第一周建图与评估
 
 Hilti 2022 `exp18_corridor_lower_gallery_2` 的 ROS2 FAST-LIO 半速基线。已交付累计 PCD、同次运行 TUM/KITTI 轨迹、evo 评估、源码补丁和复现工具。
 

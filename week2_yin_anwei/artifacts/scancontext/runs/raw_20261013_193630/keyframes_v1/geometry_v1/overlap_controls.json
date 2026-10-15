@@ -1,0 +1,148 @@
+{
+  "purpose": "odometry-based diagnostic controls, not retrieval results",
+  "results": [
+    {
+      "group": "\u76f8\u90bb",
+      "query_id": 1,
+      "candidate_id": 0,
+      "time_gap_s": 2.100008726,
+      "odom_distance_m": 0.03686995030687502,
+      "candidate_points": 209,
+      "query_points": 173,
+      "forward_fitness": 0.8755980861244019,
+      "reverse_fitness": 0.9595375722543352
+    },
+    {
+      "group": "\u76f8\u90bb",
+      "query_id": 20,
+      "candidate_id": 19,
+      "time_gap_s": 0.699187994,
+      "odom_distance_m": 1.030445668135281,
+      "candidate_points": 317,
+      "query_points": 296,
+      "forward_fitness": 0.7444794952681388,
+      "reverse_fitness": 0.847972972972973
+    },
+    {
+      "group": "\u76f8\u90bb",
+      "query_id": 80,
+      "candidate_id": 79,
+      "time_gap_s": 0.496503592,
+      "odom_distance_m": 0.5951317207731897,
+      "candidate_points": 2375,
+      "query_points": 2261,
+      "forward_fitness": 0.30189473684210527,
+      "reverse_fitness": 0.34188412206988056
+    },
+    {
+      "group": "\u76f8\u90bb",
+      "query_id": 140,
+      "candidate_id": 139,
+      "time_gap_s": 0.100823879,
+      "odom_distance_m": 0.10227296822374786,
+      "candidate_points": 2321,
+      "query_points": 2044,
+      "forward_fitness": 0.6324859974149074,
+      "reverse_fitness": 0.7211350293542075
+    },
+    {
+      "group": "\u76f8\u90bb",
+      "query_id": 200,
+      "candidate_id": 199,
+      "time_gap_s": 0.098128557,
+      "odom_distance_m": 0.07218261939039988,
+      "candidate_points": 746,
+      "query_points": 701,
+      "forward_fitness": 0.8914209115281502,
+      "reverse_fitness": 0.9343794579172611
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 195,
+      "candidate_id": 124,
+      "time_gap_s": 30.09925437,
+      "odom_distance_m": 1.9866897356620965,
+      "candidate_points": 2800,
+      "query_points": 841,
+      "forward_fitness": 0.0010714285714285715,
+      "reverse_fitness": 0.0035671819262782403
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 196,
+      "candidate_id": 124,
+      "time_gap_s": 30.199058533,
+      "odom_distance_m": 2.0263612941251896,
+      "candidate_points": 2800,
+      "query_points": 835,
+      "forward_fitness": 0.0014285714285714286,
+      "reverse_fitness": 0.004790419161676647
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 197,
+      "candidate_id": 124,
+      "time_gap_s": 30.299102306,
+      "odom_distance_m": 2.0775779333833877,
+      "candidate_points": 2800,
+      "query_points": 797,
+      "forward_fitness": 0.0007142857142857143,
+      "reverse_fitness": 0.005018820577164366
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 201,
+      "candidate_id": 125,
+      "time_gap_s": 30.092728614,
+      "odom_distance_m": 2.0821869186376363,
+      "candidate_points": 2592,
+      "query_points": 629,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 198,
+      "candidate_id": 124,
+      "time_gap_s": 30.398736238,
+      "odom_distance_m": 2.128973389257617,
+      "candidate_points": 2800,
+      "query_points": 747,
+      "forward_fitness": 0.00035714285714285714,
+      "reverse_fitness": 0.002677376171352075
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 202,
+      "candidate_id": 125,
+      "time_gap_s": 30.188240051,
+      "odom_distance_m": 2.132786049303112,
+      "candidate_points": 2592,
+      "query_points": 621,
+      "forward_fitness": 0.00038580246913580245,
+      "reverse_fitness": 0.001610305958132045
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 203,
+      "candidate_id": 125,
+      "time_gap_s": 30.28733015,
+      "odom_distance_m": 2.169588229376787,
+      "candidate_points": 2592,
+      "query_points": 584,
+      "forward_fitness": 0.0,
+      "reverse_fitness": 0.0
+    },
+    {
+      "group": "\u975e\u76f8\u90bb",
+      "query_id": 199,
+      "candidate_id": 124,
+      "time_gap_s": 30.497718811,
+      "odom_distance_m": 2.1825042006686144,
+      "candidate_points": 2800,
+      "query_points": 746,
+      "forward_fitness": 0.0010714285714285715,
+      "reverse_fitness": 0.005361930294906166
+    }
+  ]
+}

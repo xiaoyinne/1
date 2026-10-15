@@ -1,0 +1,18 @@
+{
+  "mode": "same-sequence historical retrieval",
+  "exclusion_seconds": 30,
+  "max_candidates": 10,
+  "acceptance_distance_threshold": 0.15,
+  "odom_proximity_threshold_m": 3.0,
+  "queries_without_eligible_history": 56,
+  "queries_without_finite_match": 0,
+  "queried_frames": 164,
+  "queries_with_history_within_3m_by_odom": 33,
+  "accepted_candidates": 26,
+  "accepted_near_by_odom": 0,
+  "accepted_far_by_odom": 26,
+  "elapsed_s": 33.381,
+  "note": "Odometry proximity is a diagnostic proxy, not GT or geometric verification.",
+  "module_sha256": "956938ea658270e7908a9e047e69bb0010d0a0f8efa70cb50e46ec44e1f24c72",
+  "script_sha256": "18b993ae25ba5920e2070e16342b12715b9d0931892c1bbfc15fdf5c6eacc8ce"
+}

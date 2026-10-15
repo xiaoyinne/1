@@ -1,5 +1,11 @@
 # 第二周：先验地图重定位
 
+## 2026-10-14 实际交付状态
+
+见 [第二周成果](week2_yin_anwei/README.md)。已完成 Hilti 先验地图定位、相同样本 ATE 对比、KITTI Scan Context 离线检索及 ICP 几何验证，提供脚本、配置、日志、轨迹、结果表和静态演示图。以下保留原计划作为对照：其中“当前仓库没有实现第二周定位器”是开始前的状态，现已归档 ROS2 修改版。在线 SC→定位恢复联动、视频、跨 session 验证尚未交付，不能把离线几何匹配等同于这些功能。
+
+## 原计划
+
 负责方向：尹安伟，学生 3。输入为第一周固定地图和查询 bag；输出为定位轨迹、ATE 表与重定位演示。
 
 1. **先确定 ROS 版本和接口。** 原版 [FAST_LIO_LOCALIZATION](https://github.com/HViktorTsoi/FAST_LIO_LOCALIZATION#3-build) 使用 ROS1/catkin；现有环境为 ROS2 Humble。选择并固定 ROS2 兼容实现/移植提交，或明确独立 ROS1 环境与数据转换方案，再开始部署。当前仓库没有实现第二周定位器。

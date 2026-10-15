@@ -1,0 +1,21 @@
+{
+  "sequence": "2011_09_30_drive_0020_sync",
+  "frames": 220,
+  "sampling": "frame_id % 5 == 0, within reference time support",
+  "rings": 20,
+  "sectors": 60,
+  "radial_filter_m": "1 < horizontal radius < 80",
+  "height_offset_m": 2.0,
+  "height_offset_note": "Inherited from upstream implementation",
+  "input_frame": "Velodyne lidar",
+  "valid_descriptors": 220,
+  "invalid_ids": [],
+  "used_points_min": 113256,
+  "used_points_max": 125108,
+  "active_sectors_min": 60,
+  "active_sectors_max": 60,
+  "elapsed_s": 353.012,
+  "module_sha256": "956938ea658270e7908a9e047e69bb0010d0a0f8efa70cb50e46ec44e1f24c72",
+  "reference_sha256": "7fe131444c229dd8914e86903bb96766904de290a69c2f915a770e8bb9ea4299",
+  "script_sha256": "48a436489364927923536f07fecac2f2e0dcc2abd4ac449514e5b2a8d5336d3c"
+}

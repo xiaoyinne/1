@@ -1,0 +1,21 @@
+{
+  "mode": "same-sequence historical retrieval",
+  "exclusion_seconds": 30,
+  "max_candidates": 10,
+  "acceptance_distance_threshold": 0.15,
+  "reference_proximity_threshold_m": 5.0,
+  "queries_without_history": 58,
+  "queries_without_finite_match": 0,
+  "queried_frames": 162,
+  "queries_with_history_within_5m": 54,
+  "queries_with_near_in_top10": 54,
+  "top1_near_by_reference": 54,
+  "accepted_candidates": 23,
+  "accepted_near_by_reference": 23,
+  "accepted_far_by_reference": 0,
+  "elapsed_s": 53.885,
+  "note": "Reference proximity is diagnostic; geometry is not yet verified.",
+  "descriptor_sha256": "879b930ba958b01793a1a7d50a6857ccf78072a9b62737dac9a17416bceb065c",
+  "module_sha256": "956938ea658270e7908a9e047e69bb0010d0a0f8efa70cb50e46ec44e1f24c72",
+  "script_sha256": "b932f016933577ed8a426e6631fc04732692847e4cb685b5cefc1f9f0d3ac436"
+}

@@ -9,3 +9,9 @@ log/
 __pycache__/
 *.pyc
 runs/
+
+# Reviewed week-2 evidence only; raw datasets remain excluded above.
+!week2_yin_anwei/artifacts/runs/
+!week2_yin_anwei/artifacts/scancontext/runs/
+*.mcap
+*.ply
