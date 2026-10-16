@@ -17,6 +17,8 @@
 
 ## 数据与参考位姿
 
+- NCLT 跨日期实验的数据来源、署名、许可及文件范围见 [NCLT 来源说明](nclt/SOURCES.md)。主数据集工作使用 NCLT + Hilti，KITTI 为补充验证。
+
 - Hilti 数据、真值及地图来源和许可见根目录 [SOURCES.md](../SOURCES.md) 和 [MAP_FILE.md](../MAP_FILE.md)。本次同序列先验地图定位不构成独立跨 session 验证。
 - KITTI raw：[官网](https://www.cvlibs.net/datasets/kitti/raw_data.php)，`2011_09_30_drive_0020_sync.zip`、`2011_09_30_calib.zip`。遵守原数据集的使用和署名条款；不上传原始图像、Velodyne 文件或大型下载包。
 - OXTS 投影与姿态转换参照 [pykitti utils.py](https://github.com/utiasSTARS/pykitti/blob/master/pykitti/utils.py)。参考位姿来自原始 OXTS，并非另行下载的 KITTI Odometry benchmark poses；两者不可混称。

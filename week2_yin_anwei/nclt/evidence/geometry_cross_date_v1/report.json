@@ -1,0 +1,60 @@
+{
+  "tested_candidates": 366,
+  "geometry_passed": 355,
+  "geometry_rejected": 11,
+  "reference_near_before_geometry": 347,
+  "reference_far_before_geometry": 19,
+  "geometry_passed_reference_near": 347,
+  "geometry_passed_reference_far": 8,
+  "geometry_rejected_reference_far": 11,
+  "passed_all_error_stats": {
+    "count": 355,
+    "translation_reference_error_m": {
+      "median": 0.06668236742304243,
+      "p95": 0.2805377063324601,
+      "max": 52.545285892098015
+    },
+    "rotation_reference_error_deg": {
+      "median": 0.6375533284852677,
+      "p95": 2.1244945266988418,
+      "max": 179.93578820797347
+    }
+  },
+  "passed_reference_near_error_stats": {
+    "count": 347,
+    "translation_reference_error_m": {
+      "median": 0.06617742601935202,
+      "p95": 0.20376245903375592,
+      "max": 2.96718958673899
+    },
+    "rotation_reference_error_deg": {
+      "median": 0.6251540563826863,
+      "p95": 2.012840159854983,
+      "max": 12.291789877706595
+    }
+  },
+  "passed_reference_far_error_stats": {
+    "count": 8,
+    "translation_reference_error_m": {
+      "median": 18.0382892803854,
+      "p95": 52.45890810875162,
+      "max": 52.545285892098015
+    },
+    "rotation_reference_error_deg": {
+      "median": 3.201247658217947,
+      "p95": 179.02563066774005,
+      "max": 179.93578820797347
+    }
+  },
+  "initialization": "SC yaw; zero translation; no reference pose",
+  "transform_direction": "query FLU body to database FLU body",
+  "geometry_rule": "both overlap >=0.5; both inlier RMSE <=0.3m; nonempty correspondences",
+  "evaluation_voxel_m": 0.3,
+  "evaluation_correspondence_distance_m": 0.5,
+  "reference_proximity_threshold_m": 5.0,
+  "elapsed_s": 44.51,
+  "open3d_version": "0.14.1",
+  "retrieval_sha256": "59df5a9edfb6a94bf8a0b0ca44f1806ead3a71e8496e50db97c880d5ae095f40",
+  "script_sha256": "dd3eefc37dbf37b75fcfa03c1a0a644eee5ae35ec8cf0212dafc0304a875aecb",
+  "note": "Reference proximity and geometric screening are separate diagnostics. A geometrically accepted candidate is not automatically correct. Relative pose reference errors are not trajectory ATE."
+}

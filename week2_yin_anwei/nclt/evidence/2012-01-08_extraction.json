@@ -1,0 +1,24 @@
+{
+  "date": "2012-01-08",
+  "archive": "D:\\chromeDownload\\2012-01-08_vel.tar (1).gz",
+  "archive_bytes": 18303340411,
+  "archive_sha256": "4627f9890e13c4a34b21cccad8389a86cc9de1e040166de00d133da1cd0a0f0f",
+  "gzip_crc_validated": true,
+  "scans": 28127,
+  "total_points": 1489852979,
+  "first_stamp_us": 1326030975726043,
+  "last_stamp_us": 1326036608635029,
+  "span_seconds": 5632.908986,
+  "reference_files": {
+    "groundtruth_2012-01-08.csv": {
+      "bytes": 115860468,
+      "sha256": "4a4f3406026a3b65b858eb0a75e22a5192c209a67619cb301605de1333f8e941"
+    },
+    "cov_2012-01-08.csv": {
+      "bytes": 457841,
+      "sha256": "61151fc3ee48067a7711b8555afa5c1a89899fb2d0068e32b6c7acf98bb2ba5f"
+    }
+  },
+  "elapsed_s": 261.08,
+  "note": "Only velodyne_sync scans extracted. Local hashes, not comparison with an official checksum."
+}

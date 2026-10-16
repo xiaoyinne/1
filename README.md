@@ -1,5 +1,15 @@
 # 尹安伟 · FAST-LIO 建图、先验地图定位与地点识别
 
+## 第二周补充：NCLT 跨日期重定位基线（2026-10-16）
+
+学生三主数据集为 **NCLT + Hilti**，下面的 KITTI 实验作为补充验证。新增 [NCLT 完整报告与证据](week2_yin_anwei/nclt/README.md)、[复现说明](week2_yin_anwei/nclt/REPRODUCE.md) 和 [归档核验](week2_yin_anwei/nclt/VALIDATION.json)。
+
+以 NCLT 2012-01-08 的 1296 帧建库，检索 2012-02-05 的 1306 帧；366 个候选通过 SC 阈值，其中355个通过 ICP 几何筛选。**几何通过不等于定位正确**：355个中347个参考位置在5米内，另8个位置较远且配准参考误差较大；位置接近的候选也存在姿态或平移误差。已保留全部失败结果、退化诊断和案例图。
+
+这是单个日期组合的离线跨日期检索与配准，尚未接入在线恢复定位或闭环优化。没有把帧间配准误差当作轨迹 ATE。
+
+![NCLT 正常配准与误接受对照](week2_yin_anwei/nclt/evidence/demo_cases_v1/alignment_cases.png)
+
 ## 第二周成果（2026-10-14）
 
 已归档 [第二周实验与演示](week2_yin_anwei/README.md)、[周报](week2_yin_anwei/WEEK2_REPORT.md) 和 [复现说明](week2_yin_anwei/REPRODUCE.md)。Hilti 同一组 763 个匹配样本独立 SE(3) 对齐后，FAST-LIO 前端 ATE RMSE 为 **0.154003 m**，地图定位输出为 **0.353149 m**：本次精度未改善，保留失败结果。

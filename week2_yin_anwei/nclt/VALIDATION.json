@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "manifest_files": 36,
+  "syntax_checked_scripts": 11,
+  "retrieval_counts": {
+    "queries_with_near_history": 1152,
+    "queries_without_near_history": 154,
+    "queries_with_near_in_top10": 1108,
+    "top1_near_by_reference": 1079,
+    "accepted_candidates": 366,
+    "accepted_near_by_reference": 347,
+    "accepted_far_by_reference": 19,
+    "accepted_when_no_near_history": 1,
+    "rejected_when_no_near_history": 153
+  },
+  "geometry_passed": {
+    "total": 355,
+    "reference_near": 347,
+    "reference_far": 8
+  },
+  "relative_pose_errors_recomputed": 366,
+  "degenerate": {
+    "total": 8,
+    "reference_near": 3,
+    "reference_far": 5
+  },
+  "scope": "Archive integrity and numerical checks only; ICP and retrieval were not rerun."
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "query_index": 73,
+    "db_index": 1246,
+    "geometry_passed": true,
+    "translation_reference_error_m": 0.038337627795279786,
+    "rotation_reference_error_deg": 1.7960600391593837
+  },
+  {
+    "query_index": 1294,
+    "db_index": 1289,
+    "geometry_passed": true,
+    "translation_reference_error_m": 17.62644771950243,
+    "rotation_reference_error_deg": 0.7435910050808968
+  }
+]

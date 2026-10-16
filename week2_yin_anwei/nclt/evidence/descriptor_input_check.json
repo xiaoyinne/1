@@ -1,0 +1,15 @@
+{
+  "date": "2012-01-08",
+  "stamp_us": 1326031006926738,
+  "points_used": 38755,
+  "descriptor_shape": [
+    20,
+    60
+  ],
+  "ring_key_shape": [
+    20
+  ],
+  "active_sectors": 58,
+  "self_distance": 0.0,
+  "note": "Single-frame input compatibility check, not cross-date retrieval."
+}

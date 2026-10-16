@@ -1,0 +1,57 @@
+{
+  "2012-01-08": {
+    "date": "2012-01-08",
+    "gt_rows": 835469,
+    "nonfinite_pose_rows": 1,
+    "gt_span_s": 5588.308668,
+    "graph_nodes": 1297,
+    "usable_graph_nodes": 1296,
+    "excluded_graph_nodes": 1,
+    "max_nearest_gt_gap_ms": 6.013,
+    "xyz_min": [
+      -339.7892210151955,
+      -720.8219346524713,
+      -1.115252312706362
+    ],
+    "xyz_max": [
+      79.75075075944387,
+      70.57960938092643,
+      14.852101912843935
+    ]
+  },
+  "2012-02-05": {
+    "date": "2012-02-05",
+    "gt_rows": 834499,
+    "nonfinite_pose_rows": 0,
+    "gt_span_s": 5619.970433,
+    "graph_nodes": 1307,
+    "usable_graph_nodes": 1306,
+    "excluded_graph_nodes": 1,
+    "max_nearest_gt_gap_ms": 7.852,
+    "xyz_min": [
+      -315.351064014951,
+      -720.5923386933661,
+      -3.680421151317088
+    ],
+    "xyz_max": [
+      97.32516468749927,
+      105.3929514589681,
+      14.829735942616358
+    ]
+  },
+  "cross_date_reference_diagnostic": {
+    "query_graph_nodes": 1306,
+    "nearest_database_distance_m_percentiles": {
+      "0": 0.044553907090238425,
+      "25": 0.9629465504514263,
+      "50": 1.6959090912465573,
+      "75": 2.3731584480879624,
+      "95": 16.03302830107364,
+      "100": 107.30128272719156
+    },
+    "within_5m": 1152,
+    "within_10m": 1188,
+    "note": "Reference location coverage only. No point-cloud overlap, retrieval, or localization success is established."
+  },
+  "reference_method": "Nearest original GT to covariance node timestamps, <=20 ms, no extrapolation or bridging invalid poses. Body coordinates: x forward, y right, z down. GT world is NED. Synchronized scans already use the body frame."
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2012-02-05",
+  "role": "query",
+  "frames": 1306,
+  "descriptor_shape": [
+    1306,
+    20,
+    60
+  ],
+  "ring_key_shape": [
+    1306,
+    20
+  ],
+  "input_frame": "body FRD converted to body FLU",
+  "horizontal_range_m": [
+    1.0,
+    80.0
+  ],
+  "height_offset_m": 2.0,
+  "upstream_max_points_per_cell": 500,
+  "used_points_min": 18699,
+  "used_points_max": 210545,
+  "active_sectors_min": 22,
+  "active_sectors_max": 58,
+  "elapsed_s": 422.01,
+  "selection": "Previously validated reference-node scan timestamps",
+  "reference_positions_used_in_descriptor": false,
+  "reference_file_sha256": "5b689c78b27fd04f346756671f38744406e8096ed31a5dc8eeca7124e43b4fa5",
+  "module_sha256": "956938ea658270e7908a9e047e69bb0010d0a0f8efa70cb50e46ec44e1f24c72",
+  "script_sha256": "210b2bdb0838a91493e263fce11a747474f2cff8a6ffe0f3d9b6629d74854458"
+}

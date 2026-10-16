@@ -1,0 +1,24 @@
+{
+  "sc_accepted_candidates": 366,
+  "degenerate_candidates": {
+    "total": 8,
+    "reference_near": 3,
+    "reference_far": 5
+  },
+  "degenerate_candidates_that_passed_geometry": {
+    "total": 5,
+    "reference_near": 3,
+    "reference_far": 2
+  },
+  "original_geometry_passed": {
+    "total": 355,
+    "reference_near": 347,
+    "reference_far": 8
+  },
+  "hypothetical_remaining_after_rejecting_degenerate": {
+    "total": 350,
+    "reference_near": 344,
+    "reference_far": 6
+  },
+  "note": "Post-hoc diagnostic on the current sequence pair. Original retrieval and geometry results are unchanged. Reference proximity does not establish pose accuracy."
+}
