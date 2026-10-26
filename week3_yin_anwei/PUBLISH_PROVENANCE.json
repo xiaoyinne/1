@@ -1,0 +1,22 @@
+{
+  "publication_date": "2026-10-26",
+  "scope": "28-run fixed-query experiment used by the current presentation",
+  "source_archive": "week3_20261021_145820_7nx8_8tx.zip",
+  "archive_sha256": "f7efe32e2b625ba6bb15ee21e7a0a3bf16120cc22149fc47bb1813d5f8035933",
+  "archive_files_verified": 440,
+  "base_repository_commit": "f3aa975ead356cbe8b72c3568739ac9c3bb62974",
+  "presentation_sources": [
+    {
+      "file": "presentation/第三周汇报_老师问题补答与结果调整版.pptx",
+      "sha256": "a4cd5b72982596760d97d47aa7d6a8563f7c99220a97e514b33186b0a71f33fc",
+      "source_modified_local": "2026-10-26T15:22:43"
+    },
+    {
+      "file": "presentation/第三周汇报_当前版逐页讲解与答辩稿.md",
+      "sha256": "28af18d22f60881f8e7b6487708023eb9411ae1e87dfb970d4f2d626b9eb0a14",
+      "source_modified_local": "2026-10-24T22:57:25"
+    }
+  ],
+  "reran_icp": false,
+  "notes": "Original archive bytes preserved in experiment_20261020. Other staged 46-run local draft was not edited or included."
+}

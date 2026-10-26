@@ -1,0 +1,9 @@
+{
+  "analysis_type": "post_hoc_working_criteria",
+  "baseline_ate_rmse_m": 0.49722074820572365,
+  "ate_degraded_if_above_m": 0.9944414964114473,
+  "map_interrupted_if_gap_above_s": 10.0,
+  "required_coverage": 1.0,
+  "summary_sha256": "1b3f03be50e3103f9636128c21335b6d6824d1a6b81691f809946e9cdc3f7cc5",
+  "note": "ATE uses the fixed GT window; correction gaps use the full query."
+}

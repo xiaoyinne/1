@@ -1,0 +1,8 @@
+{
+  "matched_pairs": 753,
+  "estimate_start_s": 1649856231.3107111,
+  "estimate_end_s": 1649856314.3095422,
+  "estimate_span_s": 82.99883103370667,
+  "max_time_difference_s": 0.03368186950683594,
+  "localization_poses_after_gt_end": 227
+}

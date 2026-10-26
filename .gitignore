@@ -15,3 +15,7 @@ runs/
 !week2_yin_anwei/artifacts/scancontext/runs/
 *.mcap
 *.ply
+
+# Include reviewed week-3 configuration/script snapshots under the archive.
+!week3_yin_anwei/experiment_20261020/runs/
+!week3_yin_anwei/experiment_20261020/runs/**

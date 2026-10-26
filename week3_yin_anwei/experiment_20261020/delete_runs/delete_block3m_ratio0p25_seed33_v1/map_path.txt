@@ -1,0 +1,1 @@
+/home/yaw/fastlio_week3/maps/delete_block3m_ratio0p25_seed33/map.pcd

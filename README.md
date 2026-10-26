@@ -1,5 +1,9 @@
 # 尹安伟 · FAST-LIO 建图、先验地图定位与地点识别
 
+## 第三周：旧地图加噪、删块与定位表现（2026-10-26整理）
+
+新增[28组Hilti固定查询实验、曲线与逐组证据](week3_yin_anwei/README.md)，以及[当前汇报PPT](week3_yin_anwei/presentation/第三周汇报_老师问题补答与结果调整版.pptx)、[逐页讲解稿](week3_yin_anwei/presentation/第三周汇报_当前版逐页讲解与答辩稿.md)和[复现入口](week3_yin_anwei/REPRODUCE.md)。本轮统一使用753对样本、0.497221米clean基线；结论限于本次固定查询与参数。
+
 ## 第二周补充：NCLT 跨日期重定位基线（2026-10-16）
 
 学生三主数据集为 **NCLT + Hilti**，下面的 KITTI 实验作为补充验证。新增 [NCLT 完整报告与证据](week2_yin_anwei/nclt/README.md)、[复现说明](week2_yin_anwei/nclt/REPRODUCE.md) 和 [归档核验](week2_yin_anwei/nclt/VALIDATION.json)。

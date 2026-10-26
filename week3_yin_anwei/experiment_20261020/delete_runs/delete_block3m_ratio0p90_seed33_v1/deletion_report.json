@@ -1,0 +1,16 @@
+{
+  "fixed_pairs": 753,
+  "evaluated_pairs": 733,
+  "coverage": 0.9734395750332006,
+  "output_poses": 1038,
+  "ATE_m": null,
+  "status": "incomplete_coverage",
+  "actual_deleted_point_fraction": 0.8078555749252856,
+  "requested_deleted_block_fraction": 0.9,
+  "seed": 33,
+  "map_sha256": "32fa6bc8001efd2041a3c25272698cf5610fb8064bda12abb66a5648e60df93f",
+  "attempts": 53,
+  "accepted": 3,
+  "max_correction_gap_s": 85.710581064,
+  "query_span_s": 109.008001566
+}

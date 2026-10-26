@@ -1,0 +1,247 @@
+
+COMMAND: /usr/bin/python3 -s /home/yaw/fastlio_week3/delete_runs/batch_sources/generate_deleted_map.py --ratio 0.1 --seed 22 --block 3
+{
+  "source": "/mnt/d/chromeDownload/fastlio_hilti_fixed_20261008.pcd",
+  "output": "/home/yaw/fastlio_week3/maps/delete_block3m_ratio0p10_seed22/map.pcd",
+  "block_size_m": 3.0,
+  "grid_origin_xyz_m": [
+    0,
+    0,
+    0
+  ],
+  "requested_deleted_block_fraction": 0.1,
+  "seed": 22,
+  "occupied_blocks": 1106,
+  "deleted_blocks": 110,
+  "original_points": 7042489,
+  "remaining_points": 6622951,
+  "actual_deleted_point_fraction": 0.059572404017954494,
+  "numpy_version": "1.21.5",
+  "open3d_version": "0.14.1",
+  "output_fields": "XYZ only"
+}
+
+COMMAND: /usr/bin/python3 -s /home/yaw/fastlio_week3/delete_runs/batch_sources/run_fixed_matching.py --map /home/yaw/fastlio_week3/maps/delete_block3m_ratio0p10_seed22/map.pcd --out /home/yaw/fastlio_week3/delete_runs/delete_block3m_ratio0p10_seed22_v1
+[INFO] [1792503073.082844510] [fast_lio_localization]: GlobalLocalizationNode initialized.
+[INFO] [1792503073.582445861] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.582726077] [fast_lio_localization]: DIAG scan_t=1649856231.210443, odom_t=1649856231.210443, dt_ms=0.0, scan_points=4685
+[INFO] [1792503073.597227158] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.597597712] [fast_lio_localization]: DIAG candidate_translation=[-0.1556719555360268, -0.9724823526700929, -0.632971722533253], correction_change_m=1.171
+[INFO] [1792503073.598810000] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.599002489] [fast_lio_localization]: DIAG scan_t=1649856233.310104, odom_t=1649856233.310104, dt_ms=0.0, scan_points=5290
+[INFO] [1792503073.612624829] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.613471009] [fast_lio_localization]: DIAG candidate_translation=[0.23695324294786216, -0.8879738914171061, -0.3044997810674349], correction_change_m=0.519
+[INFO] [1792503073.614551993] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.614787731] [fast_lio_localization]: DIAG scan_t=1649856235.309593, odom_t=1649856235.309593, dt_ms=0.0, scan_points=5265
+[INFO] [1792503073.628448062] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.629037409] [fast_lio_localization]: DIAG candidate_translation=[-0.21951116215964012, -1.0637938567878953, -0.42148844616623354], correction_change_m=0.503
+[INFO] [1792503073.630453040] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.630641685] [fast_lio_localization]: DIAG scan_t=1649856237.210693, odom_t=1649856237.210693, dt_ms=0.0, scan_points=5294
+[INFO] [1792503073.644422880] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.644697732] [fast_lio_localization]: DIAG candidate_translation=[-0.2724911673766539, -0.9931707118482661, -0.605781616950444], correction_change_m=0.204
+[INFO] [1792503073.645731762] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.645912732] [fast_lio_localization]: DIAG scan_t=1649856239.310814, odom_t=1649856239.310814, dt_ms=0.0, scan_points=4738
+[INFO] [1792503073.659573606] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.659834329] [fast_lio_localization]: DIAG candidate_translation=[-0.03944778978673242, -0.9081318528211273, -0.7136694923093245], correction_change_m=0.271
+[INFO] [1792503073.660838565] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.661021082] [fast_lio_localization]: DIAG scan_t=1649856241.216964, odom_t=1649856241.216964, dt_ms=0.0, scan_points=9853
+[INFO] [1792503073.682359202] [fast_lio_localization]: ICP fitness: 0.948
+[INFO] [1792503073.682641989] [fast_lio_localization]: DIAG candidate_translation=[-0.024758450223801336, 0.008449854441582897, -0.15717291209405823], correction_change_m=1.072
+[INFO] [1792503073.683723577] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.683897889] [fast_lio_localization]: DIAG scan_t=1649856243.306962, odom_t=1649856243.306962, dt_ms=0.0, scan_points=10395
+[INFO] [1792503073.697745314] [fast_lio_localization]: ICP fitness: 0.992
+[INFO] [1792503073.698008080] [fast_lio_localization]: DIAG candidate_translation=[-0.04247176269718797, 0.02795406725086177, -0.06973513686472563], correction_change_m=0.091
+[INFO] [1792503073.699090842] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.699298301] [fast_lio_localization]: DIAG scan_t=1649856245.215680, odom_t=1649856245.215680, dt_ms=0.0, scan_points=8422
+[INFO] [1792503073.713296788] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.713593831] [fast_lio_localization]: DIAG candidate_translation=[-0.0475335227919406, 0.07858625594629716, 0.028390071051809646], correction_change_m=0.111
+[INFO] [1792503073.714581235] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.714747602] [fast_lio_localization]: DIAG scan_t=1649856247.217615, odom_t=1649856247.217615, dt_ms=0.0, scan_points=7517
+[INFO] [1792503073.728499806] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.728778384] [fast_lio_localization]: DIAG candidate_translation=[-0.19677266422993023, 0.0343411409137661, 0.8032586258736791], correction_change_m=0.790
+[INFO] [1792503073.729982615] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.730174454] [fast_lio_localization]: DIAG scan_t=1649856249.216047, odom_t=1649856249.216047, dt_ms=0.0, scan_points=5292
+[INFO] [1792503073.743946331] [fast_lio_localization]: ICP fitness: 0.981
+[INFO] [1792503073.744239126] [fast_lio_localization]: DIAG candidate_translation=[0.8696671141835476, -0.709782058567936, -0.4251417406453626], correction_change_m=1.789
+[INFO] [1792503073.745283403] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.745466131] [fast_lio_localization]: DIAG scan_t=1649856251.307858, odom_t=1649856251.307858, dt_ms=0.0, scan_points=10329
+[INFO] [1792503073.759911827] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503073.760236030] [fast_lio_localization]: DIAG candidate_translation=[0.9755924439339773, -0.896337323449472, -1.2457188199250142], correction_change_m=0.848
+[INFO] [1792503073.761303769] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.761472081] [fast_lio_localization]: DIAG scan_t=1649856253.306571, odom_t=1649856253.306571, dt_ms=0.0, scan_points=11480
+[INFO] [1792503073.775927654] [fast_lio_localization]: ICP fitness: 0.819
+[INFO] [1792503073.776206990] [fast_lio_localization]: DIAG candidate_translation=[2.52991413262394, -1.6843758954057537, -2.1301633682796997], correction_change_m=1.954
+[WARN] [1792503073.776387746] [fast_lio_localization]: Global localization failed (fitness below threshold).
+[INFO] [1792503073.777041314] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.777221114] [fast_lio_localization]: DIAG scan_t=1649856255.213208, odom_t=1649856255.213208, dt_ms=0.0, scan_points=7237
+[INFO] [1792503073.792551756] [fast_lio_localization]: ICP fitness: 0.979
+[INFO] [1792503073.792878120] [fast_lio_localization]: DIAG candidate_translation=[0.045327044808349766, 0.27857971727216485, -0.5278819653306667], correction_change_m=1.662
+[INFO] [1792503073.794057080] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.794287775] [fast_lio_localization]: DIAG scan_t=1649856257.217787, odom_t=1649856257.217787, dt_ms=0.0, scan_points=8771
+[INFO] [1792503073.827200836] [fast_lio_localization]: ICP fitness: 0.982
+[INFO] [1792503073.827539880] [fast_lio_localization]: DIAG candidate_translation=[0.025782208940818667, 0.2930845077942797, -0.6573803394738286], correction_change_m=0.132
+[INFO] [1792503073.828614915] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.828787663] [fast_lio_localization]: DIAG scan_t=1649856259.216209, odom_t=1649856259.216209, dt_ms=0.0, scan_points=4080
+[INFO] [1792503073.843191701] [fast_lio_localization]: ICP fitness: 0.989
+[INFO] [1792503073.843466775] [fast_lio_localization]: DIAG candidate_translation=[-0.14673650014306172, 0.14924019099334007, -0.07265227804984101], correction_change_m=0.626
+[INFO] [1792503073.844410300] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.844573042] [fast_lio_localization]: DIAG scan_t=1649856261.216080, odom_t=1649856261.216080, dt_ms=0.0, scan_points=10941
+[INFO] [1792503073.865170090] [fast_lio_localization]: ICP fitness: 0.995
+[INFO] [1792503073.865490918] [fast_lio_localization]: DIAG candidate_translation=[-0.15842950199830186, 0.1655108985872515, -0.19671908081759498], correction_change_m=0.126
+[INFO] [1792503073.866540940] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.866710106] [fast_lio_localization]: DIAG scan_t=1649856263.310329, odom_t=1649856263.310329, dt_ms=-0.0, scan_points=10855
+[INFO] [1792503073.884953219] [fast_lio_localization]: ICP fitness: 0.988
+[INFO] [1792503073.885273345] [fast_lio_localization]: DIAG candidate_translation=[-0.1459356200191782, 0.14683654794382733, -0.2268686497461981], correction_change_m=0.038
+[INFO] [1792503073.886265838] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.886453060] [fast_lio_localization]: DIAG scan_t=1649856265.310629, odom_t=1649856265.310629, dt_ms=0.0, scan_points=9594
+[INFO] [1792503073.903931607] [fast_lio_localization]: ICP fitness: 0.973
+[INFO] [1792503073.904214688] [fast_lio_localization]: DIAG candidate_translation=[-0.1367059825471332, 0.1301331024727545, -0.2234977115573735], correction_change_m=0.019
+[INFO] [1792503073.905508170] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.905698291] [fast_lio_localization]: DIAG scan_t=1649856267.216772, odom_t=1649856267.216772, dt_ms=0.0, scan_points=7599
+[INFO] [1792503073.925591677] [fast_lio_localization]: ICP fitness: 0.986
+[INFO] [1792503073.925880311] [fast_lio_localization]: DIAG candidate_translation=[-0.14877787570451237, 0.14467591504975366, -0.19646315808659107], correction_change_m=0.033
+[INFO] [1792503073.927091875] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.927283585] [fast_lio_localization]: DIAG scan_t=1649856269.211276, odom_t=1649856269.211276, dt_ms=0.0, scan_points=11311
+[INFO] [1792503073.945713979] [fast_lio_localization]: ICP fitness: 0.975
+[INFO] [1792503073.946225332] [fast_lio_localization]: DIAG candidate_translation=[-0.12307972843115565, 0.12644164973416902, -0.2488438110728023], correction_change_m=0.061
+[INFO] [1792503073.947459128] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.947642725] [fast_lio_localization]: DIAG scan_t=1649856271.212341, odom_t=1649856271.212341, dt_ms=0.0, scan_points=11412
+[INFO] [1792503073.967032322] [fast_lio_localization]: ICP fitness: 0.978
+[INFO] [1792503073.967350505] [fast_lio_localization]: DIAG candidate_translation=[-0.14889535374347837, 0.1534955031718619, -0.2193665168176764], correction_change_m=0.048
+[INFO] [1792503073.968365274] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.968567484] [fast_lio_localization]: DIAG scan_t=1649856273.221140, odom_t=1649856273.221140, dt_ms=0.0, scan_points=9808
+[INFO] [1792503073.987898001] [fast_lio_localization]: ICP fitness: 0.981
+[INFO] [1792503073.988187673] [fast_lio_localization]: DIAG candidate_translation=[-0.1552442621541938, 0.11549011489926563, -0.18023462975758697], correction_change_m=0.055
+[INFO] [1792503073.989204820] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503073.989376530] [fast_lio_localization]: DIAG scan_t=1649856275.217027, odom_t=1649856275.217027, dt_ms=0.0, scan_points=9479
+[INFO] [1792503074.006489768] [fast_lio_localization]: ICP fitness: 0.980
+[INFO] [1792503074.006797800] [fast_lio_localization]: DIAG candidate_translation=[-0.13802802739208062, 0.15939958322977751, -0.2530709530637968], correction_change_m=0.087
+[INFO] [1792503074.007916591] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.008113563] [fast_lio_localization]: DIAG scan_t=1649856277.218922, odom_t=1649856277.218922, dt_ms=0.0, scan_points=8454
+[INFO] [1792503074.024902149] [fast_lio_localization]: ICP fitness: 0.988
+[INFO] [1792503074.025215563] [fast_lio_localization]: DIAG candidate_translation=[-0.15630841331142983, 0.09920467496624827, -0.19076813180158003], correction_change_m=0.089
+[INFO] [1792503074.026217517] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.026401815] [fast_lio_localization]: DIAG scan_t=1649856279.221051, odom_t=1649856279.221051, dt_ms=0.0, scan_points=8746
+[INFO] [1792503074.043893451] [fast_lio_localization]: ICP fitness: 0.981
+[INFO] [1792503074.044194649] [fast_lio_localization]: DIAG candidate_translation=[-0.17833610219355728, 0.13059334681777215, -0.16259289468001764], correction_change_m=0.048
+[INFO] [1792503074.045258521] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.045430564] [fast_lio_localization]: DIAG scan_t=1649856281.221104, odom_t=1649856281.221104, dt_ms=0.0, scan_points=8667
+[INFO] [1792503074.063234728] [fast_lio_localization]: ICP fitness: 0.980
+[INFO] [1792503074.063556479] [fast_lio_localization]: DIAG candidate_translation=[-0.1697692199779602, 0.06748082089489238, -0.18415984035162405], correction_change_m=0.067
+[INFO] [1792503074.064535169] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.064702049] [fast_lio_localization]: DIAG scan_t=1649856283.220945, odom_t=1649856283.220945, dt_ms=0.0, scan_points=8600
+[INFO] [1792503074.082155629] [fast_lio_localization]: ICP fitness: 0.980
+[INFO] [1792503074.082462592] [fast_lio_localization]: DIAG candidate_translation=[-0.14729624984079903, 0.12279070744670842, -0.2038176975276744], correction_change_m=0.063
+[INFO] [1792503074.083557514] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.083732036] [fast_lio_localization]: DIAG scan_t=1649856285.220856, odom_t=1649856285.220856, dt_ms=0.0, scan_points=8731
+[INFO] [1792503074.100068749] [fast_lio_localization]: ICP fitness: 0.977
+[INFO] [1792503074.100363131] [fast_lio_localization]: DIAG candidate_translation=[-0.14686525679493226, 0.12274697123611161, -0.21811919008887912], correction_change_m=0.014
+[INFO] [1792503074.101387175] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.101585860] [fast_lio_localization]: DIAG scan_t=1649856287.220772, odom_t=1649856287.220772, dt_ms=0.0, scan_points=8700
+[INFO] [1792503074.119253364] [fast_lio_localization]: ICP fitness: 0.976
+[INFO] [1792503074.119559519] [fast_lio_localization]: DIAG candidate_translation=[-0.15788989460156785, 0.07622600381259738, -0.1724045794872436], correction_change_m=0.066
+[INFO] [1792503074.120625453] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.120806738] [fast_lio_localization]: DIAG scan_t=1649856289.220535, odom_t=1649856289.220535, dt_ms=0.0, scan_points=8744
+[INFO] [1792503074.138178051] [fast_lio_localization]: ICP fitness: 0.977
+[INFO] [1792503074.138486444] [fast_lio_localization]: DIAG candidate_translation=[-0.1421686197826182, 0.1231236320689231, -0.21494710707379672], correction_change_m=0.065
+[INFO] [1792503074.139550449] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.139741406] [fast_lio_localization]: DIAG scan_t=1649856291.211409, odom_t=1649856291.211409, dt_ms=0.0, scan_points=9398
+[INFO] [1792503074.158432986] [fast_lio_localization]: ICP fitness: 0.975
+[INFO] [1792503074.158881343] [fast_lio_localization]: DIAG candidate_translation=[-0.09997937749982504, 0.12644696825995697, -0.2385520639557444], correction_change_m=0.048
+[INFO] [1792503074.159949086] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.160292716] [fast_lio_localization]: DIAG scan_t=1649856293.212028, odom_t=1649856293.212028, dt_ms=0.0, scan_points=10225
+[INFO] [1792503074.178988181] [fast_lio_localization]: ICP fitness: 0.980
+[INFO] [1792503074.179328281] [fast_lio_localization]: DIAG candidate_translation=[-0.15800019911459304, 0.11117752277261342, -0.15597586108900474], correction_change_m=0.102
+[INFO] [1792503074.180657684] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.180843004] [fast_lio_localization]: DIAG scan_t=1649856295.214252, odom_t=1649856295.214252, dt_ms=0.0, scan_points=7719
+[INFO] [1792503074.200459988] [fast_lio_localization]: ICP fitness: 0.984
+[INFO] [1792503074.200745725] [fast_lio_localization]: DIAG candidate_translation=[-0.15056728875352163, 0.11738208560610755, -0.19135256700135053], correction_change_m=0.037
+[INFO] [1792503074.201782808] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.201978024] [fast_lio_localization]: DIAG scan_t=1649856297.213228, odom_t=1649856297.213228, dt_ms=0.0, scan_points=11186
+[INFO] [1792503074.221913663] [fast_lio_localization]: ICP fitness: 0.986
+[INFO] [1792503074.222461503] [fast_lio_localization]: DIAG candidate_translation=[-0.15843960728013395, 0.15023366334351015, -0.21655801646691783], correction_change_m=0.042
+[INFO] [1792503074.223959824] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.224180683] [fast_lio_localization]: DIAG scan_t=1649856299.216227, odom_t=1649856299.216227, dt_ms=0.0, scan_points=11144
+[INFO] [1792503074.243091951] [fast_lio_localization]: ICP fitness: 0.990
+[INFO] [1792503074.243400545] [fast_lio_localization]: DIAG candidate_translation=[-0.09356085774745745, 0.09438903670150331, -0.2972532314279197], correction_change_m=0.118
+[INFO] [1792503074.244478829] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.244659294] [fast_lio_localization]: DIAG scan_t=1649856301.214776, odom_t=1649856301.214776, dt_ms=0.0, scan_points=4792
+[INFO] [1792503074.259571088] [fast_lio_localization]: ICP fitness: 0.964
+[INFO] [1792503074.259882265] [fast_lio_localization]: DIAG candidate_translation=[-0.29062066195523967, 0.08021096539225601, 0.36406798066828416], correction_change_m=0.690
+[INFO] [1792503074.260965133] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.261184854] [fast_lio_localization]: DIAG scan_t=1649856303.216509, odom_t=1649856303.216509, dt_ms=0.0, scan_points=8546
+[INFO] [1792503074.275909256] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.276203520] [fast_lio_localization]: DIAG candidate_translation=[-0.09847735612567236, 0.1478164518253809, -0.06364124666386686], correction_change_m=0.474
+[INFO] [1792503074.277273023] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.277454754] [fast_lio_localization]: DIAG scan_t=1649856305.212616, odom_t=1649856305.212616, dt_ms=0.0, scan_points=7923
+[INFO] [1792503074.291378044] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.291644902] [fast_lio_localization]: DIAG candidate_translation=[-0.10022216139473052, 0.2341478656687143, 0.0916348670771724], correction_change_m=0.178
+[INFO] [1792503074.292584773] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.292756629] [fast_lio_localization]: DIAG scan_t=1649856307.211959, odom_t=1649856307.211959, dt_ms=0.0, scan_points=10213
+[INFO] [1792503074.306127245] [fast_lio_localization]: ICP fitness: 0.994
+[INFO] [1792503074.306403918] [fast_lio_localization]: DIAG candidate_translation=[-0.10101882068471998, 0.12023947148255328, 0.1909366374022914], correction_change_m=0.151
+[INFO] [1792503074.307493382] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.307673089] [fast_lio_localization]: DIAG scan_t=1649856309.306407, odom_t=1649856309.306407, dt_ms=0.0, scan_points=11391
+[INFO] [1792503074.321774441] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.322069331] [fast_lio_localization]: DIAG candidate_translation=[-0.09237199980021346, 0.07971518441103985, 0.17913721155340648], correction_change_m=0.043
+[INFO] [1792503074.323150781] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.323363740] [fast_lio_localization]: DIAG scan_t=1649856311.305080, odom_t=1649856311.305080, dt_ms=0.0, scan_points=11295
+[INFO] [1792503074.337461806] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.337731073] [fast_lio_localization]: DIAG candidate_translation=[-0.3183638800418548, -0.2010333073943207, 0.07706986152439353], correction_change_m=0.375
+[INFO] [1792503074.338700583] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.338862289] [fast_lio_localization]: DIAG scan_t=1649856313.307195, odom_t=1649856313.307195, dt_ms=0.0, scan_points=6506
+[INFO] [1792503074.352863135] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.353145549] [fast_lio_localization]: DIAG candidate_translation=[-0.014023003808514642, 0.422925778772402, 1.9188283859180753], correction_change_m=1.968
+[INFO] [1792503074.354174483] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.354354613] [fast_lio_localization]: DIAG scan_t=1649856315.289505, odom_t=1649856315.289505, dt_ms=0.0, scan_points=1665
+[INFO] [1792503074.368078779] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.368387259] [fast_lio_localization]: DIAG candidate_translation=[-2.619753174451079, 1.289507103700476, 7.715287902785403], correction_change_m=6.414
+[INFO] [1792503074.369297544] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.369470380] [fast_lio_localization]: DIAG scan_t=1649856317.283988, odom_t=1649856317.283988, dt_ms=0.0, scan_points=3440
+[INFO] [1792503074.383343354] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.383629653] [fast_lio_localization]: DIAG candidate_translation=[-0.26961192977807424, -0.17520535641632012, -0.24666440547974872], correction_change_m=8.430
+[INFO] [1792503074.384623245] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.384790454] [fast_lio_localization]: DIAG scan_t=1649856319.210562, odom_t=1649856319.210562, dt_ms=0.0, scan_points=8047
+[INFO] [1792503074.399240801] [fast_lio_localization]: ICP fitness: 0.990
+[INFO] [1792503074.399520001] [fast_lio_localization]: DIAG candidate_translation=[0.019891769345861364, 0.08781388318469922, -0.36080570198685885], correction_change_m=0.407
+[INFO] [1792503074.400567677] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.400748980] [fast_lio_localization]: DIAG scan_t=1649856321.212054, odom_t=1649856321.212054, dt_ms=0.0, scan_points=7229
+[INFO] [1792503074.414353197] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.414651307] [fast_lio_localization]: DIAG candidate_translation=[-0.6990911485548773, -0.11665337244319676, -1.066379815009038], correction_change_m=1.028
+[INFO] [1792503074.415763863] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.415946313] [fast_lio_localization]: DIAG scan_t=1649856323.301263, odom_t=1649856323.301263, dt_ms=0.0, scan_points=9610
+[INFO] [1792503074.430587160] [fast_lio_localization]: ICP fitness: 0.935
+[INFO] [1792503074.430915703] [fast_lio_localization]: DIAG candidate_translation=[-1.2548967825162969, -0.018681146198171454, -0.9621929341295253], correction_change_m=0.574
+[INFO] [1792503074.431964147] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.432144260] [fast_lio_localization]: DIAG scan_t=1649856325.219490, odom_t=1649856325.219490, dt_ms=0.0, scan_points=6989
+[INFO] [1792503074.446084375] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.446402268] [fast_lio_localization]: DIAG candidate_translation=[-1.5194540657308298, 0.19846263138927647, 0.6823601019249825], correction_change_m=1.680
+[INFO] [1792503074.447566385] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.447767121] [fast_lio_localization]: DIAG scan_t=1649856327.218854, odom_t=1649856327.218854, dt_ms=0.0, scan_points=6723
+[INFO] [1792503074.461836483] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.462128238] [fast_lio_localization]: DIAG candidate_translation=[-1.0454244083017092, 0.2834045305259671, 0.070348827315687], correction_change_m=0.779
+[INFO] [1792503074.463274832] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.463474029] [fast_lio_localization]: DIAG scan_t=1649856329.218801, odom_t=1649856329.218801, dt_ms=0.0, scan_points=6764
+[INFO] [1792503074.477672188] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.477963784] [fast_lio_localization]: DIAG candidate_translation=[-0.07250661697262428, 0.1664157895115998, 0.20255082055438764], correction_change_m=0.989
+[INFO] [1792503074.479041931] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.479249049] [fast_lio_localization]: DIAG scan_t=1649856331.218680, odom_t=1649856331.218680, dt_ms=0.0, scan_points=6734
+[INFO] [1792503074.493374310] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.493647593] [fast_lio_localization]: DIAG candidate_translation=[-0.4299443185389085, 0.3824142174337088, -0.23119352193258982], correction_change_m=0.602
+[INFO] [1792503074.494627976] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.494804754] [fast_lio_localization]: DIAG scan_t=1649856333.218666, odom_t=1649856333.218666, dt_ms=0.0, scan_points=6721
+[INFO] [1792503074.509309406] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.509574910] [fast_lio_localization]: DIAG candidate_translation=[-0.22005691128404892, 0.260939093714633, -0.0030404034582465194], correction_change_m=0.333
+[INFO] [1792503074.510545820] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792503074.510722585] [fast_lio_localization]: DIAG scan_t=1649856335.218475, odom_t=1649856335.218475, dt_ms=0.0, scan_points=6795
+[INFO] [1792503074.524464241] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792503074.524749730] [fast_lio_localization]: DIAG candidate_translation=[-0.4080005418218915, 0.6032858919488268, 0.3778388442002956], correction_change_m=0.546
+匹配尝试次数： 53
+接受修正次数： 52
+结果目录： /home/yaw/fastlio_week3/delete_runs/delete_block3m_ratio0p10_seed22_v1
+
+COMMAND: /usr/bin/python3 -s /home/yaw/fastlio_week3/delete_runs/batch_sources/fuse_fixed_trajectory.py --run /home/yaw/fastlio_week3/delete_runs/delete_block3m_ratio0p10_seed22_v1
+使用的成功修正数： 52
+首次修正之前跳过的里程计数： 32
+输出定位位姿数： 1059
+轨迹已保存： /home/yaw/fastlio_week3/delete_runs/delete_block3m_ratio0p10_seed22_v1/trajectory_tum.txt

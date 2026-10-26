@@ -1,0 +1,1 @@
+/home/yaw/fastlio_week3/maps/noise_sigma0p10_seed11/map.pcd

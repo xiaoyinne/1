@@ -1,0 +1,11 @@
+[INFO] [1792495112.791773999] [fast_lio_localization]: GlobalLocalizationNode initialized.
+[INFO] [1792495125.581768182] [fast_lio_localization]: Performing global localization via ICP...
+[INFO] [1792495125.582150101] [fast_lio_localization]: DIAG scan_t=1649856231.210443, odom_t=1649856231.210443, dt_ms=0.0, scan_points=4685
+[INFO] [1792495125.673770499] [fast_lio_localization]: ICP fitness: 1.000
+[INFO] [1792495125.674301276] [fast_lio_localization]: DIAG candidate_translation=[-0.1605535393927513, -0.9815408014539513, -0.5493007078257681], correction_change_m=1.136
+第一帧修正是否被接受： True
+接受的修正矩阵：
+[[ 0.95741325  0.04689068 -0.28488794 -0.16055354]
+ [-0.10019343  0.97936412 -0.17551978 -0.9815408 ]
+ [ 0.27077879  0.19658886  0.94235432 -0.54930071]
+ [ 0.          0.          0.          1.        ]]

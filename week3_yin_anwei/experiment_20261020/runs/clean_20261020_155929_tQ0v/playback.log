@@ -1,0 +1,13 @@
+[INFO] [1792483919.466389394] [rosbag2_storage]: Opened database '/home/yaw/week1_validation_20261010/ros2_bag/ros2_bag.db3' for READ_ONLY.
+[INFO] [1792483919.466478935] [rosbag2_player]: Set rate to 0.5
+[INFO] [1792483919.477723147] [rosbag2_player]: Adding keyboard callbacks.
+[INFO] [1792483919.477784298] [rosbag2_player]: Press SPACE for Pause/Resume
+[INFO] [1792483919.477791066] [rosbag2_player]: Press CURSOR_RIGHT for Play Next Message
+[INFO] [1792483919.477795919] [rosbag2_player]: Press CURSOR_UP for Increase Rate 10%
+[INFO] [1792483919.477799800] [rosbag2_player]: Press CURSOR_DOWN for Decrease Rate 10%
+[INFO] [1792483919.478434137] [rosbag2_storage]: Opened database '/home/yaw/week1_validation_20261010/ros2_bag/ros2_bag.db3' for READ_ONLY.
+[INFO] [1792483946.066740121] [rosbag2_player]: Resuming play.
+[INFO] [1792483952.678073996] [rosbag2_player]: Pausing play.
+[INFO] [1792483952.907198700] [rosbag2_player]: Resuming play.
+[INFO] [1792483953.507142372] [rosbag2_player]: Pausing play.
+[INFO] [1792484254.253394714] [rosbag2_player]: Resuming play.

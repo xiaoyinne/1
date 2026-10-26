@@ -1,0 +1,221 @@
+{
+  "passed": true,
+  "fixed_query_runs": 28,
+  "noise_plus_baseline_runs": 13,
+  "deletion_runs": 15,
+  "deletion_status_counts": {
+    "complete": 13,
+    "incomplete_coverage": 2,
+    "no_localization": 0,
+    "error": 0
+  },
+  "report_sections": 7,
+  "report_links_checked": 11,
+  "checks": [
+    "fixed timestamps, configuration and frozen matcher bytes",
+    "accepted flags and saved correction timestamps",
+    "causal fusion translation for all output poses",
+    "quaternion normalization, finite values and increasing timestamps",
+    "fixed GT sample coverage and reported RMSE arithmetic",
+    "full-query correction-gap arithmetic",
+    "copied file hashes and relative report links"
+  ],
+  "runs": [
+    {
+      "run": "clean_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p05_seed11_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p05_seed22_v1",
+      "accepted": 45,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p05_seed33_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p10_seed11_v1",
+      "accepted": 51,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p10_seed22_v1",
+      "accepted": 51,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p10_seed33_v1",
+      "accepted": 51,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p20_seed11_v1",
+      "accepted": 53,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p20_seed22_v1",
+      "accepted": 44,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p20_seed33_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p40_seed11_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p40_seed22_v1",
+      "accepted": 53,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "noise_sigma0p40_seed33_v1",
+      "accepted": 50,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p10_seed11_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p10_seed22_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p10_seed33_v1",
+      "accepted": 52,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p25_seed11_v1",
+      "accepted": 51,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p25_seed22_v1",
+      "accepted": 53,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p25_seed33_v1",
+      "accepted": 21,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p50_seed11_v1",
+      "accepted": 17,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p50_seed22_v1",
+      "accepted": 22,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p50_seed33_v1",
+      "accepted": 10,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p75_seed11_v1",
+      "accepted": 6,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p75_seed22_v1",
+      "accepted": 14,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p75_seed33_v1",
+      "accepted": 14,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p90_seed11_v1",
+      "accepted": 6,
+      "evaluated_pairs": 713,
+      "output_poses": 1018,
+      "status": "incomplete_coverage"
+    },
+    {
+      "run": "delete_block3m_ratio0p90_seed22_v1",
+      "accepted": 7,
+      "evaluated_pairs": 753,
+      "output_poses": 1059,
+      "status": "complete"
+    },
+    {
+      "run": "delete_block3m_ratio0p90_seed33_v1",
+      "accepted": 3,
+      "evaluated_pairs": 733,
+      "output_poses": 1038,
+      "status": "incomplete_coverage"
+    }
+  ]
+}

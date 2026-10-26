@@ -1,0 +1,20 @@
+{
+  "source": "/mnt/d/chromeDownload/fastlio_hilti_fixed_20261008.pcd",
+  "output": "/home/yaw/fastlio_week3/maps/noise_sigma0p05_seed22/map.pcd",
+  "points": 7042489,
+  "sigma_per_axis_m": 0.05,
+  "seed": 22,
+  "numpy_version": "1.21.5",
+  "open3d_version": "0.14.1",
+  "noise_mean_xyz_m": [
+    1.065326481710665e-05,
+    -2.3535399041639363e-05,
+    9.883188749534741e-06
+  ],
+  "noise_std_xyz_m": [
+    0.05000473771477887,
+    0.049977354516968144,
+    0.049990959159038416
+  ],
+  "output_fields": "XYZ only"
+}

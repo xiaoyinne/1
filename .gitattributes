@@ -19,3 +19,6 @@ week2_yin_anwei/manifest.json -text
 week2_yin_anwei/upstream/** -whitespace
 week2_yin_anwei/nclt/evidence/** -text -whitespace
 week2_yin_anwei/nclt/manifest.json -text -whitespace
+
+# Preserve week-3 archived evidence and recorded SHA256 values.
+week3_yin_anwei/** -text -whitespace
