@@ -1,0 +1,91 @@
+[INFO] [1793253965.281978746] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1793253965.291481078] [planner_server]: Creating
+[INFO] [1793253965.364837850] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1793253965.365972841] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1793253965.547071488] [planner_server]: Configuring
+[INFO] [1793253965.547144951] [global_costmap.global_costmap]: Configuring
+[INFO] [1793253965.557282754] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1793253965.563055644] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1793253965.566966252] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1793253965.567060268] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1793253965.568679503] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1793253965.584952292] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1793253965.585061980] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1793253965.587056471] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[INFO] [1793253965.606110192] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 36 X 56 at 0.100000 m/pix
+[INFO] [1793253965.606322843] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[INFO] [1793253965.606357086] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1793253965.607720022] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1793253968.287652676] [planner_server]: Activating
+[INFO] [1793253968.287690482] [global_costmap.global_costmap]: Activating
+[INFO] [1793253968.287698954] [global_costmap.global_costmap]: Checking transform
+[INFO] [1793253968.287749562] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253968.787837439] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253969.288030074] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253969.790229434] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253970.287798481] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253970.787879826] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253971.287827145] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253971.787856334] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253972.287836263] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253972.787817819] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253973.287857031] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253973.787836077] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253974.287832882] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253974.787819961] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253975.288063199] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253975.787839383] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253976.287827451] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253976.787872138] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253977.290206953] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253977.787798950] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253978.287835191] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253978.787824423] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253979.287842868] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253979.787809061] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253980.287927532] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253980.790315708] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253981.290790931] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253981.787799804] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253982.287832505] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253982.787834143] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253983.287816236] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253983.787810829] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253984.287973056] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253984.787873782] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253985.289677655] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253985.787841380] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253986.289869478] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793253986.788030274] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 18.859000 but the earliest data is at time 19.429000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1793253987.287858448] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 19.335000 but the earliest data is at time 19.429000, when looking up transform from frame [base_link] to frame [map]
+[INFO] [1793253987.788316757] [global_costmap.global_costmap]: start
+[INFO] [1793253988.790453153] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1793253988.793597037] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[WARN] [1793254010.885702963] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.0000 Hz
+[WARN] [1793254061.719753027] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1793254061.719928623] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.45, -1.45)
+[WARN] [1793254061.719965774] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1793254061.738463339] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1793254061.794777157] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1793254061.794953825] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.45, -1.45)
+[WARN] [1793254061.794992243] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1793254061.813656405] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1793254062.795206003] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1793254062.795295853] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.45, -1.45)
+[WARN] [1793254062.795313466] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1793254062.810343833] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1793254063.795263633] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1793254063.795447309] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.45, -1.45)
+[WARN] [1793254063.795473446] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[WARN] [1793254065.742620308] [planner_server]: GridBased: failed to create plan with tolerance 0.50.
+[WARN] [1793254065.742851749] [planner_server]: Planning algorithm GridBased failed to generate a valid path to (0.45, -1.45)
+[WARN] [1793254065.742935385] [planner_server]: [compute_path_to_pose] [ActionServer] Aborting handle.
+[INFO] [1793254065.762372814] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[INFO] [1793254141.388937115] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[WARN] [1793254141.800424422] [planner_server]: Planner loop missed its desired rate of 20.0000 Hz. Current loop rate is 2.5000 Hz

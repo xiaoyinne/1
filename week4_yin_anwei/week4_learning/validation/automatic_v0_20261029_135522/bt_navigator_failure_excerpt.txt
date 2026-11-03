@@ -1,0 +1,13 @@
+SOURCE: /home/yaw/.ros/log/bt_navigator_2751_1793252006113.log
+[INFO] [1793252006.185932461] [bt_navigator]: 
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1793252006.186307338] [bt_navigator]: Creating
+[INFO] [1793252006.574389510] [bt_navigator]: Configuring
+[INFO] [1793252053.419074007] [bt_navigator]: Activating
+[INFO] [1793252053.567668601] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[INFO] [1793253330.356894783] [bt_navigator]: Begin navigating from current location (-0.03, -0.11) to (0.05, 0.65)
+[WARN] [1793253332.912677781] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[WARN] [1793253355.197552048] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[ERROR] [1793253355.197940887] [bt_navigator]: Goal failed

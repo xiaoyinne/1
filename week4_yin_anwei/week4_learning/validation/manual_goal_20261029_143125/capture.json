@@ -1,0 +1,8 @@
+{
+  "started_unix": 1793255485.2769313,
+  "state": "path_captured",
+  "note": "Passive first-path capture only. No navigation goal is sent by this recorder.",
+  "ended_unix": 1793255553.5354714,
+  "returncode": 0,
+  "stderr": ""
+}

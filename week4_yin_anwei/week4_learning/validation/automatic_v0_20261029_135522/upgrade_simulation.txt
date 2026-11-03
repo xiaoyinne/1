@@ -1,0 +1,21 @@
+注意：这只是一次模拟！
+　　　apt-get 需要 root 特权进行实际的执行。
+　　　同时请记住此时并未锁定，所以请勿完全相信当前的情况！
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+下列软件包是自动安装的并且现在不需要了：
+  htop
+使用'apt autoremove'来卸载它(它们)。
+下列软件包将被升级：
+  ros-humble-tf2 ros-humble-tf2-geometry-msgs ros-humble-tf2-ros
+  ros-humble-tf2-ros-py
+升级了 4 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 82 个软件包未被升级。
+Inst ros-humble-tf2 [0.25.23-1jammy.20260907.213559] (0.25.24-1jammy.20260915.203746 ROS jammy:jammy [amd64])
+Inst ros-humble-tf2-ros [0.25.23-1jammy.20260907.224752] (0.25.24-1jammy.20260915.204410 ROS jammy:jammy [amd64])
+Inst ros-humble-tf2-ros-py [0.25.23-1jammy.20260907.215705] (0.25.24-1jammy.20260915.204621 ROS jammy:jammy [amd64])
+Inst ros-humble-tf2-geometry-msgs [0.25.23-1jammy.20260907.225741] (0.25.24-1jammy.20260915.205448 ROS jammy:jammy [amd64])
+Conf ros-humble-tf2 (0.25.24-1jammy.20260915.203746 ROS jammy:jammy [amd64])
+Conf ros-humble-tf2-ros (0.25.24-1jammy.20260915.204410 ROS jammy:jammy [amd64])
+Conf ros-humble-tf2-ros-py (0.25.24-1jammy.20260915.204621 ROS jammy:jammy [amd64])
+Conf ros-humble-tf2-geometry-msgs (0.25.24-1jammy.20260915.205448 ROS jammy:jammy [amd64])

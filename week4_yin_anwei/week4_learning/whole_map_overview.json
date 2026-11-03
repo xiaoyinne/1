@@ -1,0 +1,25 @@
+{
+  "finite_points": 7042489,
+  "percentile_1_xyz_m": [
+    -23.635867080688477,
+    -11.861881141662597,
+    -9.061972732543945
+  ],
+  "percentile_99_xyz_m": [
+    1.0583400774002083,
+    11.731180191040039,
+    0.3705182051658632
+  ],
+  "display_xy_span_m": [
+    24.694207158088687,
+    23.593061332702636
+  ],
+  "current_roi_xy_bounds_m": [
+    -2.2,
+    1.4,
+    -1.8,
+    3.8
+  ],
+  "full_cloud_points_in_reference_height_band": 1643353,
+  "note": "Overview limits and sampled display only; no new navigation scene selected or generated."
+}

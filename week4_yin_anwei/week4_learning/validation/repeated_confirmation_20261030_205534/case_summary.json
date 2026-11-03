@@ -1,0 +1,76 @@
+{
+  "start": [
+    0.65,
+    0.65,
+    1.5707963267948966
+  ],
+  "goal": [
+    0.65,
+    2.05,
+    1.5707963267948966
+  ],
+  "confirmation_count": 3,
+  "action_success_count": 2,
+  "distance_only_pass_count": 2,
+  "combined_pass_count": 2,
+  "distance": {
+    "mean": 0.4986232433902286,
+    "min": 0.2341545798408731,
+    "max": 1.0202292550045315
+  },
+  "wall": {
+    "mean": 66.72937518200008,
+    "min": 22.621967091999977,
+    "max": 120.07318103600028
+  },
+  "recoveries": [
+    15,
+    5,
+    1
+  ],
+  "direct_line_occupied_cells": [
+    [
+      31,
+      28
+    ]
+  ],
+  "explorations": [
+    {
+      "folder": "repeated_exploration_20261030_205056",
+      "scenario": "upper_detour",
+      "start": [
+        -0.45,
+        1.35,
+        -1.5707963267948966
+      ],
+      "goal": [
+        0.45,
+        -1.45,
+        0.0
+      ],
+      "status": "TIMEOUT_CANCELED",
+      "distance_m": 1.755684863756617,
+      "wall_s": 120.05316871600007,
+      "recoveries": 14
+    },
+    {
+      "folder": "repeated_exploration_20261030_205355",
+      "scenario": "single_pillar",
+      "start": [
+        0.65,
+        0.65,
+        1.5707963267948966
+      ],
+      "goal": [
+        0.65,
+        2.05,
+        1.5707963267948966
+      ],
+      "status": "SUCCEEDED",
+      "distance_m": 0.22559274421892558,
+      "wall_s": 58.617342555999585,
+      "recoveries": 5
+    }
+  ],
+  "scope": "Case selected after exploration; 3 new fresh-start confirmation trials. Not pooled with original complex detour."
+}

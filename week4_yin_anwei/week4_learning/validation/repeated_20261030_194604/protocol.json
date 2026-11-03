@@ -1,0 +1,48 @@
+{
+  "nominal_spawn_xy_yaw": [
+    0.05,
+    -0.05,
+    1.5707963267948966
+  ],
+  "cases": [
+    [
+      "short",
+      [
+        0.05,
+        0.65,
+        1.5707963267948966
+      ]
+    ],
+    [
+      "cross",
+      [
+        0.85,
+        3.25,
+        1.5707963267948966
+      ]
+    ],
+    [
+      "detour",
+      [
+        0.45,
+        -1.45,
+        0.0
+      ]
+    ]
+  ],
+  "repeats": 3,
+  "timeout_wall_s": 120,
+  "fresh_simulator_each_trial": true,
+  "world_geometry_unchanged": true,
+  "added_plugin": "read-only state measurement",
+  "map_world_alignment": "identity by build_world.py; origin applied to obstacle centres",
+  "truth_frame": "world",
+  "truth_entity": "turtlebot3_waffle::base_footprint",
+  "truth_is": "Gazebo simulation state, not real-world external ground truth",
+  "map_sha256": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182",
+  "world_sha256": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168",
+  "observer_world_sha256": "939e8c93ebbfa4f932e551971f3c790fd1c3f18a0d3e092fc1f83f4c55286f82",
+  "simulated_time_warmup_s": 3,
+  "endpoint_settle_sim_s": 2,
+  "performance_scope": "small repeated baseline, no algorithm comparison or collision claim"
+}

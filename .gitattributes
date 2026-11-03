@@ -22,3 +22,6 @@ week2_yin_anwei/nclt/manifest.json -text -whitespace
 
 # Preserve week-3 archived evidence and recorded SHA256 values.
 week3_yin_anwei/** -text -whitespace
+
+# Preserve week-4 original evidence and its recorded hashes.
+week4_yin_anwei/** -text -whitespace

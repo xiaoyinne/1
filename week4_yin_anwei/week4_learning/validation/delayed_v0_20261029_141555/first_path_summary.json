@@ -1,0 +1,17 @@
+{
+  "header": {
+    "stamp": {
+      "sec": 594,
+      "nanosec": 300000000
+    },
+    "frame_id": "map"
+  },
+  "pose_count": 14,
+  "first_path_endpoint": {
+    "x": 0.05,
+    "y": 0.65,
+    "z": 0.0
+  },
+  "endpoint_distance_to_requested_short_goal_m": 0.0,
+  "note": "First planned path of delayed short-goal test only; not the earlier cross-region path."
+}

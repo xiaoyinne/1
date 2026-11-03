@@ -1,0 +1,7 @@
+{
+  "original_source_restored_to_checkpoint_sha256": "d33a047460fe00880f3c6001fdc36d223922bbd6d7ca669a628c87e1030c9990",
+  "extended_source_sha256": "179637065b08f92e62ecd34e297509784f2022c86e4a043fcb89e1752d5f0b77",
+  "baseline_count_grid_unchanged": true,
+  "baseline_occupancy_unchanged": true,
+  "verification": "Compared extended default output against the original stored projection NPZ before restoring the original source."
+}

@@ -1,0 +1,52 @@
+At time 587.468000000
+- Translation: [-0.047, -0.092, -0.000]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.703, 0.711]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.559]
+- Rotation: in RPY (degree) [0.003, -0.001, 89.298]
+- Matrix:
+  0.012 -1.000  0.000 -0.047
+  1.000  0.012 -0.000 -0.092
+  0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+At time 588.454000000
+- Translation: [-0.047, -0.092, -0.000]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.703, 0.711]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.558]
+- Rotation: in RPY (degree) [0.003, -0.000, 89.294]
+- Matrix:
+  0.012 -1.000  0.000 -0.047
+  1.000  0.012 -0.000 -0.092
+  0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+At time 589.440000000
+- Translation: [-0.047, -0.092, -0.000]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.703, 0.711]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.558]
+- Rotation: in RPY (degree) [0.004, -0.001, 89.290]
+- Matrix:
+  0.012 -1.000  0.000 -0.047
+  1.000  0.012 -0.000 -0.092
+  0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+At time 590.426000000
+- Translation: [-0.047, -0.092, -0.000]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.703, 0.712]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.558]
+- Rotation: in RPY (degree) [0.002, -0.000, 89.285]
+- Matrix:
+  0.012 -1.000  0.000 -0.047
+  1.000  0.012 -0.000 -0.092
+  0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+At time 591.412000000
+- Translation: [-0.047, -0.092, -0.000]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.703, 0.712]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.558]
+- Rotation: in RPY (degree) [0.003, -0.000, 89.281]
+- Matrix:
+  0.013 -1.000  0.000 -0.047
+  1.000  0.013 -0.000 -0.092
+  0.000  0.000  1.000 -0.000
+  0.000  0.000  0.000  1.000
+[INFO] [1793254888.621450196] [tf2_echo]: Waiting for transform map ->  base_footprint: Lookup would require extrapolation into the past.  Requested time 586.482000 but the earliest data is at time 586.644000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1793254894.413238604] [rclcpp]: signal_handler(SIGINT/SIGTERM)

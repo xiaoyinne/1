@@ -1,0 +1,18 @@
+SOURCE: /home/yaw/.ros/log/bt_navigator_2124_1793251035416.log
+[INFO] [1793251363.073963727] [bt_navigator]: Begin navigating from current location (-0.02, -0.10) to (0.05, 0.65)
+[INFO] [1793251365.586087580] [bt_navigator]: Goal succeeded
+
+SOURCE: /home/yaw/.ros/log/controller_server_2114_1793251035418.log
+[INFO] [1793251035.641926176] [controller_server]: getting goal checker plugins..
+[INFO] [1793251035.711147727] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1793251035.712544036] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1793251035.740788168] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1793251035.743510583] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1793251035.745780865] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1793251363.096408196] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1793251363.096557165] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[INFO] [1793251365.548580783] [controller_server]: Reached the goal!
+
+SOURCE: /home/yaw/.ros/log/amcl_2110_1793251035400.log
+[INFO] [1793251226.093989395] [amcl]: initialPoseReceived
+[INFO] [1793251226.094134620] [amcl]: Setting pose (187.600000): 0.050 -0.050 1.571

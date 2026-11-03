@@ -1,0 +1,9 @@
+region_id,band_id,selected_points,obstacle_cells,safe_components,largest_safe_area_m2,reference_grid_route_length_m,map_world_geometry_checked,navigation_tested
+r0_exercise,band_a,43477,393,1,7.760000000000002,7.5,True,False
+r0_exercise,band_b,576939,644,3,1.4000000000000004,3.3000000000000003,True,False
+r1_near_origin,band_a,554315,2135,11,11.190000000000003,10.4,True,False
+r1_near_origin,band_b,774280,1596,10,13.360000000000003,12.0,True,False
+r2_arc_right,band_a,882181,3700,18,18.860000000000003,14.200000000000001,True,False
+r2_arc_right,band_b,950732,2724,32,18.440000000000005,18.7,True,False
+r3_arc_upper,band_a,1020712,3041,21,24.370000000000005,14.200000000000001,True,False
+r3_arc_upper,band_b,352009,1863,29,31.490000000000006,21.6,True,False

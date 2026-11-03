@@ -1,0 +1,7 @@
+[INFO] [1793255553.330648268] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1793255554.381944191] [controller_server]: Passing new path to controller.
+[INFO] [1793255555.381949990] [controller_server]: Passing new path to controller.
+[INFO] [1793255556.431939891] [controller_server]: Passing new path to controller.
+[INFO] [1793255557.481960454] [controller_server]: Passing new path to controller.
+[INFO] [1793255558.481942172] [controller_server]: Passing new path to controller.
+[INFO] [1793255558.986465284] [controller_server]: Reached the goal!

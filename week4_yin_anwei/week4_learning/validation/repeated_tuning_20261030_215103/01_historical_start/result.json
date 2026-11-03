@@ -1,0 +1,9 @@
+{
+  "repeat": 1,
+  "case": "historical_start",
+  "status": "INFRASTRUCTURE_ERROR",
+  "error": "RuntimeError('AMCL not active before initial pose')",
+  "shutdown": {
+    "SIGINT": true
+  }
+}

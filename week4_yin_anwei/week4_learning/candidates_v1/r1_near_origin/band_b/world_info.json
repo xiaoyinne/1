@@ -1,0 +1,24 @@
+{
+  "map_yaml": "/mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/candidates_v1/r1_near_origin/band_b/map.yaml",
+  "map_image_sha256": "a22902c529cfa8a895e1ab4a422e5a61d3b7641a0e2efdb4ba3229052a57fd15",
+  "world_sha256": "ffa36b4539923a1504ffb42a8ac5dafea75bfad9930d11de17201d640f88b33e",
+  "resolution_m": 0.1,
+  "map_shape_rows_cols": [
+    110,
+    65
+  ],
+  "map_origin_xy_yaw": [
+    -5.0,
+    -4.0,
+    0.0
+  ],
+  "obstacle_box_count": 1596,
+  "obstacle_height_m": 1.0,
+  "artificial_ground_simulation_z_m": 0.0,
+  "construction": "One matching visual and collision box per black map cell; no added perimeter wall.",
+  "limitations": [
+    "Ground is artificial, not detected or fitted to the point cloud.",
+    "Original heights, floors, stairs and slopes are not reconstructed.",
+    "White cells were below the slice-density threshold, not ray-verified free space."
+  ]
+}

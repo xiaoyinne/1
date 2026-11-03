@@ -1,0 +1,361 @@
+{
+  "short": {
+    "completed_trials": 3,
+    "planned_trials": 3,
+    "action_success_count": 3,
+    "geometric_endpoint_pass_count": 3,
+    "distance_only_pass_count": 3,
+    "action_success_and_geometry_pass_count": 3,
+    "metrics": {
+      "truth_endpoint_distance_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.14847231389756801,
+          "median": 0.14491395183797928,
+          "min": 0.14330288412298192,
+          "max": 0.1572001057317428,
+          "sample_sd": 0.007601292490168565
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.14847231389756801,
+          "median": 0.14491395183797928,
+          "min": 0.14330288412298192,
+          "max": 0.1572001057317428,
+          "sample_sd": 0.007601292490168565
+        }
+      },
+      "truth_endpoint_yaw_error_rad": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.24388223958368088,
+          "median": 0.24264116137948163,
+          "min": 0.2404417128446876,
+          "max": 0.2485638445268734,
+          "sample_sd": 0.004200888251000669
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.24388223958368088,
+          "median": 0.24264116137948163,
+          "min": 0.2404417128446876,
+          "max": 0.2485638445268734,
+          "sample_sd": 0.004200888251000669
+        }
+      },
+      "wall_action_s": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 4.025175172000009,
+          "median": 4.104641807999997,
+          "min": 3.7137598890000163,
+          "max": 4.2571238190000145,
+          "sample_sd": 0.28026291189546754
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 4.025175172000009,
+          "median": 4.104641807999997,
+          "min": 3.7137598890000163,
+          "max": 4.2571238190000145,
+          "sample_sd": 0.28026291189546754
+        }
+      },
+      "sim_action_s": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 4.011333333333334,
+          "median": 4.091,
+          "min": 3.702,
+          "max": 4.2410000000000005,
+          "sample_sd": 0.2781911812644921
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 4.011333333333334,
+          "median": 4.091,
+          "min": 3.702,
+          "max": 4.2410000000000005,
+          "sample_sd": 0.2781911812644921
+        }
+      },
+      "max_recoveries": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        }
+      },
+      "sampled_truth_path_length_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.5906084716466616,
+          "median": 0.5885544597114482,
+          "min": 0.5841134997707295,
+          "max": 0.5991574554578073,
+          "sample_sd": 0.007729448521802185
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.5906084716466616,
+          "median": 0.5885544597114482,
+          "min": 0.5841134997707295,
+          "max": 0.5991574554578073,
+          "sample_sd": 0.007729448521802185
+        }
+      },
+      "estimated_endpoint_distance_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.22765617943633995,
+          "median": 0.22606966041371623,
+          "min": 0.22549121251027743,
+          "max": 0.23140766538502616,
+          "sample_sd": 0.003261730462751452
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.22765617943633995,
+          "median": 0.22606966041371623,
+          "min": 0.22549121251027743,
+          "max": 0.23140766538502616,
+          "sample_sd": 0.003261730462751452
+        }
+      }
+    }
+  },
+  "cross": {
+    "completed_trials": 3,
+    "planned_trials": 3,
+    "action_success_count": 3,
+    "geometric_endpoint_pass_count": 0,
+    "distance_only_pass_count": 2,
+    "action_success_and_geometry_pass_count": 0,
+    "metrics": {
+      "truth_endpoint_distance_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.2421278224013472,
+          "median": 0.23279892587764814,
+          "min": 0.22098512588210215,
+          "max": 0.2725994154442913,
+          "sample_sd": 0.027042188419482433
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.2421278224013472,
+          "median": 0.23279892587764814,
+          "min": 0.22098512588210215,
+          "max": 0.2725994154442913,
+          "sample_sd": 0.027042188419482433
+        }
+      },
+      "truth_endpoint_yaw_error_rad": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.25353678141820307,
+          "median": 0.2523304337908896,
+          "min": 0.2506784101301063,
+          "max": 0.2576015003336134,
+          "sample_sd": 0.003615764157120558
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.25353678141820307,
+          "median": 0.2523304337908896,
+          "min": 0.2506784101301063,
+          "max": 0.2576015003336134,
+          "sample_sd": 0.003615764157120558
+        }
+      },
+      "wall_action_s": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 16.08458329466662,
+          "median": 15.962461220999899,
+          "min": 15.916924254000008,
+          "max": 16.374364408999952,
+          "sample_sd": 0.2519885404320763
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 16.08458329466662,
+          "median": 15.962461220999899,
+          "min": 15.916924254000008,
+          "max": 16.374364408999952,
+          "sample_sd": 0.2519885404320763
+        }
+      },
+      "sim_action_s": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 16.013,
+          "median": 15.877000000000002,
+          "min": 15.843,
+          "max": 16.319000000000003,
+          "sample_sd": 0.2655484889808271
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 16.013,
+          "median": 15.877000000000002,
+          "min": 15.843,
+          "max": 16.319000000000003,
+          "sample_sd": 0.2655484889808271
+        }
+      },
+      "max_recoveries": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0,
+          "sample_sd": 0.0
+        }
+      },
+      "sampled_truth_path_length_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 3.340417608030983,
+          "median": 3.3498909907411543,
+          "min": 3.3122932511910865,
+          "max": 3.3590685821607082,
+          "sample_sd": 0.024784907339133667
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 3.340417608030983,
+          "median": 3.3498909907411543,
+          "min": 3.3122932511910865,
+          "max": 3.3590685821607082,
+          "sample_sd": 0.024784907339133667
+        }
+      },
+      "estimated_endpoint_distance_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.5648500957408233,
+          "median": 0.5637931683024354,
+          "min": 0.5480679165192365,
+          "max": 0.5826892024007981,
+          "sample_sd": 0.017334825661964936
+        },
+        "action_successes_only": {
+          "n": 3,
+          "mean": 0.5648500957408233,
+          "median": 0.5637931683024354,
+          "min": 0.5480679165192365,
+          "max": 0.5826892024007981,
+          "sample_sd": 0.017334825661964936
+        }
+      }
+    }
+  },
+  "detour": {
+    "completed_trials": 3,
+    "planned_trials": 3,
+    "action_success_count": 0,
+    "geometric_endpoint_pass_count": 0,
+    "distance_only_pass_count": 0,
+    "action_success_and_geometry_pass_count": 0,
+    "metrics": {
+      "truth_endpoint_distance_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 1.549950404997973,
+          "median": 1.5610537049256594,
+          "min": 1.5111533267333548,
+          "max": 1.5776441833349053,
+          "sample_sd": 0.03460810533480714
+        },
+        "action_successes_only": null
+      },
+      "truth_endpoint_yaw_error_rad": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 1.7181781602627932,
+          "median": 1.879488528295148,
+          "min": 1.3275693907808566,
+          "max": 1.947476561712375,
+          "sample_sd": 0.3399808836819065
+        },
+        "action_successes_only": null
+      },
+      "wall_action_s": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 120.04734835000001,
+          "median": 120.06385386699998,
+          "min": 120.01358674200003,
+          "max": 120.064604441,
+          "sample_sd": 0.029240818582766327
+        },
+        "action_successes_only": null
+      },
+      "sim_action_s": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 119.52033333333334,
+          "median": 119.519,
+          "min": 119.464,
+          "max": 119.578,
+          "sample_sd": 0.05701169470673165
+        },
+        "action_successes_only": null
+      },
+      "max_recoveries": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 12,
+          "median": 12,
+          "min": 12,
+          "max": 12,
+          "sample_sd": 0.0
+        },
+        "action_successes_only": null
+      },
+      "sampled_truth_path_length_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 0.9133907121498853,
+          "median": 0.8706235226885366,
+          "min": 0.7559839503163082,
+          "max": 1.1135646634448113,
+          "sample_sd": 0.18258632471022956
+        },
+        "action_successes_only": null
+      },
+      "estimated_endpoint_distance_m": {
+        "all_terminal_trials": {
+          "n": 3,
+          "mean": 1.5271635750218542,
+          "median": 1.533209179006609,
+          "min": 1.477537442704048,
+          "max": 1.5707441033549057,
+          "sample_sd": 0.046896507258818304
+        },
+        "action_successes_only": null
+      }
+    }
+  }
+}

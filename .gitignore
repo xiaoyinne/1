@@ -19,3 +19,6 @@ runs/
 # Include reviewed week-3 configuration/script snapshots under the archive.
 !week3_yin_anwei/experiment_20261020/runs/
 !week3_yin_anwei/experiment_20261020/runs/**
+
+# Week-4 generated console streams and caches are local only.
+week4_yin_anwei/week4_learning/validation/recovery_*.log

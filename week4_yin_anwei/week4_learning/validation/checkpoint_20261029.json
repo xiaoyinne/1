@@ -1,0 +1,84 @@
+{
+  "record_date": "2026-10-29",
+  "environment": "WSL2 Ubuntu 22.04, ROS2 Humble, Gazebo Classic 11",
+  "scene_type": "Hilti-derived local height-slice 2.5D demo with artificial flat ground",
+  "projection": {
+    "xy_bounds_m": [
+      -2.2,
+      1.4,
+      -1.8,
+      3.8
+    ],
+    "z_band_m": [
+      -1.5,
+      -0.8
+    ],
+    "resolution_m": 0.1,
+    "min_points_per_cell": 5,
+    "selected_points": 43477,
+    "grid_cols_rows": [
+      36,
+      56
+    ],
+    "occupied_cells": 393
+  },
+  "world": {
+    "obstacle_boxes": 393,
+    "box_size_m": [
+      0.1,
+      0.1,
+      1.0
+    ],
+    "artificial_floor_simulation_z_m": 0.0,
+    "map_world_grid_match_checked": true
+  },
+  "runtime": {
+    "ROS_DOMAIN_ID": 0,
+    "use_composition": false,
+    "use_sim_time": true,
+    "rviz_use_sim_time": true,
+    "LIBGL_ALWAYS_SOFTWARE": "true",
+    "headless": true,
+    "planner_use_astar": false,
+    "controller_plugin": "dwb_core::DWBLocalPlanner",
+    "xy_goal_tolerance_m": 0.25,
+    "goal_checker_stateful": true
+  },
+  "test": {
+    "initial_pose_xy_yaw": [
+      0.05,
+      -0.05,
+      1.5707963267948966
+    ],
+    "goal_xy_yaw": [
+      0.05,
+      0.65,
+      1.5707963267948966
+    ],
+    "nominal_straight_distance_m": 0.7,
+    "action_result": "SUCCEEDED",
+    "recoveries_from_user_feedback": 0,
+    "confirmed_by": [
+      "user action terminal output",
+      "bt_navigator Goal succeeded log",
+      "controller_server Reached the goal log"
+    ],
+    "final_position_error_m": null,
+    "final_error_note": "The final feedback sample and distance_remaining are not a measurement of final pose error or ATE."
+  },
+  "limits": [
+    "One short navigation goal in this generated local environment; not a long-term stability test.",
+    "Ground and uniform obstacle height are synthetic; original floors, slopes and vertical geometry are not reconstructed.",
+    "White map cells are below the slice-density threshold and are treated as free for this demo, without ray-based free-space verification.",
+    "AMCL uses a supplied initial pose; FAST-LIO-LOCALIZATION and Scan Context are not integrated.",
+    "Current planner use_astar is false; A* has not been enabled."
+  ],
+  "sha256": {
+    "project_slice.py": "d33a047460fe00880f3c6001fdc36d223922bbd6d7ca669a628c87e1030c9990",
+    "build_world.py": "26468beebb4f1333fcff101cdeb34979981d822fc9e138b46f60145abf086834",
+    "rviz_light.rviz": "b3dc1577f407fd70f64042e77474dea236a77144aa4a2dd5874e4f9413390c76",
+    "scene_learning/map.pgm": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182",
+    "scene_learning/map.yaml": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187",
+    "scene_learning/hilti_cells.world": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "initial_pose_sent": true,
+  "received": {
+    "scan": true,
+    "odom": true,
+    "map_odom": true
+  },
+  "lifecycle_state_ids": {
+    "bt_navigator": 3,
+    "amcl": 3
+  },
+  "navigation_goal_sent": false
+}

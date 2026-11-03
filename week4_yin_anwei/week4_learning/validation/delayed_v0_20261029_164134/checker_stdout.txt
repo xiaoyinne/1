@@ -1,0 +1,4 @@
+Evidence directory: /mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/validation/automatic_v0_20261029_164209
+RUN short_after_restart: goal=(0.05,0.65), yaw=1.571
+RESULT short_after_restart: SUCCEEDED, recoveries=0, wall=8.34s
+SUMMARY: /mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/validation/automatic_v0_20261029_164209/SUMMARY.md

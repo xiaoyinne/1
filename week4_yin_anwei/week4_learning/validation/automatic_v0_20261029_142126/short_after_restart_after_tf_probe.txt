@@ -1,0 +1,62 @@
+At time 599.130000000
+- Translation: [-0.093, 0.386, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 0.618, 0.786]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.333]
+- Rotation: in RPY (degree) [0.004, -0.006, 76.363]
+- Matrix:
+  0.236 -0.972  0.000 -0.093
+  0.972  0.236 -0.000  0.386
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 600.116000000
+- Translation: [-0.093, 0.386, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 0.618, 0.786]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.333]
+- Rotation: in RPY (degree) [0.003, -0.007, 76.358]
+- Matrix:
+  0.236 -0.972  0.000 -0.093
+  0.972  0.236 -0.000  0.386
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 601.102000000
+- Translation: [-0.093, 0.386, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 0.618, 0.786]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.333]
+- Rotation: in RPY (degree) [0.004, -0.006, 76.352]
+- Matrix:
+  0.236 -0.972  0.000 -0.093
+  0.972  0.236 -0.000  0.386
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 602.88000000
+- Translation: [-0.093, 0.386, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 0.618, 0.786]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.333]
+- Rotation: in RPY (degree) [0.003, -0.006, 76.347]
+- Matrix:
+  0.236 -0.972  0.000 -0.093
+  0.972  0.236 -0.000  0.386
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 603.74000000
+- Translation: [-0.093, 0.386, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 0.618, 0.786]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.332]
+- Rotation: in RPY (degree) [0.003, -0.007, 76.342]
+- Matrix:
+  0.236 -0.972  0.000 -0.093
+  0.972  0.236 -0.000  0.386
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 604.60000000
+- Translation: [-0.093, 0.386, 0.000]
+- Rotation: in Quaternion (xyzw) [0.000, -0.000, 0.618, 0.786]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.332]
+- Rotation: in RPY (degree) [0.003, -0.006, 76.337]
+- Matrix:
+  0.236 -0.972  0.000 -0.093
+  0.972  0.236 -0.000  0.386
+  0.000  0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+[INFO] [1793254900.541850468] [tf2_echo]: Waiting for transform map ->  base_footprint: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793254907.320553099] [rclcpp]: signal_handler(SIGINT/SIGTERM)

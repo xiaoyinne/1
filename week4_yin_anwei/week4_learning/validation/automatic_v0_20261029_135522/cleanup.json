@@ -1,0 +1,285 @@
+{
+  "root_pids": [
+    2726
+  ],
+  "targets": {
+    "2726": {
+      "ppid": 2715,
+      "start": "573970",
+      "args": [
+        "/usr/bin/python3",
+        "/opt/ros/humble/bin/ros2",
+        "launch",
+        "/mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/restore_hilti.launch.py"
+      ]
+    },
+    "2729": {
+      "ppid": 2726,
+      "start": "574017",
+      "args": [
+        "gzserver",
+        "-s",
+        "libgazebo_ros_init.so",
+        "-s",
+        "libgazebo_ros_factory.so",
+        "/mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/scene_learning/hilti_cells.world"
+      ]
+    },
+    "2731": {
+      "ppid": 2726,
+      "start": "574017",
+      "args": [
+        "gzclient"
+      ]
+    },
+    "2735": {
+      "ppid": 2726,
+      "start": "574018",
+      "args": [
+        "/opt/ros/humble/lib/robot_state_publisher/robot_state_publisher",
+        "--ros-args",
+        "-r",
+        "__node:=robot_state_publisher",
+        "-r",
+        "__ns:=/",
+        "--params-file",
+        "/tmp/launch_params_emwng8zt",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2737": {
+      "ppid": 2726,
+      "start": "574018",
+      "args": [
+        "/opt/ros/humble/lib/nav2_map_server/map_server",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=map_server",
+        "--params-file",
+        "/tmp/launch_params_vyifj_96",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2739": {
+      "ppid": 2726,
+      "start": "574018",
+      "args": [
+        "/opt/ros/humble/lib/nav2_amcl/amcl",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=amcl",
+        "--params-file",
+        "/tmp/launch_params_vyifj_96",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2741": {
+      "ppid": 2726,
+      "start": "574018",
+      "args": [
+        "/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=lifecycle_manager_localization",
+        "--params-file",
+        "/tmp/launch_params_vb0canb4",
+        "--params-file",
+        "/tmp/launch_params_sru_4sq8",
+        "--params-file",
+        "/tmp/launch_params_on45nne6"
+      ]
+    },
+    "2743": {
+      "ppid": 2726,
+      "start": "574018",
+      "args": [
+        "/opt/ros/humble/lib/nav2_controller/controller_server",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static",
+        "-r",
+        "cmd_vel:=cmd_vel_nav"
+      ]
+    },
+    "2745": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_smoother/smoother_server",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=smoother_server",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2747": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_planner/planner_server",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=planner_server",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2749": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_behaviors/behavior_server",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=behavior_server",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2751": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_bt_navigator/bt_navigator",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=bt_navigator",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2753": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_waypoint_follower/waypoint_follower",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=waypoint_follower",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static"
+      ]
+    },
+    "2755": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_velocity_smoother/velocity_smoother",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=velocity_smoother",
+        "--params-file",
+        "/tmp/launch_params_xpwpv0b4",
+        "-r",
+        "/tf:=tf",
+        "-r",
+        "/tf_static:=tf_static",
+        "-r",
+        "cmd_vel:=cmd_vel_nav",
+        "-r",
+        "cmd_vel_smoothed:=cmd_vel"
+      ]
+    },
+    "2757": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/nav2_lifecycle_manager/lifecycle_manager",
+        "--ros-args",
+        "--log-level",
+        "info",
+        "--ros-args",
+        "-r",
+        "__node:=lifecycle_manager_navigation",
+        "--params-file",
+        "/tmp/launch_params_tbwz1ubn",
+        "--params-file",
+        "/tmp/launch_params_8gldbahw",
+        "--params-file",
+        "/tmp/launch_params_d31z15_b"
+      ]
+    },
+    "2759": {
+      "ppid": 2726,
+      "start": "574019",
+      "args": [
+        "/opt/ros/humble/lib/rviz2/rviz2",
+        "-d",
+        "/mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/rviz_light.rviz",
+        "--ros-args",
+        "-r",
+        "__node:=rviz",
+        "--params-file",
+        "/tmp/launch_params_7yjzq5gw"
+      ]
+    }
+  },
+  "forced_pids": [
+    2729,
+    2759
+  ]
+}

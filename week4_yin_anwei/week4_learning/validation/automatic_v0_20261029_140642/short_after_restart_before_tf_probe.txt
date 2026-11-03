@@ -1,0 +1,4 @@
+[INFO] [1793254004.212575455] [tf2_echo]: Waiting for transform map ->  base_footprint: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793254005.214219183] [tf2_echo]: Waiting for transform map ->  base_footprint: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1793254006.212588106] [tf2_echo]: Waiting for transform map ->  base_footprint: Lookup would require extrapolation into the past.  Requested time 37.287000 but the earliest data is at time 37.454000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1793254006.858247288] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,5 @@
+Obstacle boxes: 3700
+Each box: 0.1 x 0.1 x 1 m
+Artificial ground: simulation Z=0
+World: /mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/candidates_v1/r2_arc_right/band_a/hilti_cells.world
+Metadata: /mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/candidates_v1/r2_arc_right/band_a/world_info.json

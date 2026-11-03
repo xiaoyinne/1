@@ -1,0 +1,46 @@
+{
+  "exported_yaml_equals_baseline": true,
+  "exported_pixels_equal_baseline": true,
+  "map_world_occupied_cells_equal": true,
+  "collision_boxes": 393,
+  "visual_boxes": 393,
+  "max_cell_center_error_m": 8.881784197001252e-16,
+  "versions": "ros-humble-nav2-bringup\t1.1.20-1jammy.20260916.005516\nros-humble-tf2\t0.25.24-1jammy.20260915.203746\nros-humble-tf2-ros\t0.25.24-1jammy.20260915.204410\n",
+  "rviz_frame_rate": 5,
+  "rviz_map_displays": [
+    {
+      "Name": "Map",
+      "Enabled": true,
+      "Color Scheme": "map",
+      "Alpha": 1,
+      "Topic": {
+        "Depth": 1,
+        "Durability Policy": "Transient Local",
+        "Filter size": 10,
+        "History Policy": "Keep Last",
+        "Reliability Policy": "Reliable",
+        "Value": "/map"
+      }
+    },
+    {
+      "Name": "Map",
+      "Enabled": true,
+      "Color Scheme": "costmap",
+      "Alpha": 0.4000000059604645,
+      "Topic": {
+        "Depth": 5,
+        "Durability Policy": "Volatile",
+        "Filter size": 10,
+        "History Policy": "Keep Last",
+        "Reliability Policy": "Reliable",
+        "Value": "/global_costmap/costmap"
+      }
+    }
+  ],
+  "files_sha256": {
+    "scene_learning/map.pgm": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182",
+    "scene_learning/map.yaml": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187",
+    "scene_learning/hilti_cells.world": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168",
+    "export_nav2_map.py": "90c4b43ba4bad1f4f781c9e3273d91122e4bc59a347d5b7814a2761d7a3b9b44"
+  }
+}

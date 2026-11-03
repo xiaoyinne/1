@@ -1,0 +1,24 @@
+{
+  "kind": "static archive checks; no new ROS simulation run",
+  "python_syntax_files": 27,
+  "grid_shape_rows_columns": [
+    56,
+    36
+  ],
+  "occupied_cells": 393,
+  "collision_boxes": 393,
+  "visual_boxes": 393,
+  "map_world_centres_equal": true,
+  "result_rows_recomputed_from_raw_json": true,
+  "preserved_source_bytes": true,
+  "excluded": [
+    "week4_learning/__pycache__/check_current_scene.cpython-310.pyc",
+    "week4_learning/__pycache__/project_slice.cpython-310.pyc",
+    "week4_learning/__pycache__/repeat_navigation.cpython-310.pyc",
+    "week4_learning/__pycache__/restore_hilti.launch.cpython-310.pyc",
+    "week4_learning/validation/recovery_20261029_133325.log",
+    "week4_learning/validation/recovery_20261029_140604.log",
+    "week4_learning/validation/recovery_20261029_141129.log",
+    "week4_learning/validation/recovery_20261029_164128.log"
+  ]
+}

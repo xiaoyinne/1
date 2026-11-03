@@ -1,0 +1,53 @@
+{
+  "region_id": "r1_near_origin",
+  "title": "R1: near-origin structure",
+  "band_id": "band_b",
+  "bounds_xy_m": [
+    -5.0,
+    1.5,
+    -4.0,
+    7.0
+  ],
+  "height_band_m": [
+    -0.3,
+    0.3
+  ],
+  "source_pcd": "/mnt/d/chromeDownload/fastlio_hilti_fixed_20261008.pcd",
+  "source_sha256": "5513e08a55e7c9cc7187a5abd468157df86466151a0c1f27ace781384f49d52f",
+  "roi_points": 2652652,
+  "roi_z_percentiles_10_50_90": [
+    -2.3636953592300416,
+    -1.1829445958137512,
+    0.06481782421469678
+  ],
+  "selected_points": 774280,
+  "resolution_m": 0.1,
+  "min_points_per_cell": 5,
+  "grid_cols_rows": [
+    65,
+    110
+  ],
+  "obstacle_cells": 1596,
+  "obstacle_fraction": 0.2232167832167832,
+  "world_collision_boxes": 1596,
+  "map_world_geometry_checked": true,
+  "robot_radius_m": 0.22,
+  "clearance_cutoff_m": 0.28,
+  "safe_components": 10,
+  "largest_safe_cells": 1336,
+  "largest_safe_area_m2": 13.360000000000003,
+  "reference_grid_route_length_m": 12.0,
+  "reference_start_xy": [
+    -4.65,
+    5.950000000000001
+  ],
+  "reference_goal_xy": [
+    -4.45,
+    -3.65
+  ],
+  "navigation_tested": false,
+  "status": "generated candidate; no floor validation or ROS navigation trial",
+  "route_note": "BFS route in the largest grid component with conservative clearance; not a Nav2 result or physical traversability proof.",
+  "clearance_boundary_assumption": "Outside crop treated as blocked for analysis only; no perimeter wall added.",
+  "vertical_geometry": "Artificial flat floor at Z=0 and unit-height columns; source height variation is not reconstructed."
+}

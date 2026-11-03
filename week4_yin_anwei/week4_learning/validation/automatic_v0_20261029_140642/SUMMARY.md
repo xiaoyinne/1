@@ -1,0 +1,12 @@
+# 练习版v0自动复核结果
+
+本轮只使用已经运行的 scene_learning，未测试新候选。结果按实际action返回保存，失败后停止。
+
+| 场景目标 | Action状态 | Action墙钟耗时(s) | 最后反馈中的仿真导航时间(s) | 最大反馈恢复次数 |
+|---|---|---:|---:|---:|
+| short_after_restart | SUCCEEDED | 5.83 | 2.5 | 0 |
+| cross_region | SUCCEEDED | 15.85 | 13.2 | 1 |
+| around_diagonal_obstacle | TIMEOUT_OR_INTERRUPTED | 121.95 | 116.1 | 14 |
+
+耗时不包含每次目标前后的只读TF查询。反馈中的导航时间可能早于最终结束时刻。
+终点TF查询与目标的距离是估计位置距离，不是外部真值误差。原始action日志和前后TF查询保留在同目录。

@@ -1,0 +1,7 @@
+{
+  "selection_rule": "Among successful confirmation trials: minimum recoveries, then shortest wall time; illustration only",
+  "repeat": 3,
+  "wall_s": 18.459078732001217,
+  "recoveries": 0,
+  "physical_endpoint_distance_m": 0.21532690110670988
+}

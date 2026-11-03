@@ -1,0 +1,7 @@
+{
+  "selected_cases": [
+    "around_diagonal_obstacle"
+  ],
+  "versions": "ros-humble-tf2\t0.25.24-1jammy.20260915.203746\nros-humble-tf2-geometry-msgs\t0.25.24-1jammy.20260915.205448\nros-humble-tf2-ros\t0.25.24-1jammy.20260915.204410\nros-humble-tf2-ros-py\t0.25.24-1jammy.20260915.204621\n",
+  "map_parameter": "String value is: /mnt/c/Users/Administrator/Documents/Codex/2026-10-26/https-github-com-xiaoyinne-1-git-2/outputs/week4_learning/scene_learning/map.yaml\n"
+}

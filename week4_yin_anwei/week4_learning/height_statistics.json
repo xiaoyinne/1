@@ -1,0 +1,19 @@
+{
+  "roi_point_count": 1016323,
+  "z_percentiles": {
+    "1": -3.227695837020874,
+    "10": -2.4895034790039063,
+    "25": -1.3261326551437378,
+    "50": -0.15227733552455902,
+    "75": 0.04249255359172821,
+    "90": 0.22254484295845037,
+    "99": 0.6426850330829628
+  },
+  "reference_band_m": [
+    -1.5,
+    -0.8
+  ],
+  "reference_band_points": 43477,
+  "reference_band_fraction": 0.042778722906005276,
+  "note": "Reference band is from the pre-existing scene, not a newly verified floor or optimal threshold."
+}

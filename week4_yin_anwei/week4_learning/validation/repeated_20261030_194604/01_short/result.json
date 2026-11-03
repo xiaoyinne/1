@@ -1,0 +1,9 @@
+{
+  "repeat": 1,
+  "case": "short",
+  "status": "INFRASTRUCTURE_ERROR",
+  "error": "RuntimeError('Clock, scan or truth service not ready')",
+  "shutdown": {
+    "SIGINT": true
+  }
+}

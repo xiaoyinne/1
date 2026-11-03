@@ -1,0 +1,62 @@
+At time 53.981000000
+- Translation: [-0.071, 0.457, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 0.620, 0.785]
+- Rotation: in RPY (radian) [-0.000, -0.000, 1.336]
+- Rotation: in RPY (degree) [-0.006, -0.000, 76.563]
+- Matrix:
+  0.232 -0.973 -0.000 -0.071
+  0.973  0.232  0.000  0.457
+  0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 54.967000000
+- Translation: [-0.071, 0.457, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 0.620, 0.785]
+- Rotation: in RPY (radian) [-0.000, 0.000, 1.336]
+- Rotation: in RPY (degree) [-0.006, 0.000, 76.563]
+- Matrix:
+  0.232 -0.973 -0.000 -0.071
+  0.973  0.232  0.000  0.457
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 55.919000000
+- Translation: [-0.071, 0.457, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 0.620, 0.785]
+- Rotation: in RPY (radian) [-0.000, 0.000, 1.336]
+- Rotation: in RPY (degree) [-0.006, 0.000, 76.563]
+- Matrix:
+  0.232 -0.973 -0.000 -0.071
+  0.973  0.232  0.000  0.457
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 56.871000000
+- Translation: [-0.071, 0.457, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 0.620, 0.785]
+- Rotation: in RPY (radian) [-0.000, 0.000, 1.336]
+- Rotation: in RPY (degree) [-0.006, 0.000, 76.562]
+- Matrix:
+  0.232 -0.973 -0.000 -0.071
+  0.973  0.232  0.000  0.457
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 57.857000000
+- Translation: [-0.071, 0.457, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 0.620, 0.785]
+- Rotation: in RPY (radian) [-0.000, 0.000, 1.336]
+- Rotation: in RPY (degree) [-0.006, 0.000, 76.560]
+- Matrix:
+  0.232 -0.973 -0.000 -0.071
+  0.973  0.232  0.000  0.457
+ -0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+At time 58.809000000
+- Translation: [-0.071, 0.457, 0.000]
+- Rotation: in Quaternion (xyzw) [-0.000, -0.000, 0.619, 0.785]
+- Rotation: in RPY (radian) [-0.000, -0.000, 1.336]
+- Rotation: in RPY (degree) [-0.006, -0.000, 76.559]
+- Matrix:
+  0.232 -0.973 -0.000 -0.071
+  0.973  0.232  0.000  0.457
+  0.000 -0.000  1.000  0.000
+  0.000  0.000  0.000  1.000
+[INFO] [1793263347.650185594] [tf2_echo]: Waiting for transform map ->  base_footprint: Lookup would require extrapolation into the past.  Requested time 53.029000 but the earliest data is at time 53.257000, when looking up transform from frame [base_footprint] to frame [map]
+[INFO] [1793263354.409414772] [rclcpp]: signal_handler(SIGINT/SIGTERM)

@@ -1,0 +1,8 @@
+waiting for service to become available...
+requester: making request: action_msgs.srv.CancelGoal_Request(goal_info=action_msgs.msg.GoalInfo(goal_id=unique_identifier_msgs.msg.UUID(uuid=array([109,  30, 240, 115,  97, 220,  68, 241, 186, 242, 225, 135, 151,
+        86, 246,  16], dtype=uint8)), stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0)))
+
+response:
+action_msgs.srv.CancelGoal_Response(return_code=0, goals_canceling=[action_msgs.msg.GoalInfo(goal_id=unique_identifier_msgs.msg.UUID(uuid=array([109,  30, 240, 115,  97, 220,  68, 241, 186, 242, 225, 135, 151,
+        86, 246,  16], dtype=uint8)), stamp=builtin_interfaces.msg.Time(sec=75, nanosec=600000000))])
+

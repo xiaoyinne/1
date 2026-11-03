@@ -1,0 +1,157 @@
+{
+  "historical_reference": "automatic_v0_20261029_144742",
+  "reconstruction_limits": "Old true start, AMCL particle state and costmap history were not captured; fresh launches cannot exactly replay them.",
+  "nominal_start": [
+    -0.427,
+    1.37,
+    1.641
+  ],
+  "goal": [
+    0.45,
+    -1.45,
+    0.0
+  ],
+  "completed": 3,
+  "action_success_count": 0,
+  "distance_pass_count": 0,
+  "trials": [
+    {
+      "repeat": 1,
+      "status": "ABORTED",
+      "wall_action_s": 30.562752006000665,
+      "sim_action_s": 30.462000000000003,
+      "max_recoveries": 15,
+      "truth_endpoint_distance_m": 1.8986649744868318,
+      "estimated_endpoint_distance_m": 2.234503348251732,
+      "truth_endpoint_yaw_error_rad": 1.6591718868935312,
+      "truth_before": {
+        "sim_s": 6.793,
+        "xy_yaw": [
+          -0.4269998891318739,
+          1.3699367078360716,
+          1.6405472646515258
+        ],
+        "linear_speed": 0.0005976482134152629,
+        "angular_speed": 0.0004446563267153339
+      },
+      "estimate_before": {
+        "sim_s": 6.79,
+        "xy_yaw": [
+          -0.5175341738983532,
+          1.348418466875982,
+          1.62912298653904
+        ]
+      },
+      "truth_after_settle": {
+        "sim_s": 42.322,
+        "xy_yaw": [
+          -0.7433754105229781,
+          0.026747715387498223,
+          1.6591718868935312
+        ],
+        "linear_speed": 0.009870277282992307,
+        "angular_speed": 0.00023605316396763088
+      },
+      "estimate_after_settle": {
+        "sim_s": 42.32,
+        "xy_yaw": [
+          -1.186051849570037,
+          0.07195254816523848,
+          1.584253723882355
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "status": "ABORTED",
+      "wall_action_s": 30.513008347999858,
+      "sim_action_s": 30.395,
+      "max_recoveries": 15,
+      "truth_endpoint_distance_m": 1.8668217512388852,
+      "estimated_endpoint_distance_m": 2.187281535462402,
+      "truth_endpoint_yaw_error_rad": 1.963816059006645,
+      "truth_before": {
+        "sim_s": 6.758,
+        "xy_yaw": [
+          -0.4269999369506307,
+          1.3699371458989074,
+          1.640549845583462
+        ],
+        "linear_speed": 0.000602546609770743,
+        "angular_speed": 0.00045393021493939675
+      },
+      "estimate_before": {
+        "sim_s": 6.756,
+        "xy_yaw": [
+          -0.5369605176437362,
+          1.3473587282549175,
+          1.624071248900703
+        ]
+      },
+      "truth_after_settle": {
+        "sim_s": 39.16,
+        "xy_yaw": [
+          -0.7317650683053367,
+          -0.004851296844542296,
+          1.963816059006645
+        ],
+        "linear_speed": 0.0048931590152903656,
+        "angular_speed": 0.0003550302382214183
+      },
+      "estimate_after_settle": {
+        "sim_s": 39.158,
+        "xy_yaw": [
+          -1.121640621354793,
+          0.07123182739590449,
+          1.889830752713775
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "status": "ABORTED",
+      "wall_action_s": 118.5402271819994,
+      "sim_action_s": 118.033,
+      "max_recoveries": 19,
+      "truth_endpoint_distance_m": 1.5983409515119176,
+      "estimated_endpoint_distance_m": 1.8866371464576306,
+      "truth_endpoint_yaw_error_rad": 0.5736247160050071,
+      "truth_before": {
+        "sim_s": 6.763,
+        "xy_yaw": [
+          -0.4269999377804882,
+          1.3699370646369768,
+          1.640549417204137
+        ],
+        "linear_speed": 0.0006408564563410557,
+        "angular_speed": 0.00045653170411980173
+      },
+      "estimate_before": {
+        "sim_s": 6.755,
+        "xy_yaw": [
+          -0.5351736139321139,
+          1.354450026361338,
+          1.6213618825085954
+        ]
+      },
+      "truth_after_settle": {
+        "sim_s": 126.742,
+        "xy_yaw": [
+          -0.584380146554737,
+          -0.2314962003779296,
+          -0.5736247160050071
+        ],
+        "linear_speed": 0.0005373701261772864,
+        "angular_speed": 3.08230702398283e-05
+      },
+      "estimate_after_settle": {
+        "sim_s": 126.741,
+        "xy_yaw": [
+          -1.051956966699128,
+          -0.30827980985806075,
+          -0.6041170114611655
+        ]
+      }
+    }
+  ]
+}

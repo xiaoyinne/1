@@ -1,0 +1,181 @@
+SOURCE: /home/yaw/.ros/log/controller_server_2743_1793252006101.log
+[WARN] [1793253340.716817780] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253340.716884756] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253340.767371499] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253340.767573430] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253340.767788906] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253340.818260914] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253340.818370000] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253340.818516036] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253340.868875094] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253340.868965660] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253340.869138936] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253340.919385879] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253340.919541066] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253340.919998057] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253340.970302612] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253340.970399907] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253340.970476242] [controller_server]: Controller patience exceeded
+[WARN] [1793253340.970620203] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1793253346.458079306] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1793253346.458296908] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.458520527] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.458704968] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.508427471] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.508625701] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.508844703] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.558393033] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.558486400] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.558673775] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.609733560] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.609869980] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.610016972] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.658457851] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.658556313] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.658729501] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.708417516] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.708515206] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.708835551] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.761150687] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.761243849] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.761499788] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.809074847] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.809176340] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.810001222] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.858480908] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.858649123] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.858695903] [controller_server]: Controller patience exceeded
+[WARN] [1793253346.858786988] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1793253346.877910842] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1793253346.879090991] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1793253346.920448077] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.920705383] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.920926954] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.929495469] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.929645148] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.929852465] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253346.979442521] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253346.979545958] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253346.979745014] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253347.029443307] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253347.029539708] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253347.030148179] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253347.082262397] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253347.082435139] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253347.082883931] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253347.129487321] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253347.129585609] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253347.129870554] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253347.179473169] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253347.179578412] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253347.179791213] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253347.229474416] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253347.229663710] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253347.229829437] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253347.282461290] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253347.282559619] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253347.282609642] [controller_server]: Controller patience exceeded
+[WARN] [1793253347.282749827] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1793253347.397912061] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1793253348.148216227] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1793253348.148453407] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.148536029] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.148793132] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.198589284] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.198750376] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.199191514] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.248574765] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.248720596] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.248912678] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.298829457] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.298925769] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.299183447] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.348576897] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.348676585] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.348908560] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.399219459] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.399382519] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.399789101] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.454345398] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.454525444] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.458913985] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.498633578] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.498726220] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.498909582] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.548573917] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.548698968] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.548746504] [controller_server]: Controller patience exceeded
+[WARN] [1793253348.548837324] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1793253348.567972993] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1793253348.568991288] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1793253348.719450339] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.719630322] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.719944850] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[WARN] [1793253348.719979476] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[ERROR] [1793253348.720033858] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.720059791] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.720243618] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.770564679] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.770774461] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.771161890] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.821434536] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.821514183] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.821676600] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.871907731] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.872021723] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.872171529] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253348.923503932] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253348.923593840] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253348.923667974] [controller_server]: Controller patience exceeded
+[WARN] [1793253348.923795049] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1793253354.399164580] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1793253354.399664094] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.399963005] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.400480876] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.449720145] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.449833977] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.450048581] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.499930334] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.500087795] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.500488874] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.549626715] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.549776909] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.550151126] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.600283155] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.600383661] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.600520649] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.649679144] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.649849379] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.650434324] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.702325687] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.702416115] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.702570694] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.749596224] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.749740558] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.749832842] [controller_server]: Controller patience exceeded
+[WARN] [1793253354.749967547] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[INFO] [1793253354.770365087] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[INFO] [1793253354.771670295] [controller_server]: Received a goal, begin computing control effort.
+[ERROR] [1793253354.912171236] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.912282956] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.912477884] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[WARN] [1793253354.912499730] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[ERROR] [1793253354.912543778] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.912567923] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.912679891] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253354.966299988] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253354.966397253] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253354.966583908] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253355.016964692] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253355.017117678] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253355.017575963] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253355.067818478] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253355.068001025] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253355.068223599] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253355.118445312] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253355.118588583] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253355.118921847] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument source_frame does not exist. 
+[ERROR] [1793253355.169182571] [tf_help]: Exception in transformPose: "map" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1793253355.169327497] [controller_server]: Unable to transform robot pose into global plan's frame
+[ERROR] [1793253355.169382706] [controller_server]: Controller patience exceeded
+[WARN] [1793253355.169573997] [controller_server]: [follow_path] [ActionServer] Aborting handle.

@@ -1,0 +1,77 @@
+{
+  "before": {
+    "n": 3,
+    "action_successes": 0,
+    "distance_passes": 0,
+    "full_endpoint_passes": 0,
+    "truth_distances": [
+      1.8986649744868318,
+      1.8668217512388852,
+      1.5983409515119176
+    ],
+    "localization_endpoint_offsets": [
+      0.44497854621750915,
+      0.397229893965455,
+      0.47383942999832485
+    ],
+    "success_mean_wall_s": null
+  },
+  "after_confirmation": {
+    "n": 3,
+    "action_successes": 1,
+    "distance_passes": 1,
+    "full_endpoint_passes": 0,
+    "truth_distances": [
+      1.7326502663703673,
+      0.21362340651111977,
+      1.7966654825577066
+    ],
+    "localization_endpoint_offsets": [
+      0.15112812966243022,
+      0.1318775867627528,
+      0.14027758403458335
+    ],
+    "success_mean_wall_s": 68.01182981700003
+  },
+  "parameter_changes": {
+    "amcl.ros__parameters.max_beams": {
+      "before": 60,
+      "after": 180
+    },
+    "amcl.ros__parameters.sigma_hit": {
+      "before": 0.2,
+      "after": 0.1
+    },
+    "amcl.ros__parameters.update_min_a": {
+      "before": 0.2,
+      "after": 0.05
+    },
+    "amcl.ros__parameters.update_min_d": {
+      "before": 0.25,
+      "after": 0.05
+    },
+    "amcl.ros__parameters.z_hit": {
+      "before": 0.5,
+      "after": 0.95
+    },
+    "amcl.ros__parameters.z_rand": {
+      "before": 0.5,
+      "after": 0.05
+    }
+  },
+  "pilot": {
+    "n": 1,
+    "action_successes": 1,
+    "distance_passes": 1,
+    "full_endpoint_passes": 0,
+    "truth_distances": [
+      0.21601983805692335
+    ],
+    "localization_endpoint_offsets": [
+      0.11594271450863566
+    ],
+    "success_mean_wall_s": 39.64620005299912
+  },
+  "pilot_not_pooled": true,
+  "limits": "One combined AMCL profile change, only three fresh-start confirmations, approximate historical estimated start."
+}

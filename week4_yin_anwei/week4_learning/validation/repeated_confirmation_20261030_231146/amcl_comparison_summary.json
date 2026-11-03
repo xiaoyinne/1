@@ -1,0 +1,86 @@
+{
+  "before": {
+    "n": 3,
+    "action_successes": 0,
+    "distance_passes": 0,
+    "full_endpoint_passes": 0,
+    "truth_distances": [
+      1.8986649744868318,
+      1.8668217512388852,
+      1.5983409515119176
+    ],
+    "localization_endpoint_offsets": [
+      0.44497854621750915,
+      0.397229893965455,
+      0.47383942999832485
+    ],
+    "success_mean_wall_s": null
+  },
+  "after_confirmation": {
+    "n": 3,
+    "action_successes": 3,
+    "distance_passes": 3,
+    "full_endpoint_passes": 1,
+    "truth_distances": [
+      0.2247956619919591,
+      0.23758577298746905,
+      0.21532690110670988
+    ],
+    "localization_endpoint_offsets": [
+      0.12650232542685524,
+      0.11263869918377381,
+      0.15024449990082445
+    ],
+    "success_mean_wall_s": 20.29946644833338
+  },
+  "parameter_changes": {
+    "amcl.ros__parameters.max_beams": {
+      "before": 60,
+      "after": 180
+    },
+    "amcl.ros__parameters.sigma_hit": {
+      "before": 0.2,
+      "after": 0.1
+    },
+    "amcl.ros__parameters.update_min_a": {
+      "before": 0.2,
+      "after": 0.05
+    },
+    "amcl.ros__parameters.update_min_d": {
+      "before": 0.25,
+      "after": 0.05
+    },
+    "amcl.ros__parameters.z_hit": {
+      "before": 0.5,
+      "after": 0.95
+    },
+    "amcl.ros__parameters.z_rand": {
+      "before": 0.5,
+      "after": 0.05
+    }
+  },
+  "initial_standard_deviation_before": {
+    "xy_m": 0.5,
+    "yaw_rad": 0.261725046566048
+  },
+  "initial_standard_deviation_after": {
+    "xy_m": 0.05,
+    "yaw_rad": 0.08726646259971647
+  },
+  "startup_procedure_changed": true,
+  "pilot": {
+    "n": 1,
+    "action_successes": 1,
+    "distance_passes": 1,
+    "full_endpoint_passes": 1,
+    "truth_distances": [
+      0.2474959918433166
+    ],
+    "localization_endpoint_offsets": [
+      0.11292008215922941
+    ],
+    "success_mean_wall_s": 18.516627803999654
+  },
+  "pilot_not_pooled": true,
+  "limits": "One combined AMCL profile change, only three fresh-start confirmations, approximate historical estimated start."
+}

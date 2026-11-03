@@ -1,0 +1,50 @@
+{
+  "source": "Student clicked Nav2 Goal in RViz; assistant only recorded the first plan and read logs.",
+  "first_path_header": {
+    "stamp": {
+      "sec": 1238,
+      "nanosec": 800000000
+    },
+    "frame_id": "map"
+  },
+  "first_path_pose_count": 26,
+  "first_path_start": {
+    "position": {
+      "x": -0.09999996870756167,
+      "y": 0.4000000327825546,
+      "z": 0.0
+    },
+    "orientation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "w": 1.0
+    }
+  },
+  "first_path_end": {
+    "position": {
+      "x": -0.4937441349029541,
+      "y": 1.5968769788742065,
+      "z": 0.0
+    },
+    "orientation": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.675315689514449,
+      "w": 0.7375287923163572
+    }
+  },
+  "clicked_goal_full_precision_captured": false,
+  "navigator_reported_success": true,
+  "navigator_excerpt": [
+    "[INFO] [1793255553.307158598] [bt_navigator]: Begin navigating from current location (-0.09, 0.38) to (-0.49, 1.60)",
+    "[INFO] [1793255559.017699702] [bt_navigator]: Goal succeeded"
+  ],
+  "later_estimated_pose_xyz": [
+    -0.439,
+    1.371,
+    0.0
+  ],
+  "later_estimated_distance_to_first_path_endpoint_m": 0.2324162857710526,
+  "limitations": "The first published path is not an executed trajectory; later TF is a localization estimate after completion, not an independent physical-accuracy measurement. Full-precision clicked goal and full action feedback were not captured."
+}

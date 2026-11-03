@@ -1,0 +1,30 @@
+{
+  "controller_server": {
+    "Unable to transform robot pose": 0,
+    "Controller patience exceeded": 0,
+    "Failed to make progress": 7,
+    "failed to create plan": 0,
+    "Timed out while waiting for action server": 0
+  },
+  "planner_server": {
+    "Unable to transform robot pose": 0,
+    "Controller patience exceeded": 0,
+    "Failed to make progress": 0,
+    "failed to create plan": 5,
+    "Timed out while waiting for action server": 0
+  },
+  "bt_navigator": {
+    "Unable to transform robot pose": 0,
+    "Controller patience exceeded": 0,
+    "Failed to make progress": 0,
+    "failed to create plan": 0,
+    "Timed out while waiting for action server": 1
+  },
+  "behavior_server": {
+    "Unable to transform robot pose": 0,
+    "Controller patience exceeded": 0,
+    "Failed to make progress": 0,
+    "failed to create plan": 0,
+    "Timed out while waiting for action server": 0
+  }
+}

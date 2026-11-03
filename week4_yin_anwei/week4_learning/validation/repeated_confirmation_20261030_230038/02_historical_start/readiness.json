@@ -1,0 +1,28 @@
+{
+  "lifecycle": {
+    "amcl": "active",
+    "bt_navigator": "active",
+    "planner_server": "active",
+    "controller_server": "active"
+  },
+  "truth": {
+    "sim_s": 6.382,
+    "xy_yaw": [
+      -0.42700010724780935,
+      1.3699415745986663,
+      1.6405770887508604
+    ],
+    "linear_speed": 0.000598834968202505,
+    "angular_speed": 0.00045908738373416283
+  },
+  "estimate": {
+    "sim_s": 6.381,
+    "xy_yaw": [
+      -0.5949753575614997,
+      1.3750088413849633,
+      1.6344313492817266
+    ]
+  },
+  "scan_count": 30,
+  "warmup_sim_s": 3.0
+}

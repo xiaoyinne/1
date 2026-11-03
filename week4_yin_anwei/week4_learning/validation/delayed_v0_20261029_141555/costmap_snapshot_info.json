@@ -1,0 +1,34 @@
+{
+  "stamp": {
+    "sec": 467,
+    "nanosec": 500000000
+  },
+  "grid_info": {
+    "map_load_time": {
+      "sec": 0,
+      "nanosec": 0
+    },
+    "resolution": 0.10000000149011612,
+    "width": 36,
+    "height": 56,
+    "origin": {
+      "position": {
+        "x": -2.2,
+        "y": -1.8,
+        "z": 0.0
+      },
+      "orientation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  },
+  "sampled_goal_cell_costs": {
+    "short": 0,
+    "cross": 65,
+    "detour": 65
+  },
+  "note": "A later snapshot, not the costmap during earlier goals. Cell cost alone is not a full-footprint collision or route-feasibility check."
+}
