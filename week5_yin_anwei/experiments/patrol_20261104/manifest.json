@@ -1,0 +1,126 @@
+{
+  "actual_trajectories.png": {
+    "bytes": 67687,
+    "sha256": "927f3cbba8b644f7befc5ffdba582875afcbadee2bbe5728e0719e92c2e067e2"
+  },
+  "measurement.world": {
+    "bytes": 263594,
+    "sha256": "7952315fd34d17ba8c0c6771fd60eb798b1b4edcdda7662fc49b851c3b649f8b"
+  },
+  "measurements.csv": {
+    "bytes": 1708,
+    "sha256": "0f4a2420e7eaee55421f3b2200036df1f02b3776c4f6a167d7b577c1d96bcdbe"
+  },
+  "protocol.json": {
+    "bytes": 1754,
+    "sha256": "f0a7a25902b8999ed40089e209cae023662dda9801ef0618169df7f664afd51d"
+  },
+  "summary.json": {
+    "bytes": 10598,
+    "sha256": "2c6fb2c439d4c14f988cc893a1ee64e8d67b5fb73c8cc051308e37bab2022fe9"
+  },
+  "validation.launch.py": {
+    "bytes": 978,
+    "sha256": "4b7e9e8dbbe327c230bb401fdac93ce36735b0fe254b70e2f7a21bcd52ec9430"
+  },
+  "补充实验讲解与结果.md": {
+    "bytes": 6949,
+    "sha256": "a77d095e41881603038fc26c55c8d834fb954029e1f51e2acb993cb22ebc32a6"
+  },
+  "analysis_tools/summarize_patrol.py": {
+    "bytes": 3620,
+    "sha256": "5adf42b816daa73f4b8f490613659f1641051b8116d652f9ef75307fcdbeee6e"
+  },
+  "inputs/measurement_core.py": {
+    "bytes": 12063,
+    "sha256": "cea3774de20ce979c7c0c9c30ea58ec765693aa0e6c4c016a572de2f22510850"
+  },
+  "inputs/nav2_week5_params.yaml": {
+    "bytes": 10721,
+    "sha256": "6557493a52fb840a6629a732cd3bdef9adb06ad0248fb018eca223f1c2121574"
+  },
+  "inputs/patrol.py": {
+    "bytes": 4622,
+    "sha256": "dacb24b43dece74a9931d878f28c84266ecd2f3862613e862b65d9bbaa307ace"
+  },
+  "inputs/patrol_measured.py": {
+    "bytes": 3524,
+    "sha256": "363e5c6893d4c60401a892a7962833550e22b5702cbca590bdeb129223fea26d"
+  },
+  "inputs/repeat_patrol.py": {
+    "bytes": 7032,
+    "sha256": "8372dbe2a4b836ec2c2aec1c043b55d8ba1849dc46558d099ac51a39c56aaf2f"
+  },
+  "inputs/scene_learning/hilti_cells.world": {
+    "bytes": 263442,
+    "sha256": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168"
+  },
+  "inputs/scene_learning/map.pgm": {
+    "bytes": 2029,
+    "sha256": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182"
+  },
+  "inputs/scene_learning/map.yaml": {
+    "bytes": 124,
+    "sha256": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187"
+  },
+  "inputs/__pycache__/measurement_core.cpython-310.pyc": {
+    "bytes": 11399,
+    "sha256": "13148c1c0e3ea4a8e3670f681a3c84f224ab07a52a672bb630dc382387c1274a"
+  },
+  "inputs/__pycache__/patrol.cpython-310.pyc": {
+    "bytes": 3573,
+    "sha256": "7228805344312b455cd4d8c12ed8e44008ebb4bced60691e63293248a2cf0bde"
+  },
+  "round_01/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "round_01/client.log": {
+    "bytes": 207,
+    "sha256": "b5493f33919fbcec2b438227529d9312da9d99c3700c41b1340de3d38b9d5515"
+  },
+  "round_01/launch.log": {
+    "bytes": 45836,
+    "sha256": "e221bcfa951f6c6466b700abd6825248cc931211fa135bb02f5cca4eab242d36"
+  },
+  "round_01/result.json": {
+    "bytes": 1082551,
+    "sha256": "dc1bd99840fc8a1fc2a364a6c5d11b8350ba2eaee5957948793a78af53d1b5fd"
+  },
+  "round_02/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "round_02/client.log": {
+    "bytes": 206,
+    "sha256": "b373b66c11deec2bea6e1ae0f2bfba9f0fd030c4e028714ea296f1eab6f5e0cd"
+  },
+  "round_02/launch.log": {
+    "bytes": 44435,
+    "sha256": "71bf05a24269d86add3ffe259027a6d2b5ff80f79d041f2516cae907277516f0"
+  },
+  "round_02/result.json": {
+    "bytes": 1076881,
+    "sha256": "87576631a25b0e761a9bbea76f8de3b4600535cf3c3db95bc7bf84f9b0cade92"
+  },
+  "round_03/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "round_03/client.log": {
+    "bytes": 207,
+    "sha256": "7e92cd1965de338b54fdc5ff06b37de27f761255d9989ba6c44f0e782fda49cf"
+  },
+  "round_03/launch.log": {
+    "bytes": 44343,
+    "sha256": "eb8121c94e516582b341ccc2abcb4939a673c83a9ec7130f86ad320ed543c5e8"
+  },
+  "round_03/result.json": {
+    "bytes": 1085706,
+    "sha256": "7cb501fd60b0980fd10972f4f34c24ff8899b0d280bd29b349d56e12f782c929"
+  },
+  "__pycache__/validation.launch.cpython-310.pyc": {
+    "bytes": 1179,
+    "sha256": "c50a352d4ea428113fc487b9fabf0d095ab04f6b70905a50378cf6f7101255c3"
+  }
+}

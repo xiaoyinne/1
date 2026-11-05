@@ -1,0 +1,355 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "completed": true,
+      "wall_route_s": 47.497512623999995,
+      "error": null,
+      "ready": {
+        "lifecycle": {
+          "amcl": "active",
+          "bt_navigator": "active",
+          "planner_server": "active",
+          "controller_server": "active"
+        },
+        "truth": {
+          "sim_s": 7.809,
+          "xy_yaw": [
+            0.04999539378108539,
+            -0.050075383917765004,
+            1.5702594289408103
+          ],
+          "linear_speed": 0.0006435089662163545,
+          "angular_speed": 0.00044863449121101
+        },
+        "estimate": {
+          "sim_s": 7.808,
+          "xy_yaw": [
+            -0.048379818430766185,
+            -0.10354277046609348,
+            1.5855415980128809
+          ]
+        },
+        "scan_count": 37,
+        "warmup_sim_s": 3.0
+      },
+      "runtime_parameters": {
+        "planner_server.GridBased.use_astar": true,
+        "planner_server.GridBased.tolerance": 0.5,
+        "controller_server.FollowPath.plugin": "dwb_core::DWBLocalPlanner",
+        "controller_server.general_goal_checker.xy_goal_tolerance": 0.25,
+        "controller_server.general_goal_checker.yaw_goal_tolerance": 0.25,
+        "controller_server.general_goal_checker.stateful": true
+      }
+    },
+    {
+      "round": 2,
+      "completed": true,
+      "wall_route_s": 47.478026148,
+      "error": null,
+      "ready": {
+        "lifecycle": {
+          "amcl": "active",
+          "bt_navigator": "active",
+          "planner_server": "active",
+          "controller_server": "active"
+        },
+        "truth": {
+          "sim_s": 6.416,
+          "xy_yaw": [
+            0.04999579848859179,
+            -0.05005835966125987,
+            1.5703628687017852
+          ],
+          "linear_speed": 0.0006115217403460221,
+          "angular_speed": 0.000465410391261176
+        },
+        "estimate": {
+          "sim_s": 6.414,
+          "xy_yaw": [
+            -0.05930287409270054,
+            -0.09611446033312021,
+            1.5782096644613153
+          ]
+        },
+        "scan_count": 31,
+        "warmup_sim_s": 3.0000000000000004
+      },
+      "runtime_parameters": {
+        "planner_server.GridBased.use_astar": true,
+        "planner_server.GridBased.tolerance": 0.5,
+        "controller_server.FollowPath.plugin": "dwb_core::DWBLocalPlanner",
+        "controller_server.general_goal_checker.xy_goal_tolerance": 0.25,
+        "controller_server.general_goal_checker.yaw_goal_tolerance": 0.25,
+        "controller_server.general_goal_checker.stateful": true
+      }
+    },
+    {
+      "round": 3,
+      "completed": true,
+      "wall_route_s": 47.829187219999994,
+      "error": null,
+      "ready": {
+        "lifecycle": {
+          "amcl": "active",
+          "bt_navigator": "active",
+          "planner_server": "active",
+          "controller_server": "active"
+        },
+        "truth": {
+          "sim_s": 6.784,
+          "xy_yaw": [
+            0.04999580959273736,
+            -0.05006048347887051,
+            1.5703502805895042
+          ],
+          "linear_speed": 0.0006463013147125811,
+          "angular_speed": 0.000438516754725723
+        },
+        "estimate": {
+          "sim_s": 6.783,
+          "xy_yaw": [
+            -0.056069014160543516,
+            -0.10356396961333025,
+            1.5856847309134716
+          ]
+        },
+        "scan_count": 32,
+        "warmup_sim_s": 3.1
+      },
+      "runtime_parameters": {
+        "planner_server.GridBased.use_astar": true,
+        "planner_server.GridBased.tolerance": 0.5,
+        "controller_server.FollowPath.plugin": "dwb_core::DWBLocalPlanner",
+        "controller_server.general_goal_checker.xy_goal_tolerance": 0.25,
+        "controller_server.general_goal_checker.yaw_goal_tolerance": 0.25,
+        "controller_server.general_goal_checker.stateful": true
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "round": 1,
+      "segment": "A1",
+      "status": "SUCCEEDED",
+      "wall_action_s": 4.250365161000001,
+      "sim_action_s": 4.218,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.14449119856750722,
+      "yaw_error_deg": 13.656611828229847,
+      "position_le_025": true,
+      "yaw_le_025rad": true,
+      "joint_precision_pass": true,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.2291631514722772,
+      "estimate_truth_distance_m": 0.2311115003749865,
+      "plan_endpoint_target_distance_m": 0.0
+    },
+    {
+      "round": 1,
+      "segment": "B",
+      "status": "SUCCEEDED",
+      "wall_action_s": 13.562118607000002,
+      "sim_action_s": 13.45,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.19734985111841347,
+      "yaw_error_deg": 16.021192510419144,
+      "position_le_025": true,
+      "yaw_le_025rad": false,
+      "joint_precision_pass": false,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.5198128086518518,
+      "estimate_truth_distance_m": 0.3766520924558392,
+      "plan_endpoint_target_distance_m": 0.36055512258699274
+    },
+    {
+      "round": 1,
+      "segment": "A2",
+      "status": "SUCCEEDED",
+      "wall_action_s": 17.625702429,
+      "sim_action_s": 17.493000000000002,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.07928804635676476,
+      "yaw_error_deg": 10.88035394742693,
+      "position_le_025": true,
+      "yaw_le_025rad": true,
+      "joint_precision_pass": true,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.23049836254954073,
+      "estimate_truth_distance_m": 0.2887540827610526,
+      "plan_endpoint_target_distance_m": 0.0
+    },
+    {
+      "round": 2,
+      "segment": "A1",
+      "status": "SUCCEEDED",
+      "wall_action_s": 3.9347726389999877,
+      "sim_action_s": 3.908999999999999,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.13866490267094306,
+      "yaw_error_deg": 14.757905429018937,
+      "position_le_025": true,
+      "yaw_le_025rad": false,
+      "joint_precision_pass": false,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.23230762320312778,
+      "estimate_truth_distance_m": 0.22813459931051,
+      "plan_endpoint_target_distance_m": 0.0
+    },
+    {
+      "round": 2,
+      "segment": "B",
+      "status": "SUCCEEDED",
+      "wall_action_s": 13.746700702999988,
+      "sim_action_s": 13.644000000000002,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.2877322989119693,
+      "yaw_error_deg": 13.901547280165149,
+      "position_le_025": false,
+      "yaw_le_025rad": true,
+      "joint_precision_pass": false,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.5183933627596079,
+      "estimate_truth_distance_m": 0.27865762867447,
+      "plan_endpoint_target_distance_m": 0.36055512258699274
+    },
+    {
+      "round": 2,
+      "segment": "A2",
+      "status": "SUCCEEDED",
+      "wall_action_s": 17.56665810999999,
+      "sim_action_s": 17.442,
+      "settle_sim_s": 2.1000000000000014,
+      "stopped": true,
+      "position_error_m": 0.09810222579355307,
+      "yaw_error_deg": 11.054962891816466,
+      "position_le_025": true,
+      "yaw_le_025rad": true,
+      "joint_precision_pass": true,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.18580472847682045,
+      "estimate_truth_distance_m": 0.26535630357514717,
+      "plan_endpoint_target_distance_m": 0.0
+    },
+    {
+      "round": 3,
+      "segment": "A1",
+      "status": "SUCCEEDED",
+      "wall_action_s": 4.127962112999995,
+      "sim_action_s": 4.109,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.13915816877008305,
+      "yaw_error_deg": 14.670070645962896,
+      "position_le_025": true,
+      "yaw_le_025rad": false,
+      "joint_precision_pass": false,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.26408070401595285,
+      "estimate_truth_distance_m": 0.26704586710163514,
+      "plan_endpoint_target_distance_m": 0.0
+    },
+    {
+      "round": 3,
+      "segment": "B",
+      "status": "SUCCEEDED",
+      "wall_action_s": 13.94283471899999,
+      "sim_action_s": 13.837,
+      "settle_sim_s": 2.0000000000000036,
+      "stopped": true,
+      "position_error_m": 0.23141073391024616,
+      "yaw_error_deg": 13.4535168627387,
+      "position_le_025": true,
+      "yaw_le_025rad": true,
+      "joint_precision_pass": true,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.46696402262441683,
+      "estimate_truth_distance_m": 0.27978432119714786,
+      "plan_endpoint_target_distance_m": 0.31622776130467706
+    },
+    {
+      "round": 3,
+      "segment": "A2",
+      "status": "SUCCEEDED",
+      "wall_action_s": 17.505685837000016,
+      "sim_action_s": 17.361999999999995,
+      "settle_sim_s": 2.0,
+      "stopped": true,
+      "position_error_m": 0.14155910802935187,
+      "yaw_error_deg": 10.988878744492657,
+      "position_le_025": true,
+      "yaw_le_025rad": true,
+      "joint_precision_pass": true,
+      "recoveries": 0,
+      "estimated_position_error_m": 0.14691482328432107,
+      "estimate_truth_distance_m": 0.28746143633140353,
+      "plan_endpoint_target_distance_m": 0.0
+    }
+  ],
+  "completed_rounds": 3,
+  "successful_actions": 9,
+  "planned_actions": 9,
+  "measured_actions": 9,
+  "position_pass_count": 8,
+  "yaw_pass_count": 6,
+  "joint_precision_pass_count": 5,
+  "A1": {
+    "count": 3,
+    "position_error_m": {
+      "mean": 0.1407714233361778,
+      "min": 0.13866490267094306,
+      "max": 0.14449119856750722
+    },
+    "yaw_error_deg": {
+      "mean": 14.36152930107056,
+      "min": 13.656611828229847,
+      "max": 14.757905429018937
+    },
+    "wall_action_s": {
+      "mean": 4.104366637666661,
+      "min": 3.9347726389999877,
+      "max": 4.250365161000001
+    }
+  },
+  "B": {
+    "count": 3,
+    "position_error_m": {
+      "mean": 0.23883096131354298,
+      "min": 0.19734985111841347,
+      "max": 0.2877322989119693
+    },
+    "yaw_error_deg": {
+      "mean": 14.45875221777433,
+      "min": 13.4535168627387,
+      "max": 16.021192510419144
+    },
+    "wall_action_s": {
+      "mean": 13.750551342999993,
+      "min": 13.562118607000002,
+      "max": 13.94283471899999
+    }
+  },
+  "A2": {
+    "count": 3,
+    "position_error_m": {
+      "mean": 0.1063164600598899,
+      "min": 0.07928804635676476,
+      "max": 0.14155910802935187
+    },
+    "yaw_error_deg": {
+      "mean": 10.97473186124535,
+      "min": 10.88035394742693,
+      "max": 11.054962891816466
+    },
+    "wall_action_s": {
+      "mean": 17.56601545866667,
+      "min": 17.505685837000016,
+      "max": 17.625702429
+    }
+  }
+}

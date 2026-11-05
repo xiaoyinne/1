@@ -1,0 +1,9 @@
+# New runtime output stays local; archived experiment logs remain tracked.
+code/logs/
+code/validation/
+__pycache__/
+*.pyc
+*.pptx
+*.ppt
+*.pptm
+~$*

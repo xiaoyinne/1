@@ -1,5 +1,11 @@
 # 尹安伟 · FAST-LIO建图、地图定位与导航仿真
 
+## 第五周：自动巡检与停车实测（2026-11-05归档）
+
+新增[第五周成果索引](week5_yin_anwei/README.md)、[复现步骤](week5_yin_anwei/REPRODUCE.md)、[九次到点位姿与误差](week5_yin_anwei/docs/第五周_九次到点位姿与误差明细.md)和[当前汇报讲稿](week5_yin_anwei/docs/第五周汇报_逐页讲解稿_流程页优化版.md)。本次暂不上传第五周PPT。
+
+在已有Hilti局部场景中执行A、B、A顺序导航。三轮统一条件实测路线完成3/3、Action成功9/9；实际位置≤0.25米8/9、朝向≤0.25弧度6/9、两项同时达标且停稳5/9。代码、地图、三轮原始证据和最终带标记演示视频均已归档。结论限于已知初值的当前小型仿真，未完成真实硬件或长期稳定性验证。
+
 ## 第四周：Hilti局部仿真与导航验证（2026-11-03归档）
 
 新增[第四周代码、地图、世界与实验索引](week4_yin_anwei/README.md)、[复现入口](week4_yin_anwei/REPRODUCE.md)、[当前9页汇报PPT](week4_yin_anwei/week4_presentation/第四周汇报_原理到结果版_修改副本.pptx)和[大白话逐页讲稿](week4_yin_anwei/week4_presentation/第四周汇报_给非专业老师的大白话讲稿.md)。

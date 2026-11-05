@@ -1,0 +1,50 @@
+{
+  "repeats": 3,
+  "route": [
+    [
+      "A",
+      0.05,
+      0.65
+    ],
+    [
+      "B",
+      0.85,
+      3.25
+    ],
+    [
+      "A",
+      0.05,
+      0.65
+    ]
+  ],
+  "spawn_xy_yaw": [
+    0.05,
+    -0.05,
+    1.5707963267948966
+  ],
+  "initial_covariance_xy": 0.25,
+  "initial_covariance_yaw": 0.0685,
+  "headless": true,
+  "ros_domain_id": 35,
+  "gazebo_master": "http://127.0.0.1:11355",
+  "fresh_simulator_per_round": true,
+  "warmup_sim_s": 3,
+  "pre_send_wall_s": 2,
+  "post_goal_minimum_sim_s": 2,
+  "stopped_linear_m_s": 0.01,
+  "stopped_angular_rad_s": 0.03,
+  "action_timeout_wall_s": 120,
+  "input_sha256": {
+    "patrol.py": "dacb24b43dece74a9931d878f28c84266ecd2f3862613e862b65d9bbaa307ace",
+    "patrol_measured.py": "363e5c6893d4c60401a892a7962833550e22b5702cbca590bdeb129223fea26d",
+    "measurement_core.py": "cea3774de20ce979c7c0c9c30ea58ec765693aa0e6c4c016a572de2f22510850",
+    "repeat_patrol.py": "8372dbe2a4b836ec2c2aec1c043b55d8ba1849dc46558d099ac51a39c56aaf2f",
+    "nav2_week5_params.yaml": "6557493a52fb840a6629a732cd3bdef9adb06ad0248fb018eca223f1c2121574",
+    "scene_learning/map.yaml": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187",
+    "scene_learning/map.pgm": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182",
+    "scene_learning/hilti_cells.world": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168"
+  },
+  "versions": "gazebo\t11.10.2+dfsg-1\nros-humble-nav2-amcl\t1.1.20-1jammy.20260915.212107\nros-humble-nav2-bringup\t1.1.20-1jammy.20260916.005516\nros-humble-rclpy\t3.3.22-1jammy.20260907.213431\n",
+  "random_seed_controlled": false,
+  "note": "Headless validation protocol differs from earlier GUI/video timing; no collision-contact measurement."
+}
