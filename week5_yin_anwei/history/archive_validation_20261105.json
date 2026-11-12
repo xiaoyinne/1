@@ -1,0 +1,22 @@
+{
+  "archive_date": "2026-11-05",
+  "checks": {
+    "protocol_input_hashes": 8,
+    "original_manifest_files": 28,
+    "original_manifest_cache_entries_excluded": [
+      "inputs/__pycache__/measurement_core.cpython-310.pyc",
+      "inputs/__pycache__/patrol.cpython-310.pyc",
+      "__pycache__/validation.launch.cpython-310.pyc"
+    ],
+    "python_syntax_files": 18,
+    "recomputed_counts": {
+      "actions": 9,
+      "position": 8,
+      "yaw": 6,
+      "joint": 5
+    },
+    "excluded_presentation_and_cache_files": true,
+    "video_bytes": 81722839
+  },
+  "scope": "Archive integrity and recomputation from retained measurements; no new simulation run in this archive step."
+}

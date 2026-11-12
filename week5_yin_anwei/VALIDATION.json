@@ -1,22 +1,20 @@
 {
-  "archive_date": "2026-11-05",
+  "archive_date": "2026-11-12",
+  "scope": "Archive integrity and recomputation of retained measurements; no new simulation run in this push.",
+  "current_experiment": "experiments/patrol_20261111_multiyaw",
   "checks": {
-    "protocol_input_hashes": 8,
-    "original_manifest_files": 28,
-    "original_manifest_cache_entries_excluded": [
-      "inputs/__pycache__/measurement_core.cpython-310.pyc",
-      "inputs/__pycache__/patrol.cpython-310.pyc",
-      "__pycache__/validation.launch.cpython-310.pyc"
-    ],
-    "python_syntax_files": 18,
-    "recomputed_counts": {
-      "actions": 9,
-      "position": 8,
-      "yaw": 6,
-      "joint": 5
-    },
-    "excluded_presentation_and_cache_files": true,
-    "video_bytes": 81722839
+    "current_formal_metrics_recomputed": 12,
+    "formal_and_preflight_input_hashes_verified": 16,
+    "current_code_matches_formal_inputs": true,
+    "formal_and_preflight_process_cleanup_verified": true,
+    "python_syntax_files": 7,
+    "completed_rounds": 3,
+    "actions": 12,
+    "position": 11,
+    "yaw": 12,
+    "joint": 11,
+    "presentation_files_excluded": true,
+    "historical_code_and_raw_results_retained": true
   },
-  "scope": "Archive integrity and recomputation from retained measurements; no new simulation run in this archive step."
+  "historical_docs": "Superseded local lecture copies were removed; detailed current handbook replaces their index entries. Raw historical experiments remain."
 }

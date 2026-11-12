@@ -20,7 +20,7 @@ for i in range(1, repeat_count + 1):
                    'wall_route_s': result.get('wall_route_including_dwell_s'), 'error': result.get('error'),
                    'ready': result.get('ready'), 'runtime_parameters': result.get('runtime_parameters')})
     segments = {s['index']: s for s in result.get('segments', [])}
-    for index, name in enumerate(['A1', 'B', 'A2'], start=1):
+    for index, name in enumerate(['A', 'B', 'C', 'S'], start=1):
         s = segments.get(index, {})
         xy = s.get('truth_endpoint_distance_m')
         angle = s.get('truth_endpoint_yaw_error_rad')
@@ -47,12 +47,12 @@ with (folder / 'measurements.csv').open('w', newline='') as stream:
 summary = {'rounds': rounds, 'measurements': rows,
            'completed_rounds': sum(r['completed'] for r in rounds),
            'successful_actions': sum(r['status'] == 'SUCCEEDED' for r in rows),
-           'planned_actions': 3 * repeat_count,
+           'planned_actions': 4 * repeat_count,
            'measured_actions': sum(r['position_error_m'] is not None for r in rows),
            'position_pass_count': sum(r['position_le_025'] is True for r in rows),
            'yaw_pass_count': sum(r['yaw_le_025rad'] is True for r in rows),
            'joint_precision_pass_count': sum(r['joint_precision_pass'] is True for r in rows)}
-for segment in ['A1', 'B', 'A2']:
+for segment in ['A', 'B', 'C', 'S']:
     subset = [r for r in rows if r['segment'] == segment and r['position_error_m'] is not None]
     summary[segment] = {'count': len(subset)}
     for key in ['position_error_m', 'yaw_error_deg', 'wall_action_s']:

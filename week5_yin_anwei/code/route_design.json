@@ -1,0 +1,36 @@
+{
+  "route": "S-A-B-C-S",
+  "spawn_and_base": [
+    0.05,
+    -0.05,
+    90
+  ],
+  "requested_goals_degrees": [
+    [
+      "A",
+      0.05,
+      0.65,
+      90
+    ],
+    [
+      "B",
+      0.85,
+      3.25,
+      180
+    ],
+    [
+      "C",
+      -0.8,
+      -0.1,
+      0
+    ],
+    [
+      "S",
+      0.05,
+      -0.05,
+      90
+    ]
+  ],
+  "navigation_parameters": "Same as fixed configuration: goal .12m/.10rad, NavFn .15m",
+  "repetition": "Same fixed headings in every trial"
+}

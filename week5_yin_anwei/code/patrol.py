@@ -1,28 +1,31 @@
 import time
+import math
 import rclpy
 from action_msgs.msg import GoalStatus
 from rclpy.action import ActionClient
 from nav2_msgs.action import NavigateToPose
 
 
-# 每项依次填写：点的名称、地图中的 x 坐标、y 坐标（米）。
-# 最后一项重复 A，表示巡检后返回 A。
+# 每项依次填写：点的名称、地图中的 x 坐标、y 坐标（米）、目标朝向（度）。
+# S 是固定出生基地，最后一项返回 S。
 WAYPOINTS = [
-    ("A", 0.05, 0.65),
-    ("B", 0.85, 3.25),
-    ("A", 0.05, 0.65),
+    ("A", 0.05, 0.65, 90.0),
+    ("B", 0.85, 3.25, 180.0),
+    ("C", -0.80, -0.10, 0.0),
+    ("S", 0.05, -0.05, 90.0),
 ]
 
 
-def navigate_to_point(node, client, name, x, y):
+def navigate_to_point(node, client, name, x, y, yaw_deg):
     """完成一个点的导航；成功返回 True，否则返回 False。"""
     goal = NavigateToPose.Goal()
     goal.pose.header.frame_id = "map"
     goal.pose.pose.position.x = x
     goal.pose.pose.position.y = y
-    # 本次所有巡检点均要求朝向地图 +Y 方向。
-    goal.pose.pose.orientation.z = 0.7071068
-    goal.pose.pose.orientation.w = 0.7071068
+    # 根据每个目标的固定朝向计算平面四元数。
+    yaw_rad = math.radians(yaw_deg)
+    goal.pose.pose.orientation.z = math.sin(yaw_rad / 2)
+    goal.pose.pose.orientation.w = math.cos(yaw_rad / 2)
 
     # 服务器可发现后，继续处理消息，让新客户端完成通信发现。
     settle_until = time.perf_counter() + 2.0
@@ -88,10 +91,10 @@ def main():
 
         # 计时使用单调时钟，单位为秒，统计的是实际等待的墙钟时间。
         patrol_started = time.perf_counter()
-        for index, (name, x, y) in enumerate(WAYPOINTS, start=1):
+        for index, (name, x, y, yaw_deg) in enumerate(WAYPOINTS, start=1):
             print(f"巡检进度 {index}/{len(WAYPOINTS)}：{name} 点", flush=True)
             segment_started = time.perf_counter()
-            succeeded = navigate_to_point(node, client, name, x, y)
+            succeeded = navigate_to_point(node, client, name, x, y, yaw_deg)
             segment_seconds = time.perf_counter() - segment_started
             print(f"第 {index} 段（{name} 点）耗时：{segment_seconds:.2f} 秒", flush=True)
             if not succeeded:
@@ -99,7 +102,7 @@ def main():
                 return
 
         patrol_seconds = time.perf_counter() - patrol_started
-        print("A → B → A 巡检任务全部返回成功", flush=True)
+        print("S 出发 → A → B → C → 返回 S 巡检任务全部返回成功", flush=True)
         print(f"巡检全程耗时：{patrol_seconds:.2f} 秒（墙钟时间）", flush=True)
     finally:
         client.destroy()

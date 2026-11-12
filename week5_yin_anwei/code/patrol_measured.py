@@ -1,6 +1,7 @@
-"""Run one A-B-A route, measuring every endpoint in the instrumented world."""
+"""Run one S-A-B-C-S route, measuring every endpoint in the instrumented world."""
 import argparse
 import json
+import math
 import time
 from pathlib import Path
 import rclpy
@@ -24,7 +25,8 @@ def main():
     try:
         data['ready'] = node.ready()
         data['runtime_parameters'] = {}
-        for owner, names in [('planner_server', ['GridBased.use_astar', 'GridBased.tolerance']),
+        for owner, names in [('amcl', ['max_beams', 'sigma_hit', 'update_min_d', 'update_min_a', 'z_hit', 'z_rand']),
+                             ('planner_server', ['GridBased.use_astar', 'GridBased.tolerance']),
                              ('controller_server', ['FollowPath.plugin', 'general_goal_checker.xy_goal_tolerance',
                                                     'general_goal_checker.yaw_goal_tolerance', 'general_goal_checker.stateful'])]:
             service = node.create_client(GetParameters, '/' + owner + '/get_parameters')
@@ -42,9 +44,9 @@ def main():
         if data['runtime_parameters']['controller_server.FollowPath.plugin'] != 'dwb_core::DWBLocalPlanner':
             raise RuntimeError('Unexpected controller')
         started = time.monotonic()
-        for index, (name, x, y) in enumerate(WAYPOINTS, start=1):
-            print(f'Segment {index}/3: {name}', flush=True)
-            segment = node.execute([x, y, 1.5707963267948966], 120)
+        for index, (name, x, y, yaw_deg) in enumerate(WAYPOINTS, start=1):
+            print(f'Segment {index}/{len(WAYPOINTS)}: {name}', flush=True)
+            segment = node.execute([x, y, math.radians(yaw_deg)], 120)
             segment.update(index=index, name=name)
             segment['last_plan_endpoint'] = node.plans[-1]['xy'][-1] if node.plans and node.plans[-1]['xy'] else None
             data['segments'].append(segment)
@@ -53,7 +55,7 @@ def main():
             if segment['status'] != 'SUCCEEDED' or not segment.get('stopped_verified'):
                 break
         data['wall_route_including_dwell_s'] = time.monotonic() - started
-        data['completed'] = len(data['segments']) == 3 and all(s['status'] == 'SUCCEEDED' and s.get('stopped_verified') for s in data['segments'])
+        data['completed'] = len(data['segments']) == len(WAYPOINTS) and all(s['status'] == 'SUCCEEDED' and s.get('stopped_verified') for s in data['segments'])
     except Exception as exc:
         data['error'] = repr(exc)
         print('ERROR:', repr(exc), flush=True)

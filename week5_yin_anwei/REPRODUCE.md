@@ -1,25 +1,31 @@
-# 第五周复现
+# 第五周运行与复现
 
-环境为 WSL Ubuntu 22.04、ROS2 Humble、Gazebo Classic 11、Nav2、TurtleBot3。原始安装版本见 [protocol.json](experiments/patrol_20261104/protocol.json)。需要已安装导航与仿真依赖；本周归档不含ROS安装包。
+依赖：WSL Ubuntu 22.04、ROS 2 Humble、Nav2、Gazebo Classic 11、TurtleBot3 仿真包。实测安装版本记录在 [正式实验协议](experiments/patrol_20261111_multiyaw/formal/protocol.json)。本次归档未重新运行仿真，下面的命令用于之后复现。
 
-## 1. 准备独立运行目录
+## 1. 准备最终版本
 
-在Ubuntu终端进入克隆后的仓库根目录，把代码复制到一个新目录，避免覆盖原来的学习目录：
+在 Ubuntu 终端、克隆后的仓库根目录执行。建议使用一个新的可写目录，避免混用早期 A-B-A 代码。
 
 ```bash
-mkdir ~/nav2_week5_archive
-cp -a week5_yin_anwei/code/. ~/nav2_week5_archive/
-cd ~/nav2_week5_archive
+mkdir -p ~/nav2_week5_final
+cp -a week5_yin_anwei/code/. ~/nav2_week5_final/
+cd ~/nav2_week5_final
 source /opt/ros/humble/setup.bash
-export LIBGL_ALWAYS_SOFTWARE=true
-export GAZEBO_MODEL_PATH="${GAZEBO_MODEL_PATH:-}:/opt/ros/humble/share/turtlebot3_gazebo/models"
 ```
+
+核对 `patrol.py` 的清单应为 A、B、C、S，目标朝向依次为 90°、180°、0°、90°。出生位姿为 S=(0.05,-0.05,90°)。每个目标都是地图坐标中的位姿。
 
 ## 2. 图形演示
 
-窗口1运行 `bash ~/nav2_week5_archive/start_week5.sh`。它加载本目录地图、世界、A*参数和带标记的RViz配置；自身不发送导航任务。检查没有其他同域的仿真/导航同时运行。
+窗口 1：
 
-窗口2执行：
+```bash
+bash ~/nav2_week5_final/start_week5.sh
+```
+
+它加载本目录地图、仿真场地、参数、目标标记及 RViz，本身不会发送巡检任务。图形启动使用 `ROS_DOMAIN_ID=0`，避免同时开启其他同域导航。脚本发现已有 gzserver、amcl 或 controller_server 时会拒绝重复启动。
+
+窗口 2：
 
 ```bash
 source /opt/ros/humble/setup.bash
@@ -29,46 +35,54 @@ timeout 10s ros2 param get /planner_server GridBased.use_astar
 timeout 10s ros2 param get /controller_server FollowPath.plugin
 ```
 
-预期分别为 `active`、`True`、`dwb_core::DWBLocalPlanner`。在RViz用2D Pose Estimate设置已知出生位姿：地图坐标约(0.05,-0.05)，朝向+Y；等激光与地图对齐、定位就绪后运行：
+预期分别是 `active`、`True`、`dwb_core::DWBLocalPlanner`。在 RViz 使用 2D Pose Estimate 提供已知出生位姿 S，箭头朝 +Y。定位就绪、激光与地图对齐后，运行：
 
 ```bash
+mkdir -p ~/nav2_week5_final/logs
 set -o pipefail
-/usr/bin/python3 -u ~/nav2_week5_archive/patrol.py 2>&1 | tee ~/nav2_week5_archive/logs/patrol_local.log
+/usr/bin/python3 -u ~/nav2_week5_final/patrol.py 2>&1 | tee ~/nav2_week5_final/logs/patrol_local.log
 ```
 
-`patrol.py`只负责顺序导航与计时，不做正式外部位姿采样；需要测量时使用下一节。退出演示时先等待当前任务结束，再在启动终端Ctrl+C并等待进程退出。客户端退出本身不保证服务端目标被取消。
+`patrol.py` 负责顺序下发和导航结果处理，不执行独立的 Gazebo 实际位姿测量。它的通信等待也不等于正式程序的停稳检查。图形世界没有自动注入测量插件，不能直接假设 `/evaluation/get_entity_state` 可用。
 
-## 3. 三轮统一条件测量
+## 3. 三轮正式测量
 
-在独立终端、已加载Humble环境且本机11355端口空闲时运行：
+先退出图形演示，并确保端口 11361 无其他服务占用。在已加载 ROS 环境的 Ubuntu 终端执行：
 
 ```bash
 source /opt/ros/humble/setup.bash
-cd ~/nav2_week5_archive
+cd ~/nav2_week5_final
 /usr/bin/python3 -s repeat_patrol.py --run --repeats 3
 ```
 
-这会真正启动无图形窗口仿真并移动模拟机器人。脚本使用通信域35、Gazebo端口11355，每轮新建仿真，自动提供定位初值，最后清理自己启动的进程。结果目录显示在 `EVIDENCE:` 后，位于 `validation/patrol_时间戳/`。每点任务成功后，至少等2个仿真秒，确认平移速度<0.01米/秒、角速度<0.03弧度/秒，再读取停稳位姿。
+这条命令会实际启动仿真并移动模拟机器人。程序在 `ROS_DOMAIN_ID=41`、Gazebo 端口 11361 下无图形运行，每轮重新启动仿真并设置已知初值。结果写入 `validation/patrol_时间戳/`，终端以 `EVIDENCE:` 打印目录。
 
-不要直接启动归档证据里的 `validation.launch.py`：它是历史生成文件，保留当时的绝对路径。应运行 `repeat_patrol.py`，让它为本机新目录重新生成启动文件。
+每点终态后至少等待 2 个仿真秒，再检查采样平移速度<0.01 米/秒、角速度<0.03 弧度/秒，读取实际位姿并计算误差。Action 成功且确认停稳才继续；失败、超时或未确认停稳则停止后续点。误差超出外部标准会记录，当前程序不会自动重试，也不因此阻断下一点。
 
-## 4. 汇总新结果或重算历史结果
+不要直接启动归档中的 `formal/validation.launch.py`。它保留历史机器的绝对路径，应运行 `repeat_patrol.py` 为当前目录重新生成启动文件。程序只清理自己启动的进程组，清理结果写入各轮 `cleanup.json`。
 
-新运行完成后，把下列路径替换为刚才 `EVIDENCE:` 显示的实际目录：
+## 4. 汇总新结果
 
-```bash
-/usr/bin/python3 -s ~/nav2_week5_archive/summarize_patrol.py ~/nav2_week5_archive/validation/patrol_实际时间戳
-```
-
-重算历史结果时，先复制证据目录，避免修改原始归档。在仓库根目录执行：
+将目录名替换为实际运行输出：
 
 ```bash
-cp -a week5_yin_anwei/experiments/patrol_20261104 /tmp/week5_recheck
-/usr/bin/python3 week5_yin_anwei/code/summarize_patrol.py /tmp/week5_recheck
+/usr/bin/python3 -s ~/nav2_week5_final/summarize_patrol.py ~/nav2_week5_final/validation/patrol_实际时间戳
 ```
 
-`measurements.csv`的九行对应三轮的A1、B、A2；位置误差使用实际停车点到原始目标的欧氏距离，朝向误差使用最短角差，联合判定还要求停稳。统计应得到9次Action成功、位置通过8次、朝向通过6次、联合通过5次。新实验可能变化，不要求逐字节复现相同结果。
+这会生成 `measurements.csv` 与 `summary.json`。每轮四段，三轮十二条。位置误差使用实际停车点到原始目标的欧氏距离，朝向使用最短角差。外部标准是位置≤0.25 米、朝向≤0.25 弧度，联合达标还要求停稳。
 
-## 5. 归档完整性
+## 5. 重算本次归档
 
-`ARCHIVE_MANIFEST.json`记录本次归档的SHA256。原始 `protocol.json` 还记录正式运行输入的SHA256，`experiments/patrol_20261104/manifest.json` 是原始实验导出清单。原始实验清单中三项 `__pycache__` 编译缓存按归档规则未上传，已在 `VALIDATION.json` 单独列出；其余28项逐一校验一致。历史证据中的本机路径用于溯源，不代表新的克隆目录。
+在仓库根目录执行，先复制到临时目录，保留原始证据不变：
+
+```bash
+review_dir=$(mktemp -d /tmp/week5-review-XXXXXX)
+cp -a week5_yin_anwei/experiments/patrol_20261111_multiyaw/formal/. "$review_dir/"
+/usr/bin/python3 -s week5_yin_anwei/code/summarize_patrol.py "$review_dir"
+```
+
+应得到路线完成 3/3、Action 成功 12/12、位置通过 11/12、朝向通过 12/12、联合通过 11/12。新运行存在随机性，不要求得到完全相同的数字。不要用当前四段汇总脚本处理旧 A-B-A 的三段结果，旧版本代码在 `history/code_20261104/`。
+
+## 6. 完整性与限制
+
+[ARCHIVE_MANIFEST.json](ARCHIVE_MANIFEST.json) 记录当前第五周文件的字节数与 SHA256，各次 `protocol.json` 另记录正式输入哈希。历史证据中的本机路径用于溯源。所有正式轮次、超标点和独立预运行均保留，预运行不计入正式统计。第五周 PPT 不上传。

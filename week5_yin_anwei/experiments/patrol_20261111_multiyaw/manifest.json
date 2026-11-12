@@ -1,0 +1,246 @@
+{
+  "README.md": {
+    "bytes": 1395,
+    "sha256": "b62a49f3710e488624c220c92810eaa9b17ed079762ea821886fa0a66c35d723"
+  },
+  "VALIDATION.json": {
+    "bytes": 179,
+    "sha256": "238d231a201e2b184d123b8e6afad8b85445a69741fef92da9568558dee264f3"
+  },
+  "actual_trajectories_sabcs.png": {
+    "bytes": 190242,
+    "sha256": "1e781439d3f88ebb6753dffbab5ba4c132363a4c6824f44ce785c272c51bec8e"
+  },
+  "code/measurement_core.py": {
+    "bytes": 12063,
+    "sha256": "cea3774de20ce979c7c0c9c30ea58ec765693aa0e6c4c016a572de2f22510850"
+  },
+  "code/nav2_week5_params.yaml": {
+    "bytes": 10726,
+    "sha256": "bab8f20f3154a26317d6b8b053332b1d62496358245d8a078d5909d96f3fa9f8"
+  },
+  "code/parameters.diff": {
+    "bytes": 1955,
+    "sha256": "81397b87112792e6049e80a82757d79dc9c93738a57174f1ada2ff8ef698e8bb"
+  },
+  "code/patrol.py": {
+    "bytes": 4823,
+    "sha256": "027b0441e41e95067b5febb130729fa016a253c2492c074809037f085a59900a"
+  },
+  "code/patrol_measured.py": {
+    "bytes": 3698,
+    "sha256": "a0297730ad86bd18e25291719e849c1b854677d82b9671b55b446d96fcad9949"
+  },
+  "code/repeat_patrol.py": {
+    "bytes": 7343,
+    "sha256": "c981ba4c6878060d94444ea79dd173f6baede78cbfa85a651263d42c815e0cc4"
+  },
+  "code/route_design.json": {
+    "bytes": 487,
+    "sha256": "8568d04c8012fdc49e6cb58c5fbe342a98b92593b0e68a9c826856cee9989148"
+  },
+  "code/rviz_demo.rviz": {
+    "bytes": 20514,
+    "sha256": "f28f88256adabc9944144ae2f0155a25f7b1a260bfd66df965c1fd9418d0a3a6"
+  },
+  "code/rviz_light.rviz": {
+    "bytes": 20362,
+    "sha256": "03147b45e9074ce209f05d669a0a3034fd4e4acb5c677ec6ac6b7d5d54d246c8"
+  },
+  "code/scene_learning/hilti_cells.world": {
+    "bytes": 263442,
+    "sha256": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168"
+  },
+  "code/scene_learning/map.pgm": {
+    "bytes": 2029,
+    "sha256": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182"
+  },
+  "code/scene_learning/map.yaml": {
+    "bytes": 124,
+    "sha256": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187"
+  },
+  "code/scene_learning/world_info.json": {
+    "bytes": 920,
+    "sha256": "1a097262759851dbd32fad261a3789041c0d9eb3c189a13da0a9a992b422cfae"
+  },
+  "code/show_patrol_points.py": {
+    "bytes": 2657,
+    "sha256": "06d709221462e12c701d1732ab6bf7e7fab253150215646445fd63174709c837"
+  },
+  "code/start_week5.launch.py": {
+    "bytes": 1825,
+    "sha256": "49b9ca6841fa6e914ef8c4e916a1ead8ca1a5583126f9869cb439a1f57096b43"
+  },
+  "code/start_week5.sh": {
+    "bytes": 829,
+    "sha256": "0d066b93c0ad3b6afe6d0c0c247dade93d2a19a073d3fd0ef398a17e5154bdab"
+  },
+  "code/summarize_patrol.py": {
+    "bytes": 3626,
+    "sha256": "d6abde467614865b2f669da58e37bee8cb3d7c618c0eee7dad7e3540184bbab3"
+  },
+  "code/tuning_plan.json": {
+    "bytes": 877,
+    "sha256": "15924a449f318a8b55bcdfeb9896a61b7d9d1baab8b97c029de31646ed7a6f83"
+  },
+  "formal/inputs/measurement_core.py": {
+    "bytes": 12063,
+    "sha256": "cea3774de20ce979c7c0c9c30ea58ec765693aa0e6c4c016a572de2f22510850"
+  },
+  "formal/inputs/nav2_week5_params.yaml": {
+    "bytes": 10726,
+    "sha256": "bab8f20f3154a26317d6b8b053332b1d62496358245d8a078d5909d96f3fa9f8"
+  },
+  "formal/inputs/patrol.py": {
+    "bytes": 4823,
+    "sha256": "027b0441e41e95067b5febb130729fa016a253c2492c074809037f085a59900a"
+  },
+  "formal/inputs/patrol_measured.py": {
+    "bytes": 3698,
+    "sha256": "a0297730ad86bd18e25291719e849c1b854677d82b9671b55b446d96fcad9949"
+  },
+  "formal/inputs/repeat_patrol.py": {
+    "bytes": 7343,
+    "sha256": "c981ba4c6878060d94444ea79dd173f6baede78cbfa85a651263d42c815e0cc4"
+  },
+  "formal/inputs/scene_learning/hilti_cells.world": {
+    "bytes": 263442,
+    "sha256": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168"
+  },
+  "formal/inputs/scene_learning/map.pgm": {
+    "bytes": 2029,
+    "sha256": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182"
+  },
+  "formal/inputs/scene_learning/map.yaml": {
+    "bytes": 124,
+    "sha256": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187"
+  },
+  "formal/measurement.world": {
+    "bytes": 263594,
+    "sha256": "7952315fd34d17ba8c0c6771fd60eb798b1b4edcdda7662fc49b851c3b649f8b"
+  },
+  "formal/protocol.json": {
+    "bytes": 2105,
+    "sha256": "54461739fc04950d910b0fc5e50d5e50315d5852601070e1ec6e9b9370ab7fbf"
+  },
+  "formal/round_01/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "formal/round_01/client.log": {
+    "bytes": 275,
+    "sha256": "7eac5762729829445c9b6b13d64e21da5dd3508a0907b6bf2aece0252bc45198"
+  },
+  "formal/round_01/launch.log": {
+    "bytes": 51355,
+    "sha256": "eeecb9b686d287f5d1f29cd176682027c2c27249953d89a8502d3ef3f869214c"
+  },
+  "formal/round_01/result.json": {
+    "bytes": 2232652,
+    "sha256": "b4b922a44e81fa7cab98bf0caf0c3835778e41ebbc7fdb02fbca022f31c3c7c2"
+  },
+  "formal/round_02/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "formal/round_02/client.log": {
+    "bytes": 273,
+    "sha256": "17b18c0255a467e4832b5dd9039887cd654ed2d7b0e666c1c4cf9842832c4455"
+  },
+  "formal/round_02/launch.log": {
+    "bytes": 46630,
+    "sha256": "3b5ee8e08a0dbc7743fa37e92e50fd01310f359346856b6eb8534ac52fdf53a2"
+  },
+  "formal/round_02/result.json": {
+    "bytes": 1676157,
+    "sha256": "a0347a9e324f815307294396d6cf44b99505e2be45e7441aedbe6287565d2753"
+  },
+  "formal/round_03/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "formal/round_03/client.log": {
+    "bytes": 275,
+    "sha256": "c181574fd2d6e4b757cd55d26482410e422aaa711765dcb0039d60845da8de74"
+  },
+  "formal/round_03/launch.log": {
+    "bytes": 50315,
+    "sha256": "79ccb13236b05f512d0969694fd44795d87638b3975bcf4505a8cc1749c40d2a"
+  },
+  "formal/round_03/result.json": {
+    "bytes": 2101016,
+    "sha256": "76c2150d28a9b893c9ae56fdb527928251ab988e0c06377132f9d54f1b3a0edd"
+  },
+  "formal/validation.launch.py": {
+    "bytes": 1050,
+    "sha256": "c93a674433af143e42bb300c73049468dd93807c841f668bf043c224434fa0b5"
+  },
+  "measurements_verified.csv": {
+    "bytes": 1256,
+    "sha256": "362b19dfd41be2d25b987988b5d9bcb04dc1656ce88fd46d04e03dcf88c33257"
+  },
+  "preflight/patrol_20261111_145415/inputs/measurement_core.py": {
+    "bytes": 12063,
+    "sha256": "cea3774de20ce979c7c0c9c30ea58ec765693aa0e6c4c016a572de2f22510850"
+  },
+  "preflight/patrol_20261111_145415/inputs/nav2_week5_params.yaml": {
+    "bytes": 10726,
+    "sha256": "bab8f20f3154a26317d6b8b053332b1d62496358245d8a078d5909d96f3fa9f8"
+  },
+  "preflight/patrol_20261111_145415/inputs/patrol.py": {
+    "bytes": 4823,
+    "sha256": "027b0441e41e95067b5febb130729fa016a253c2492c074809037f085a59900a"
+  },
+  "preflight/patrol_20261111_145415/inputs/patrol_measured.py": {
+    "bytes": 3698,
+    "sha256": "a0297730ad86bd18e25291719e849c1b854677d82b9671b55b446d96fcad9949"
+  },
+  "preflight/patrol_20261111_145415/inputs/repeat_patrol.py": {
+    "bytes": 7343,
+    "sha256": "c981ba4c6878060d94444ea79dd173f6baede78cbfa85a651263d42c815e0cc4"
+  },
+  "preflight/patrol_20261111_145415/inputs/scene_learning/hilti_cells.world": {
+    "bytes": 263442,
+    "sha256": "375ea95f9d604e84f698fedd619a3b5f6be96f991e503b1b71e474818613a168"
+  },
+  "preflight/patrol_20261111_145415/inputs/scene_learning/map.pgm": {
+    "bytes": 2029,
+    "sha256": "e72341a0bdc5d7c9aab13a3e33da9aa61154519d261c97caeb0fc9cb89cd1182"
+  },
+  "preflight/patrol_20261111_145415/inputs/scene_learning/map.yaml": {
+    "bytes": 124,
+    "sha256": "7b84ca8e0cec915a052d828d942866d49fb253bd4b9fb2604d22a07ddadd6187"
+  },
+  "preflight/patrol_20261111_145415/measurement.world": {
+    "bytes": 263594,
+    "sha256": "7952315fd34d17ba8c0c6771fd60eb798b1b4edcdda7662fc49b851c3b649f8b"
+  },
+  "preflight/patrol_20261111_145415/protocol.json": {
+    "bytes": 2105,
+    "sha256": "4a1d405b79ec3bb93f4697b74a23b731807d2572e940490dbb1207a6bc0d248a"
+  },
+  "preflight/patrol_20261111_145415/round_01/cleanup.json": {
+    "bytes": 59,
+    "sha256": "a3d9852d5eae341e9a01fbd54e84e9d43df8113f51da66884cff5d3ce0ad51be"
+  },
+  "preflight/patrol_20261111_145415/round_01/client.log": {
+    "bytes": 275,
+    "sha256": "0f0247887ef208a502987fad7d7146c933580e0d687178b9b2d10f1f55d1d230"
+  },
+  "preflight/patrol_20261111_145415/round_01/launch.log": {
+    "bytes": 53928,
+    "sha256": "ffe20d48e28d6caa1cd927c7c7cba7b19f70d058b7d65369cfd8ccb10720ba54"
+  },
+  "preflight/patrol_20261111_145415/round_01/result.json": {
+    "bytes": 2735943,
+    "sha256": "783174339fad0ae04bf0efbf5593fe31f14d013d2a91d2e1ba30f886b480948d"
+  },
+  "preflight/patrol_20261111_145415/validation.launch.py": {
+    "bytes": 1050,
+    "sha256": "e709a63e60d81bd14d0be7d5dd93df575d4e298718f8f072a637e91db844af2a"
+  },
+  "summary_verified.json": {
+    "bytes": 6922,
+    "sha256": "eb7afab8dfd8dc139368634b49d4f9a60d036b7adcf44dc4a389ac6b33b65d4a"
+  }
+}

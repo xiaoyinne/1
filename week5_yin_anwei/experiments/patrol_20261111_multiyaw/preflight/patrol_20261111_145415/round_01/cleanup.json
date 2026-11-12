@@ -1,0 +1,6 @@
+{
+  "signals": [
+    "SIGINT"
+  ],
+  "remaining_pids": []
+}

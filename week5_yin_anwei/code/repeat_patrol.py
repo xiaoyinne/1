@@ -59,11 +59,11 @@ def main():
         parser.error('--run and 1..10 repeats required')
     # Separate ROS domain and Gazebo master; do not disturb user sessions.
     with socket.socket() as port:
-        port.bind(('127.0.0.1', 11355))
+        port.bind(('127.0.0.1', 11361))
     folder = ROOT / 'validation' / ('patrol_' + datetime.now(ZoneInfo('Asia/Shanghai')).strftime('%Y%m%d_%H%M%S'))
     folder.mkdir(parents=True)
     env = os.environ.copy()
-    env.update(ROS_DOMAIN_ID='35', GAZEBO_MASTER_URI='http://127.0.0.1:11355', LIBGL_ALWAYS_SOFTWARE='true')
+    env.update(ROS_DOMAIN_ID='41', GAZEBO_MASTER_URI='http://127.0.0.1:11361', LIBGL_ALWAYS_SOFTWARE='true')
     env['GAZEBO_MODEL_PATH'] = env.get('GAZEBO_MODEL_PATH', '') + ':/opt/ros/humble/share/turtlebot3_gazebo/models'
     files = ['patrol.py', 'patrol_measured.py', 'measurement_core.py', 'repeat_patrol.py', 'nav2_week5_params.yaml',
              'scene_learning/map.yaml', 'scene_learning/map.pgm', 'scene_learning/hilti_cells.world']
@@ -83,16 +83,17 @@ def main():
     tree.write(world, encoding='utf-8', xml_declaration=True)
     versions = subprocess.run(['dpkg-query', '-W', 'ros-humble-nav2-bringup', 'ros-humble-nav2-amcl',
                                'ros-humble-rclpy', 'gazebo'], capture_output=True, text=True)
-    protocol = {'repeats': args.repeats, 'route': [['A', .05, .65], ['B', .85, 3.25], ['A', .05, .65]],
-                'spawn_xy_yaw': [.05, -.05, 1.5707963267948966],
+    protocol = {'repeats': args.repeats, 'route': [['A', .05, .65, 90.0], ['B', .85, 3.25, 180.0], ['C', -.80, -.10, 0.0], ['S', .05, -.05, 90.0]],
+                'route_yaw_unit': 'degrees', 'spawn_xy_yaw': [.05, -.05, 1.5707963267948966],
                 'initial_covariance_xy': .25, 'initial_covariance_yaw': .0685,
-                'headless': True, 'ros_domain_id': 35, 'gazebo_master': env['GAZEBO_MASTER_URI'],
+                'headless': True, 'ros_domain_id': 41, 'gazebo_master': env['GAZEBO_MASTER_URI'],
                 'fresh_simulator_per_round': True, 'warmup_sim_s': 3,
                 'pre_send_wall_s': 2, 'post_goal_minimum_sim_s': 2,
                 'stopped_linear_m_s': .01, 'stopped_angular_rad_s': .03,
                 'action_timeout_wall_s': 120, 'input_sha256': hashes,
                 'versions': versions.stdout, 'random_seed_controlled': False,
-                'note': 'Headless validation protocol differs from earlier GUI/video timing; no collision-contact measurement.'}
+                'route_extension': 'S-A-B-C-S; C=(-0.80,-0.10), fixed goal yaw A=90deg B=180deg C=0deg S=90deg; unchanged map and target coordinates; tuned AMCL, goal tolerances and NavFn fallback, see parameters.diff.',
+                'note': 'Headless validation; separate preflight and formal rounds. No controlled random seed or collision-contact measurement.'}
     (folder / 'protocol.json').write_text(json.dumps(protocol, indent=2))
     mapfile = snapshot / 'scene_learning/map.yaml'
     params = snapshot / 'nav2_week5_params.yaml'
